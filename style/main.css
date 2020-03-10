@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap");
+@import url(c:\Users\Simuratli\Desktop\mursheed\style\reset.css);
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .navbar {
   width: 100%;
   padding: 10px;
@@ -272,4 +280,4 @@
     height: auto !important;
   }
 }
-/*# sourceMappingURL=navbar.css.map */
+/*# sourceMappingURL=main.css.map */
