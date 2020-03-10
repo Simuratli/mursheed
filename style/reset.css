@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+@import '/style/fonts/averta/stylesheet.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 html,
 body,
@@ -91,7 +92,7 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Averta;
     font-size: 16px;
     transition: 500ms ease-in-out;
 }
