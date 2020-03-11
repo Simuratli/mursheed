@@ -1,0 +1,138 @@
+.startYourJourney {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.startYourJourney .journeyHead {
+  text-align: center;
+  width: 100%;
+}
+
+.startYourJourney .journeyHead h1 {
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.startYourJourney .journeyBottom {
+  width: 100%;
+}
+
+.startYourJourney .journeyBottom ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.startYourJourney .journeyBottom ul li {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  margin-left: 10px;
+}
+
+.startYourJourney .journeyBottom ul li input {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #0b8071;
+  border-radius: 5px;
+}
+
+.startYourJourney .journeyBottom ul li button {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #0b8071;
+  border-radius: 5px;
+  background-color: #0b8071;
+  color: white;
+}
+
+.startYourJourney .journeyBottom ul li input[type=date] {
+  padding: 8px !important;
+}
+
+.startYourJourney .journeyBottom ul li select {
+  width: 200px !important;
+  border: 1px solid #0b8071 !important;
+  border-radius: 5px;
+  padding: 10px !important;
+}
+
+@media (max-width: 900px) {
+  .startYourJourney {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .startYourJourney .journeyHead {
+    text-align: center;
+    width: 100%;
+  }
+  .startYourJourney .journeyBottom {
+    width: 100%;
+  }
+  .startYourJourney .journeyBottom ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .startYourJourney .journeyBottom ul li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .startYourJourney .journeyBottom ul li input {
+    width: 230px;
+    padding: 10px;
+    border: 1px solid #0b8071;
+    border-radius: 5px;
+  }
+  .startYourJourney .journeyBottom ul li button {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #0b8071;
+    border-radius: 5px;
+    background-color: #0b8071;
+    color: white;
+  }
+  .startYourJourney .journeyBottom ul li input[type=date] {
+    padding: 8px !important;
+  }
+  .startYourJourney .journeyBottom ul li select {
+    width: 250px !important;
+    border: 1px solid #0b8071 !important;
+    border-radius: 5px;
+    padding: 10px !important;
+  }
+}
+
+.journey {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/*# sourceMappingURL=start_your_journey.css.map */

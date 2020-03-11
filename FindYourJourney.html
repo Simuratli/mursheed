@@ -11,27 +11,37 @@
 
 <body>
 
-
-    <section id="start_your_journey">
-        <!-- Start your journey -->
-        <div class="container">
-            <div class="start_your_journey_top">
-                <h6>Start your journey</h6>
-            </div>
-            <div class="start_your_journey_bottom">
-                <select>
-                    <option value="">Country</option>
-                    <option>Azerbaijan</option>
-                    <option>Turkey</option>
-                    <option>SAA</option>
-                </select>
-                <!-- <input autocomplete="off" type="text" placeholder="City"> -->
-                <input autocomplete="off" type="text" placeholder="City">
-                <input autocomplete="off" type="date" id="journey_date">
-                <button class="btn">Search</button>
-            </div>
+    <div class="startYourJourney">
+        <div class="journeyHead">
+            <h1>Start your Journey</h1>
         </div>
-    </section>
+        <div class="journeyBottom">
+            <ul>
+                <li class="journeyItem">
+                    <select>
+                        <option>
+                            Country
+                        </option>
+                        <option>
+                            Azerbaijan
+                        </option>
+                        <option>
+                            France
+                        </option>
+                    </select>
+                </li>
+                <li class="journeyItem">
+                    <input autocomplete="off" type="text">
+                </li>
+                <li class="journeyItem">
+                    <input autocomplete="off" type="date" id="journey_date">
+                </li>
+                <li class="journeyItem">
+                    <button>Search</button>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 
     <script src="js/swiper.js"></script>

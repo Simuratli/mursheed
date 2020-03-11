@@ -156,3 +156,11 @@ table {
     width: 80%;
     margin: 0 auto;
 }
+
+input {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #0b8071;
+}
