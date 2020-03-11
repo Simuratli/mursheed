@@ -1,10 +1,13 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
 
-@import '/style/fonts/averta/stylesheet.css';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 html,
 body,
 div,
@@ -92,7 +95,7 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    font-family: Averta;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     transition: 500ms ease-in-out;
 }
@@ -147,4 +150,9 @@ table {
     border: 0px;
     font-size: 1em;
     font-weight: bolder;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
 }

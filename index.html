@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
     <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/container.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/swiper.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
     <title>Nav</title>
 </head>
 
@@ -37,11 +38,21 @@
                 <div class="navbar__left">
                     <div class="navbar__left__currency">
                         <span class="navbar__left__currency--green responsivespan">Currency</span>
-                        <p class="navbar__left__currency__selected">USD $</p>
+                        <form>
+                            <select>
+                                <option class="navbar__left__currency__selected">USD</option>
+                                <option class="navbar__left__currency__selected">AZN</option>
+                            </select>
+                        </form>
                     </div>
                     <div class="navbar__left__language">
                         <span class="navbar__left__currency--green responsivespan">Language</span>
-                        <p class="navbar__left__language__selected">English</p>
+                        <form>
+                            <select>
+                                <option class="navbar__left__language__selected">English</option>
+                                <option class="navbar__left__language__selected">Azerbaijan</option>
+                            </select>
+                        </form>
                     </div>
                     <div class="navbar__left__buttons">
                         <button class="navbar__left__buttons--bgwhite btn">Login</button>
@@ -49,8 +60,8 @@
                     </div>
                     <div id="dropLogBtn" class="if-logged ">
                         <div id="loggedContainer" class="loggedContainer">
-                            <button class="logbutton btn">Login</button>
-                            <button class="regbutton btn">Register</button>
+                            <a href="#" class="logbutton btn">Login</a>
+                            <a href="#" class="regbutton btn">Register</a>
                         </div>
                     </div>
                     <div id="responsivenavIcon" class="responsivenavIcon">
@@ -75,13 +86,51 @@
                     <a class="navbar__menu__item" href="#">Attractive Places</a>
                     <a class="navbar__menu__item" href="#">Offers</a>
                 </div>
-
             </div>
         </div>
     </div>
     <!-- bottom nav end  -->
 
 
+    <!-- slider -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="https://google.az"><img src="./img/swiper/bitmap.png" alt="">
+                    <div class="bigsliderTitle">
+                        <p>Title 1</p>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://google.az"><img src="./img/swiper/nature-1.jpg" alt="">
+                    <div class="bigsliderTitle">
+                        <p>Title 2</p>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://google.az"><img src="./img/swiper/nature-2.jpg" alt="">
+                    <div class="bigsliderTitle">
+                        <p>Title 3</p>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://google.az"><img src="./img/swiper/nature-4.jpg" alt="">
+                    <div class="bigsliderTitle">
+                        <p>Title 4</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <script src="js/swiper.js"></script>
+    <script src="js/bigslider.js"></script>
     <script src="js/main.js"></script>
 </body>
 
