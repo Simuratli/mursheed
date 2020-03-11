@@ -362,8 +362,8 @@ a {
 
 .startYourJourney .journeyHead h1 {
   font-size: 1.8em;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .startYourJourney .journeyBottom {
@@ -485,5 +485,26 @@ a {
 .journey {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.whyMursheed {
+  padding: 3em;
+}
+
+.whyMursheed .murseedContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.whyMursheed .murseedContainer_item {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #fff;
+}
+
+.whyMursheed .murseedContainer_item img {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */
