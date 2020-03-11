@@ -156,7 +156,7 @@
   display: none;
 }
 
-@media (max-width: 872px) {
+@media (max-width: 900px) {
   .container {
     width: 95%;
   }
