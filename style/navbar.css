@@ -79,7 +79,7 @@
 }
 
 .navbar__left__buttons--bgwhite {
-  border: 1px solid #0b8071;
+  border: 1px solid #0b8071 !important;
   border-radius: 3px;
   background-color: #f7f7f7;
   -webkit-transition: 200ms ease-in-out;

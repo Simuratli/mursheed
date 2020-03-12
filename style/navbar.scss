@@ -78,7 +78,7 @@ $bg-color: #f7f7f7;
         }
         &__buttons {
             &--bgwhite {
-                border: 1px solid $main-color;
+                border: 1px solid $main-color !important;
                 border-radius: 3px;
                 background-color: $bg-color;
                 transition: 200ms ease-in-out;

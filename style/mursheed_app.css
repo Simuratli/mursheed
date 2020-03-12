@@ -1,0 +1,43 @@
+.app_container {
+  position: relative;
+  top: 40px;
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin-top: 10px;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.app_container .mursheed_content {
+  display: inline-block;
+  text-align: left !important;
+  margin-left: 3em !important;
+}
+
+.app_container .mursheed_content .mursheed_text h1 {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-bottom: 1.2em;
+  margin-top: 5em !important;
+}
+
+.app_container .mursheed_content .mursheed_buttons {
+  margin-top: 1em;
+}
+
+.app_container .mursheed_img {
+  display: inline-block;
+  margin-left: 2em !important;
+}
+
+.app_container .mursheed_img img {
+  width: 562px;
+  height: 387px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=mursheed_app.css.map */

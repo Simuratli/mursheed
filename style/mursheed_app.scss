@@ -1,0 +1,34 @@
+.app_container {
+    position: relative;
+    top: 40px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin-top: 10px;
+    justify-content: space-between !important;
+    .mursheed_content {
+        display: inline-block;
+        text-align: left !important;
+        margin-left: 3em !important;
+        .mursheed_text {
+            h1 {
+                font-size: 1.7em;
+                font-weight: bold;
+                margin-bottom: 1.2em;
+                margin-top: 5em !important;
+            }
+        }
+        .mursheed_buttons {
+            margin-top: 1em;
+        }
+    }
+    .mursheed_img {
+        display: inline-block;
+        margin-left: 2em !important;
+        img {
+            width: 562px;
+            height: 387px;
+            object-fit: cover;
+        }
+    }
+}

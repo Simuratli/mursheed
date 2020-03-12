@@ -1,6 +1,7 @@
 $main-color:#0b8071;
 $bg-color: #f7f7f7;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import "../fonts/averta/stylesheet.css";
 @import 'reset';
 @import 'navbar';
 @import 'bigSlider';
@@ -8,3 +9,7 @@ $bg-color: #f7f7f7;
 @import 'start_your_journey';
 @import 'whyMursheed';
 @import 'driverSlider';
+@import 'atractive_places';
+@import 'partners';
+@import 'mursheed_app';
+@import 'footer';
