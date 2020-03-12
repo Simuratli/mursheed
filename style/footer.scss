@@ -3,7 +3,7 @@ footer {
     top: 35px;
     background-color: #222222;
     padding-top: 3em;
-    padding-bottom: 3em;
+    padding-bottom: 4em;
     color: white;
     text-align: left !important;
     .footer_container {
@@ -110,6 +110,34 @@ footer {
                     border-radius: 5px !important;
                 }
             }
+        }
+    }
+}
+
+.social-networks {
+    display: flex;
+    width: 100%;
+    position: relative;
+    left: -50px;
+    top: 30px;
+    li {
+        display: inline-block;
+        list-style: none;
+        margin-left: 10px;
+    }
+}
+
+@media(max-width:899px) {
+    .social-networks {
+        display: flex;
+        width: 100%;
+        position: relative;
+        left: 30px;
+        top: 30px;
+        li {
+            display: inline-block;
+            list-style: none;
+            margin-left: 10px;
         }
     }
 }
