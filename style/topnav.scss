@@ -3,6 +3,7 @@ $bg-color: #f7f7f7;
 .topNav {
     .langandcurrency {
         display: flex;
+        flex-direction: row !important;
         float: left !important;
         width: 40%;
         margin: 0 auto !important;
@@ -28,6 +29,42 @@ $bg-color: #f7f7f7;
     }
 }
 
+#dropLogBtn {
+    display: none;
+}
+
+@media(max-width:900px) {
+    #dropLogBtn {
+        display: block !important;
+    }
+}
+
+.profile {
+    // display: none !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(../img/profile/user.jpg);
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    top: 10px !important;
+    right: 10px;
+    #loggedid {
+        position: relative;
+        left: -40px;
+        top: 20px;
+        display: none !important;
+        text-align: right;
+        .loggediditem {
+            display: block;
+            margin-top: 10px;
+            font-size: 1em;
+            padding: 5px !important;
+        }
+    }
+}
+
 @media(max-width:900px) {
     .topNav {
         .langandcurrency {
@@ -39,8 +76,50 @@ $bg-color: #f7f7f7;
         padding-top: 10px;
         padding-bottom: 15px;
         .support {
-            a {
+            position: relative;
+            top: -10px !important;
+            .supportItem {
                 visibility: hidden !important;
+            }
+            .profile {
+                display: inline-block !important;
+                position: relative;
+                top: 10px !important;
+                // position: absolute;
+                // top: 0.5em !important; 
+                #loggedid {
+                    display: block !important;
+                }
+            }
+        }
+    }
+}
+
+#loggedid.open {
+    display: block !important;
+    background-color: $bg-color;
+    width: 80px;
+    z-index: 12 !important;
+    a {
+        display: inline;
+    }
+}
+
+@media(max-width:431px) {
+    .topNav {
+        width: 100% !important;
+        height: 50px !important;
+        .support {
+            .supportItem {
+                display: none;
+            }
+            .profile {
+                display: inline-block !important;
+                // display: inline-block;
+                // position: relative;
+                // top: 15px !important;
+                // position: absolute;
+                // top: 0.5em !important;
             }
         }
     }

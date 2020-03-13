@@ -1,77 +1,85 @@
-<!-- top nav  -->
-<div class="inner-header">
-    <div class="container">
-        <div class="navbar__header">
-            <div class="navbar__header__container--left">
-                <div class="navbar__header__container__links">
-                    <a href="#">Support</a>
-                    <a href="#">Contact us</a>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="topNav">
+        <div class="container langandcurrency">
+            <div class="currency">
+                <form>
+                    <select>
+                        <option class="optioncurrency">USD</option>
+                        <option class="optioncurrency">AZN</option>
+                    </select>
+                </form>
+            </div>
+            <div class="language">
+                <form>
+                    <select>
+                        <option class="optionlang">Azerbaijan</option>
+                        <option class="optionlang">English</option>
+                    </select>
+                </form>
             </div>
         </div>
+        <div class="container support">
+            <a class="supportItem" href="#">Support</a>
+            <a class="supportItem" href="#">Contact Us</a>
+        </div>
+
     </div>
-</div>
-<!-- top nav end  -->
-<!-- Center nav start -->
-<div class="center-header">
-    <div class="container">
-        <div class="navbar">
-            <div class="navbar__logo">
+    <div id="dropLogBtn" class="profile">
+        <div id="loggedid">
+            <a class="loggediditem" href="#">Login</a>
+            <a class="loggediditem" href="#">Register</a>
+        </div>
+    </div>
+    <div class="centerNav">
+        <div class="container">
+            <div class="logo">
                 <img src="img/header/logo.svg" alt="">
             </div>
+            <div class="rightContent">
+                <div class="currency">
+                    <span class="currencyText">Currency</span>
+                    <form>
+                        <select>
+                            <option class="optioncurrency">USD</option>
+                            <option class="optioncurrency">AZN</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="language">
+                    <span class="langText">Language</span>
+                    <form>
+                        <select>
+                            <option class="optionlang">Azerbaijan</option>
+                            <option class="optionlang">English</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="loginbuttons">
+                    <button class="loginbtn btn">Login</button>
+                    <button class="registerbtn btn">Register</button>
+                </div>
+                <div class="barIcon">
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <div class="navbar__left">
-                <div class="navbar__left__currency">
-                    <span class="navbar__left__currency--green responsivespan">Currency</span>
-                    <form>
-                        <select>
-                                <option class="navbar__left__currency__selected">USD</option>
-                                <option class="navbar__left__currency__selected">AZN</option>
-                            </select>
-                    </form>
-                </div>
-                <div class="navbar__left__language">
-                    <span class="navbar__left__currency--green responsivespan">Language</span>
-                    <form>
-                        <select>
-                                <option class="navbar__left__language__selected">English</option>
-                                <option class="navbar__left__language__selected">Azerbaijan</option>
-                            </select>
-                    </form>
-                </div>
-                <div class="navbar__left__buttons">
-                    <button class="navbar__left__buttons--bgwhite btn">Login</button>
-                    <button class="navbar__left__buttons--bggreen btn">Register</button>
-                </div>
-                <div id="dropLogBtn" class="if-logged ">
-                    <div id="loggedContainer" class="loggedContainer">
-                        <a href="#" class="logbutton btn">Login</a>
-                        <a href="#" class="regbutton btn">Register</a>
-                    </div>
-                </div>
-                <div id="responsivenavIcon" class="responsivenavIcon">
-                    <p class="line"></p>
-                    <p class="line"></p>
-                    <p class="line"></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Center nav end -->
-<!-- bottom nav start  -->
-<div id="bottomHeader" class="bottom-header">
-    <div class="container">
-        <div class="navbar">
-            <div id="navbarMenu" class="navbar__menu">
-                <a class="navbar__menu__item active" href="#">Home</a>
-                <a class="navbar__menu__item" href="#">About</a>
-                <a class="navbar__menu__item" href="#">Guides & Drivers</a>
-                <a class="navbar__menu__item" href="#">Accomodation</a>
-                <a class="navbar__menu__item" href="#">Attractive Places</a>
-                <a class="navbar__menu__item" href="#">Offers</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- bottom nav end  -->
+</body>
+
+<script src="js/main.js"></script>
+
+</html>

@@ -8,6 +8,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
   float: left !important;
   width: 40%;
   margin: 0 auto !important;
@@ -32,6 +36,43 @@
   margin-left: 1.2em;
 }
 
+#dropLogBtn {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  #dropLogBtn {
+    display: block !important;
+  }
+}
+
+.profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url(../img/profile/user.jpg);
+  background-size: cover;
+  display: inline-block;
+  position: absolute;
+  top: 10px !important;
+  right: 10px;
+}
+
+.profile #loggedid {
+  position: relative;
+  left: -40px;
+  top: 20px;
+  display: none !important;
+  text-align: right;
+}
+
+.profile #loggedid .loggediditem {
+  display: block;
+  margin-top: 10px;
+  font-size: 1em;
+  padding: 5px !important;
+}
+
 @media (max-width: 900px) {
   .topNav {
     padding-top: 10px;
@@ -43,8 +84,44 @@
   .topNav .langandcurrency select {
     font-size: 0.8em !important;
   }
-  .topNav .support a {
+  .topNav .support {
+    position: relative;
+    top: -10px !important;
+  }
+  .topNav .support .supportItem {
     visibility: hidden !important;
+  }
+  .topNav .support .profile {
+    display: inline-block !important;
+    position: relative;
+    top: 10px !important;
+  }
+  .topNav .support .profile #loggedid {
+    display: block !important;
+  }
+}
+
+#loggedid.open {
+  display: block !important;
+  background-color: #f7f7f7;
+  width: 80px;
+  z-index: 12 !important;
+}
+
+#loggedid.open a {
+  display: inline;
+}
+
+@media (max-width: 431px) {
+  .topNav {
+    width: 100% !important;
+    height: 50px !important;
+  }
+  .topNav .support .supportItem {
+    display: none;
+  }
+  .topNav .support .profile {
+    display: inline-block !important;
   }
 }
 /*# sourceMappingURL=topnav.css.map */
