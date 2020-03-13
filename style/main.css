@@ -299,29 +299,17 @@ select option {
   font-size: 1em;
 }
 
-#swiper {
-  height: 700px;
-}
-
-#swiper a {
-  height: inherit;
-  display: inline-block;
-  width: 100%;
-}
-
-#swiper .swiper-container {
+.swiper-container {
   width: 100%;
   height: 100%;
 }
 
-#swiper .swiper-container .swiper-wrapper .swiper-slide {
+.swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
   /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -330,84 +318,36 @@ select option {
   align-items: center;
 }
 
-#swiper .swiper-container .swiper-wrapper .swiper-slide img {
+.swiper-slide .bigSliderImg {
+  display: block;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  margin-top: 10px;
+  height: 80vh;
 }
 
-#swiper .swiper-container .swiper-button-next {
-  cursor: pointer;
-  background: #eeeeee;
-  border-radius: 100%;
-  color: black;
-  width: 40px;
-  height: 40px;
-  right: 50px;
-}
-
-#swiper .swiper-container .swiper-button-next::after {
-  font-weight: bold;
-  width: 40px;
-  height: 40px;
-  font-size: 18px;
-  text-align: center;
-  line-height: 40px;
-}
-
-#swiper .swiper-container .swiper-button-prev {
-  cursor: pointer;
-  background: #eeeeee;
-  border-radius: 100%;
-  color: black;
-  width: 40px;
-  height: 40px;
-  left: 50px;
-}
-
-#swiper .swiper-container .swiper-button-prev::after {
-  font-weight: bold;
-  width: 40px;
-  height: 40px;
-  font-size: 18px;
-  text-align: center;
-  line-height: 40px;
-}
-
-#swiper .swiper-container .swiper-bottom-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
+.swiper-slide .bigSliderImg img {
   width: 100%;
-  bottom: 0;
-  padding: 15px 0px;
-  left: 0px;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.7);
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-#swiper .swiper-container .swiper-bottom-text p {
-  font-family: Averta;
-  font-size: 23px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
-  margin-bottom: 0px;
-  margin-left: 13%;
+.swiper-slide .bigsliderTitle {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: left;
+  margin-top: -0.4em;
 }
 
-@media only screen and (max-width: 992px) {
-  #swiper {
-    height: 450px !important;
-  }
+.swiper-slide .bigsliderTitle p {
+  font-size: 2em;
+  padding-left: 40px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
 }
 
 .startYourJourney {
