@@ -1,19 +1,13 @@
-var swiper = new Swiper('.bigslider.swiper-container', {
+var swiper = new Swiper('#swiper.swiper-container', {
     autoplay: {
-        delay: 1000,
+        delay: 3000,
     },
-    spead: 3000,
+    speed: 3000,
     effect: 'fade',
-    fadeEffect: {
-        crossFade: true,
-
-    },
+    loop: true,
+    loopFillGroupWithBlank: true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-
-    },
-    controller: {
-        inverse: true,
     },
 });
