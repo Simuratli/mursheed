@@ -4,6 +4,25 @@
   padding-bottom: 10px;
 }
 
+.topNav .langandcurrency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left !important;
+  width: 40%;
+  margin: 0 auto !important;
+  margin-left: 30px !important;
+  visibility: hidden;
+}
+
+.topNav .langandcurrency select {
+  font-size: 1em !important;
+  border-radius: 2px;
+  padding: 5px !important;
+  border: 1px solid #0b8071 !important;
+  margin-left: 10px !important;
+}
+
 .topNav .container {
   text-align: right;
 }
@@ -15,11 +34,17 @@
 
 @media (max-width: 900px) {
   .topNav {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
   }
-  .topNav .container a {
-    display: none !important;
+  .topNav .langandcurrency {
+    visibility: visible;
+  }
+  .topNav .langandcurrency select {
+    font-size: 0.8em !important;
+  }
+  .topNav .support a {
+    visibility: hidden !important;
   }
 }
 /*# sourceMappingURL=topnav.css.map */

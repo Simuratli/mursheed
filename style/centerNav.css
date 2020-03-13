@@ -1,0 +1,115 @@
+.centerNav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.centerNav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.centerNav .container .logo {
+  width: 200px;
+}
+
+.centerNav .container .logo img {
+  width: 100%;
+}
+
+.centerNav .container .rightContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.centerNav .container .rightContent .barIcon {
+  margin-top: 10px !important;
+  display: none;
+}
+
+.centerNav .container .rightContent .barIcon .line {
+  width: 30px;
+  background-color: black;
+  border-radius: 5px;
+  height: 5px;
+  margin-bottom: 5px;
+}
+
+.centerNav .container .rightContent .currency {
+  position: relative;
+  left: -50px !important;
+  text-align: center !important;
+}
+
+.centerNav .container .rightContent .currency .currencyText {
+  font-size: 0.8em;
+  color: #0b8071;
+}
+
+.centerNav .container .rightContent .currency select {
+  font-size: 1em !important;
+}
+
+.centerNav .container .rightContent .language {
+  position: relative;
+  left: -30px !important;
+  text-align: center !important;
+}
+
+.centerNav .container .rightContent .language .langText {
+  font-size: 0.8em;
+  color: #0b8071;
+}
+
+.centerNav .container .rightContent .language select {
+  font-size: 1em !important;
+}
+
+.centerNav .container .rightContent .language select option {
+  padding: 5px !important;
+  border: 0px !important;
+}
+
+.centerNav .container .rightContent .loginbuttons .loginbtn {
+  border-radius: 2px !important;
+  border: 1px solid #0b8071;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  width: 100px;
+}
+
+.centerNav .container .rightContent .loginbuttons .loginbtn:hover {
+  background-color: #0b8071;
+  color: white;
+}
+
+.centerNav .container .rightContent .loginbuttons .registerbtn {
+  border-radius: 2px !important;
+  background-color: #0b8071;
+  border: 1px solid #0b8071;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  width: 100px;
+  color: white;
+}
+
+.centerNav .container .rightContent .loginbuttons .registerbtn:hover {
+  background-color: #f7f7f7;
+  color: black;
+}
+
+@media (max-width: 900px) {
+  .rightContent .currency,
+  .rightContent .language,
+  .rightContent .loginbuttons {
+    display: none !important;
+  }
+  .rightContent .barIcon {
+    display: block !important;
+  }
+}
+/*# sourceMappingURL=centerNav.css.map */

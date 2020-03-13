@@ -1,6 +1,21 @@
 $main-color:#0b8071;
 $bg-color: #f7f7f7;
 .topNav {
+    .langandcurrency {
+        display: flex;
+        float: left !important;
+        width: 40%;
+        margin: 0 auto !important;
+        margin-left: 30px !important;
+        visibility: hidden;
+        select {
+            font-size: 1em !important;
+            border-radius: 2px;
+            padding: 5px !important;
+            border: 1px solid $main-color !important;
+            margin-left: 10px !important;
+        }
+    }
     background-color: $bg-color;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -15,11 +30,17 @@ $bg-color: #f7f7f7;
 
 @media(max-width:900px) {
     .topNav {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        .container {
+        .langandcurrency {
+            visibility: visible;
+            select {
+                font-size: 0.8em !important;
+            }
+        }
+        padding-top: 10px;
+        padding-bottom: 15px;
+        .support {
             a {
-                display: none !important;
+                visibility: hidden !important;
             }
         }
     }
