@@ -1,4 +1,4 @@
-var swiper = new Swiper('.bigslider.swiper-container ', {
+var swiper = new Swiper('.bigslider.swiper-container', {
     autoplay: {
         delay: 1000,
     },
