@@ -160,12 +160,6 @@
   #swiper_popular_attractions_locations h6 {
     font-size: 18px !important;
   }
-  #swiper_popular_attractions_locations .swiper-button-next {
-    right: -15px !important;
-  }
-  #swiper_popular_attractions_locations .swiper-button-prev {
-    left: -15px !important;
-  }
 }
 
 a {

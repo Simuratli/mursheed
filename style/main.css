@@ -348,7 +348,7 @@ select option {
   color: black;
   width: 40px;
   height: 40px;
-  right: 50px;
+  right: 20px;
 }
 
 #swiper .swiper-container .swiper-button-next::after {
@@ -367,7 +367,7 @@ select option {
   color: black;
   width: 40px;
   height: 40px;
-  left: 50px;
+  left: 20px;
 }
 
 #swiper .swiper-container .swiper-button-prev::after {
@@ -793,7 +793,7 @@ select option {
 }
 
 @media only screen and (max-width: 992px) {
-  #swiper_most_popular_drivers h6 {
+  #swiper_most_popular_drivers .slider-container h6 {
     font-size: 18px !important;
   }
   #swiper_most_popular_drivers .swiper-button-next {
@@ -801,6 +801,12 @@ select option {
   }
   #swiper_most_popular_drivers .swiper-button-prev {
     left: -15px !important;
+  }
+  .swiper_most_popular_drivers_bottom {
+    width: 300px !important;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -965,12 +971,6 @@ select option {
 @media only screen and (max-width: 992px) {
   #swiper_popular_attractions_locations h6 {
     font-size: 18px !important;
-  }
-  #swiper_popular_attractions_locations .swiper-button-next {
-    right: -15px !important;
-  }
-  #swiper_popular_attractions_locations .swiper-button-prev {
-    left: -15px !important;
   }
 }
 
@@ -1365,6 +1365,31 @@ footer .footer_container .footer_menu button {
   body,
   html {
     overflow-x: hidden;
+  }
+}
+
+.topNav {
+  background-color: #f7f7f7;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.topNav .container {
+  text-align: right;
+}
+
+.topNav .container a {
+  display: inline-block;
+  margin-left: 1.2em;
+}
+
+@media (max-width: 900px) {
+  .topNav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .topNav .container a {
+    display: none !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,26 @@
+$main-color:#0b8071;
+$bg-color: #f7f7f7;
+.topNav {
+    background-color: $bg-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .container {
+        text-align: right;
+        a {
+            display: inline-block;
+            margin-left: 1.2em;
+        }
+    }
+}
+
+@media(max-width:900px) {
+    .topNav {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .container {
+            a {
+                display: none !important;
+            }
+        }
+    }
+}

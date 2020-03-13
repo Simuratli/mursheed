@@ -218,7 +218,7 @@
 }
 
 @media only screen and (max-width: 992px) {
-  #swiper_most_popular_drivers h6 {
+  #swiper_most_popular_drivers .slider-container h6 {
     font-size: 18px !important;
   }
   #swiper_most_popular_drivers .swiper-button-next {
@@ -226,6 +226,12 @@
   }
   #swiper_most_popular_drivers .swiper-button-prev {
     left: -15px !important;
+  }
+  .swiper_most_popular_drivers_bottom {
+    width: 300px !important;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 /*# sourceMappingURL=driverSlider.css.map */

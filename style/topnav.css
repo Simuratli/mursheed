@@ -1,0 +1,25 @@
+.topNav {
+  background-color: #f7f7f7;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.topNav .container {
+  text-align: right;
+}
+
+.topNav .container a {
+  display: inline-block;
+  margin-left: 1.2em;
+}
+
+@media (max-width: 900px) {
+  .topNav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .topNav .container a {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=topnav.css.map */
