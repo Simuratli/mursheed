@@ -1,6 +1,6 @@
 var swiper = new Swiper('.bigslider.swiper-container ', {
     autoplay: {
-        delay: 3000,
+        delay: 1000,
     },
     spead: 3000,
     effect: 'fade',
