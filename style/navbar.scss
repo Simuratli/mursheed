@@ -2,8 +2,9 @@ $main-color:#0b8071;
 $bg-color: #f7f7f7;
 .navbar {
     width: 100%;
-    padding: 10px;
     display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
     //top nav
     &__header {
         padding-top: 20px;
