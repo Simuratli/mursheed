@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @import url(c:\Users\Simuratli\Desktop\mursheed\fonts\averta\stylesheet.css);
 @import url(c:\Users\Simuratli\Desktop\mursheed\style\reset.css);
-@import url(c:\Users\Simuratli\Desktop\mursheed\style\swiper.css);
+@import url(c:\Users\Simuratli\Desktop\mursheed\libs\swiper\swiper.css);
 .navbar {
   width: 100%;
   padding: 10px;
@@ -1126,87 +1126,66 @@ a {
   }
 }
 
-.app_container {
+#mursheed_app {
   position: relative;
-  top: 40px;
-  width: 80%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  margin-top: 10px;
-  -webkit-box-pack: justify !important;
-      -ms-flex-pack: justify !important;
-          justify-content: space-between !important;
+  top: 50px;
 }
 
-.app_container .mursheed_content {
-  display: inline-block;
-  text-align: left !important;
-  margin-left: 3em !important;
+#mursheed_app .mursheed_app_inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.app_container .mursheed_content .mursheed_text h1 {
-  font-size: 1.7em;
-  font-weight: bold;
-  margin-bottom: 1.2em;
-  margin-top: 5em !important;
+#mursheed_app .mursheed_app_inside .mursheed_app_left {
+  padding-left: 55px;
 }
 
-.app_container .mursheed_content .mursheed_buttons {
-  margin-top: 1em;
+#mursheed_app .mursheed_app_inside .mursheed_app_left h6 {
+  font-family: Averta;
+  font-size: 23px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-bottom: 22px;
 }
 
-.app_container .mursheed_img {
-  display: inline-block;
-  margin-left: 2em !important;
+#mursheed_app .mursheed_app_inside .mursheed_app_left p {
+  opacity: 0.75;
+  font-family: Averta;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-bottom: 30px;
 }
 
-.app_container .mursheed_img img {
-  width: 562px;
-  height: 387px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media (max-width: 611px) {
-  .app_container {
-    position: relative;
-    top: 40px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media only screen and (max-width: 768px) {
+  #swiper {
+    height: 450 !important;
+  }
+  #mursheed_app .mursheed_app_inside {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 10px;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
   }
-  .app_container .mursheed_content {
-    display: inline-block;
-    text-align: center !important;
+  #mursheed_app .mursheed_app_inside .mursheed_app_left {
+    padding-left: 0px !important;
+    margin-bottom: 50px;
   }
-  .app_container .mursheed_content .mursheed_text h1 {
-    font-size: 1.7em;
-    font-weight: bold;
-    margin-bottom: 1.2em;
-    margin-top: 5em !important;
-  }
-  .app_container .mursheed_content .mursheed_buttons {
-    margin-top: 1em;
-  }
-  .app_container .mursheed_img {
-    display: inline-block;
-  }
-  .app_container .mursheed_img img {
-    width: 100%;
-    height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
+  #mursheed_app .mursheed_app_inside .mursheed_app_right img {
+    width: 100% !important;
   }
 }
 
