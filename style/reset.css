@@ -3,11 +3,6 @@
     font-family: Averta !important;
 }
 
-html,
-body {
-    overflow-x: hidden;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 html,
 body,
@@ -160,4 +155,8 @@ input {
     padding: 10px;
     border-radius: 3px;
     border: 1px solid #0b8071;
+}
+
+.fullContainer {
+    width: 100%;
 }

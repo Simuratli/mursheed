@@ -165,8 +165,8 @@
     display: none;
   }
   .if-logged {
-    margin-top: -4em;
     position: relative;
+    top: -3.3em !important;
     left: 2em;
     display: block;
     z-index: 12 !important;
@@ -210,9 +210,12 @@
     position: absolute;
     top: 1rem;
     left: 1rem;
-    border-radius: 0.3em;
-    border: 1px solid #0b8071;
     cursor: pointer;
+  }
+  .navbar__left__language select,
+  .navbar__left__currency select {
+    border: 1px solid #0b8071 !important;
+    border-radius: 0.3em;
   }
   .navbar__left__language {
     left: 6rem;
