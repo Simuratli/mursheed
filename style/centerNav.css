@@ -142,10 +142,10 @@
     -webkit-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
     font-size: 1em !important;
+    font-weight: bold;
   }
   .menucontainer .openmenu_item:hover {
     color: #0b8071 !important;
-    font-weight: bold;
   }
   .menucontainer.active {
     display: block !important;
