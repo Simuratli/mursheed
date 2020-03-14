@@ -57,6 +57,8 @@ $bg-color: #f7f7f7;
                     }
                     #loggedid.open {
                         display: block;
+                        position: relative;
+                        z-index: 13 !important;
                     }
                 }
                 .support {

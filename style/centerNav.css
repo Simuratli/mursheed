@@ -143,6 +143,8 @@
     transition: 1s ease-in-out;
     font-size: 1em !important;
     font-weight: bold;
+    text-decoration: none;
+    color: #151515;
   }
   .menucontainer .openmenu_item:hover {
     color: #0b8071 !important;

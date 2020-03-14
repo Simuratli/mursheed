@@ -1,6 +1,6 @@
 #swiper_popular_attractions_locations {
     text-align: center;
-    margin: 50px 0px;
+    margin: 30px 0px;
     .swiper_popular_attractions_locations_top {
         display: flex;
         justify-content: space-between;
@@ -132,14 +132,11 @@
         h6 {
             font-size: 18px !important;
         }
+        .swiper-button-next {
+            right: -15px !important;
+        }
+        .swiper-button-prev {
+            left: -15px !important;
+        }
     }
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-.city_name {
-    padding-bottom: 20px
 }

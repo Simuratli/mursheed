@@ -12,6 +12,8 @@ $bg-color: #f7f7f7;
                 font-size: 1.2em !important;
                 font-weight: bold;
                 transition: 500ms;
+                text-decoration: none;
+                color: black;
                 &:hover {
                     color: $main-color;
                 }

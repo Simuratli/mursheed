@@ -71,6 +71,8 @@
 
 .topNav .container .topnavcontainer .secondcontainer .profile #loggedid.open {
   display: block;
+  position: relative;
+  z-index: 13 !important;
 }
 
 .topNav .container .topnavcontainer .secondcontainer .support {

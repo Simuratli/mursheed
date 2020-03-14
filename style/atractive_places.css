@@ -1,6 +1,6 @@
 #swiper_popular_attractions_locations {
   text-align: center;
-  margin: 50px 0px;
+  margin: 30px 0px;
 }
 
 #swiper_popular_attractions_locations .swiper_popular_attractions_locations_top {
@@ -160,14 +160,11 @@
   #swiper_popular_attractions_locations h6 {
     font-size: 18px !important;
   }
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-.city_name {
-  padding-bottom: 20px;
+  #swiper_popular_attractions_locations .swiper-button-next {
+    right: -15px !important;
+  }
+  #swiper_popular_attractions_locations .swiper-button-prev {
+    left: -15px !important;
+  }
 }
 /*# sourceMappingURL=atractive_places.css.map */

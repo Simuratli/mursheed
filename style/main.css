@@ -12,12 +12,12 @@
   width: 100%;
 }
 
-#swiper .swiper-container {
+#swiper .bigslider {
   width: 100%;
   height: 100%;
 }
 
-#swiper .swiper-container .swiper-wrapper .swiper-slide {
+#swiper .bigslider .swiper-wrapper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -33,24 +33,24 @@
   align-items: center;
 }
 
-#swiper .swiper-container .swiper-wrapper .swiper-slide img {
+#swiper .bigslider .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
-#swiper .swiper-container .swiper-button-next {
+#swiper .bigslider .swiper-button-next {
   cursor: pointer;
   background: #eeeeee;
   border-radius: 100%;
   color: black;
   width: 40px;
   height: 40px;
-  right: 20px;
+  right: 50px;
 }
 
-#swiper .swiper-container .swiper-button-next::after {
+#swiper .bigslider .swiper-button-next::after {
   font-weight: bold;
   width: 40px;
   height: 40px;
@@ -59,17 +59,17 @@
   line-height: 40px;
 }
 
-#swiper .swiper-container .swiper-button-prev {
+#swiper .bigslider .swiper-button-prev {
   cursor: pointer;
   background: #eeeeee;
   border-radius: 100%;
   color: black;
   width: 40px;
   height: 40px;
-  left: 20px;
+  left: 50px;
 }
 
-#swiper .swiper-container .swiper-button-prev::after {
+#swiper .bigslider .swiper-button-prev::after {
   font-weight: bold;
   width: 40px;
   height: 40px;
@@ -78,7 +78,7 @@
   line-height: 40px;
 }
 
-#swiper .swiper-container .swiper-bottom-text {
+#swiper .bigslider .swiper-bottom-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +94,7 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-#swiper .swiper-container .swiper-bottom-text p {
+#swiper .bigslider .swiper-bottom-text p {
   font-family: Averta;
   font-size: 23px;
   font-weight: 600;
@@ -492,7 +492,7 @@
 }
 
 @media only screen and (max-width: 992px) {
-  #swiper_most_popular_drivers .slider-container h6 {
+  #swiper_most_popular_drivers h6 {
     font-size: 18px !important;
   }
   #swiper_most_popular_drivers .swiper-button-next {
@@ -501,17 +501,11 @@
   #swiper_most_popular_drivers .swiper-button-prev {
     left: -15px !important;
   }
-  .swiper_most_popular_drivers_bottom {
-    width: 300px !important;
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 }
 
 #swiper_popular_attractions_locations {
   text-align: center;
-  margin: 50px 0px;
+  margin: 30px 0px;
 }
 
 #swiper_popular_attractions_locations .swiper_popular_attractions_locations_top {
@@ -671,15 +665,12 @@
   #swiper_popular_attractions_locations h6 {
     font-size: 18px !important;
   }
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-.city_name {
-  padding-bottom: 20px;
+  #swiper_popular_attractions_locations .swiper-button-next {
+    right: -15px !important;
+  }
+  #swiper_popular_attractions_locations .swiper-button-prev {
+    left: -15px !important;
+  }
 }
 
 #swiper_our_offers_partners {
@@ -1140,6 +1131,8 @@ footer .footer_container .footer_menu button {
 
 .topNav .container .topnavcontainer .secondcontainer .profile #loggedid.open {
   display: block;
+  position: relative;
+  z-index: 13 !important;
 }
 
 .topNav .container .topnavcontainer .secondcontainer .support {
@@ -1318,6 +1311,8 @@ footer .footer_container .footer_menu button {
     transition: 1s ease-in-out;
     font-size: 1em !important;
     font-weight: bold;
+    text-decoration: none;
+    color: #151515;
   }
   .menucontainer .openmenu_item:hover {
     color: #0b8071 !important;
@@ -1354,6 +1349,8 @@ footer .footer_container .footer_menu button {
   font-weight: bold;
   -webkit-transition: 500ms;
   transition: 500ms;
+  text-decoration: none;
+  color: black;
 }
 
 .bottomNav .container .navcontainer .bottomnav_item:hover {
