@@ -61,10 +61,11 @@
 
 .profile #loggedid {
   position: relative;
-  left: -40px;
+  left: -60px;
   top: 20px;
   display: none !important;
   text-align: right;
+  width: 100px !important;
 }
 
 .profile #loggedid .loggediditem {

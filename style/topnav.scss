@@ -52,10 +52,11 @@ $bg-color: #f7f7f7;
     transition: 1s ease;
     #loggedid {
         position: relative;
-        left: -40px;
+        left: -60px;
         top: 20px;
         display: none !important;
         text-align: right;
+        width: 100px !important;
         .loggediditem {
             display: block;
             margin-top: 10px;
