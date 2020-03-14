@@ -1,95 +1,149 @@
-$main-color:#0b8071;
-$bg-color: #f7f7f7;
-.centerNav {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    .container {
-        display: flex;
-        justify-content: space-between !important;
-        .logo {
-            width: 200px;
-            img {
-                width: 100%;
+        $main-color:#0b8071;
+        $bg-color: #f7f7f7;
+        .centerNav {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            .container {
+                display: flex;
+                justify-content: space-between !important;
+                .logo {
+                    width: 200px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .rightContent {
+                    display: flex;
+                    .barIcon {
+                        margin-top: 10px !important;
+                        display: none;
+                        .line {
+                            width: 30px;
+                            background-color: black;
+                            border-radius: 5px;
+                            height: 5px;
+                            margin-bottom: 5px;
+                        }
+                    }
+                    .currency {
+                        position: relative;
+                        left: -50px !important;
+                        text-align: center !important;
+                        .currencyText {
+                            font-size: 0.8em;
+                            color: $main-color;
+                        }
+                        select {
+                            font-size: 1em !important;
+                            border: 0px !important;
+                            -webkit-appearance: none !important;
+                            padding: 2px !important;
+                        }
+                    }
+                    .language {
+                        position: relative;
+                        left: -30px !important;
+                        text-align: center !important;
+                        .langText {
+                            font-size: 0.8em;
+                            color: $main-color;
+                        }
+                        select {
+                            font-size: 1em !important;
+                            border: 0px !important;
+                            -webkit-appearance: none !important;
+                            padding: 2px !important;
+                            option {
+                                padding: 5px !important;
+                                border: 0px !important;
+                            }
+                        }
+                    }
+                    .loginbuttons {
+                        .loginbtn {
+                            border-radius: 2px !important;
+                            border: 1px solid $main-color;
+                            transition: 300ms ease;
+                            width: 100px;
+                            margin-top: 0.5em !important;
+                            &:hover {
+                                background-color: $main-color;
+                                color: white;
+                            }
+                        }
+                        .registerbtn {
+                            border-radius: 2px !important;
+                            background-color: $main-color;
+                            border: 1px solid $main-color;
+                            transition: 300ms ease;
+                            width: 100px;
+                            color: white;
+                            &:hover {
+                                background-color: $bg-color;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+            .menucontainer {
+                display: none !important;
             }
         }
-        .rightContent {
-            display: flex;
-            .barIcon {
-                margin-top: 10px !important;
+        
+        @media(max-width:900px) {
+            .rightContent {
+                .currency,
+                .language,
+                .loginbuttons {
+                    display: none !important;
+                }
+                .barIcon {
+                    display: block !important;
+                }
+            }
+            .menucontainer {
                 display: none;
-                .line {
-                    width: 30px;
-                    background-color: black;
-                    border-radius: 5px;
-                    height: 5px;
-                    margin-bottom: 5px;
-                }
-            }
-            .currency {
-                position: relative;
-                left: -50px !important;
-                text-align: center !important;
-                .currencyText {
-                    font-size: 0.8em;
-                    color: $main-color;
-                }
-                select {
-                    font-size: 1em !important;
-                }
-            }
-            .language {
-                position: relative;
-                left: -30px !important;
-                text-align: center !important;
-                .langText {
-                    font-size: 0.8em;
-                    color: $main-color;
-                }
-                select {
-                    font-size: 1em !important;
-                    option {
-                        padding: 5px !important;
-                        border: 0px !important;
+                height: 0px !important;
+                transition: 1s ease-in-out;
+                height: 0;
+                opacity: 0;
+                transition: height 0ms 400ms, opacity 400ms 0ms;
+                .openmenu {
+                    text-align: right;
+                    width: 100%;
+                    &_item {
+                        display: block;
+                        margin-top: 15px;
+                        transition: 1s ease-in-out;
+                        font-size: 1em !important;
+                        &:hover {
+                            color: $main-color !important;
+                            font-weight: bold;
+                        }
                     }
                 }
             }
-            .loginbuttons {
-                .loginbtn {
-                    border-radius: 2px !important;
-                    border: 1px solid $main-color;
-                    transition: 300ms ease;
-                    width: 100px;
-                    &:hover {
-                        background-color: $main-color;
-                        color: white;
-                    }
+            .menucontainer.active {
+                display: block !important;
+                height: auto !important;
+                height: auto;
+                opacity: 1;
+                transition: height 0ms 0ms, opacity 600ms 0ms;
+            }
+        }
+        
+        @media(max-width:500px) {
+            .centerNav {
+                .container {
+                    width: 95% !important;
+                    margin: 0 auto;
                 }
-                .registerbtn {
-                    border-radius: 2px !important;
-                    background-color: $main-color;
-                    border: 1px solid $main-color;
-                    transition: 300ms ease;
-                    width: 100px;
-                    color: white;
-                    &:hover {
-                        background-color: $bg-color;
-                        color: black;
+                .logo {
+                    width: 150px;
+                    img {
+                        width: 100%;
                     }
                 }
             }
         }
-    }
-}
-
-@media(max-width:900px) {
-    .rightContent {
-        .currency,
-        .language,
-        .loginbuttons {
-            display: none !important;
-        }
-        .barIcon {
-            display: block !important;
-        }
-    }
-}

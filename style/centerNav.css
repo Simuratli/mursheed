@@ -52,6 +52,9 @@
 
 .centerNav .container .rightContent .currency select {
   font-size: 1em !important;
+  border: 0px !important;
+  -webkit-appearance: none !important;
+  padding: 2px !important;
 }
 
 .centerNav .container .rightContent .language {
@@ -67,6 +70,9 @@
 
 .centerNav .container .rightContent .language select {
   font-size: 1em !important;
+  border: 0px !important;
+  -webkit-appearance: none !important;
+  padding: 2px !important;
 }
 
 .centerNav .container .rightContent .language select option {
@@ -80,6 +86,7 @@
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
   width: 100px;
+  margin-top: 0.5em !important;
 }
 
 .centerNav .container .rightContent .loginbuttons .loginbtn:hover {
@@ -102,6 +109,10 @@
   color: black;
 }
 
+.centerNav .menucontainer {
+  display: none !important;
+}
+
 @media (max-width: 900px) {
   .rightContent .currency,
   .rightContent .language,
@@ -110,6 +121,52 @@
   }
   .rightContent .barIcon {
     display: block !important;
+  }
+  .menucontainer {
+    display: none;
+    height: 0px !important;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    height: 0;
+    opacity: 0;
+    -webkit-transition: height 0ms 400ms, opacity 400ms 0ms;
+    transition: height 0ms 400ms, opacity 400ms 0ms;
+  }
+  .menucontainer .openmenu {
+    text-align: right;
+    width: 100%;
+  }
+  .menucontainer .openmenu_item {
+    display: block;
+    margin-top: 15px;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    font-size: 1em !important;
+  }
+  .menucontainer .openmenu_item:hover {
+    color: #0b8071 !important;
+    font-weight: bold;
+  }
+  .menucontainer.active {
+    display: block !important;
+    height: auto !important;
+    height: auto;
+    opacity: 1;
+    -webkit-transition: height 0ms 0ms, opacity 600ms 0ms;
+    transition: height 0ms 0ms, opacity 600ms 0ms;
+  }
+}
+
+@media (max-width: 500px) {
+  .centerNav .container {
+    width: 95% !important;
+    margin: 0 auto;
+  }
+  .centerNav .logo {
+    width: 150px;
+  }
+  .centerNav .logo img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=centerNav.css.map */

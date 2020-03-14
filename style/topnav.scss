@@ -13,7 +13,6 @@ $bg-color: #f7f7f7;
             font-size: 1em !important;
             border-radius: 2px;
             padding: 5px !important;
-            border: 1px solid $main-color !important;
             margin-left: 10px !important;
         }
     }
@@ -49,7 +48,8 @@ $bg-color: #f7f7f7;
     display: inline-block;
     position: absolute;
     top: 10px !important;
-    right: 10px;
+    right: 80px;
+    transition: 1s ease;
     #loggedid {
         position: relative;
         left: -40px;
@@ -71,6 +71,7 @@ $bg-color: #f7f7f7;
             visibility: visible;
             select {
                 font-size: 0.8em !important;
+                border: 1px solid $main-color !important;
             }
         }
         padding-top: 10px;
@@ -123,4 +124,32 @@ $bg-color: #f7f7f7;
             }
         }
     }
+}
+
+@media(max-width:710px) {
+    .profile {
+        position: absolute;
+        top: 10px !important;
+        right: 70px;
+    }
+}
+
+@media(max-width:554px) {
+    .profile {
+        position: absolute;
+        top: 10px !important;
+        right: 60px;
+    }
+}
+
+@media(max-width:500px) {
+    .profile {
+        position: absolute;
+        top: 10px !important;
+        right: 10px;
+    }
+    // .langandcurrency {
+    //     position: absolute;
+    //     left: 10px !important;
+    // }
 }

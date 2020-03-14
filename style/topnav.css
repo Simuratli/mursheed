@@ -23,7 +23,6 @@
   font-size: 1em !important;
   border-radius: 2px;
   padding: 5px !important;
-  border: 1px solid #0b8071 !important;
   margin-left: 10px !important;
 }
 
@@ -55,7 +54,9 @@
   display: inline-block;
   position: absolute;
   top: 10px !important;
-  right: 10px;
+  right: 80px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .profile #loggedid {
@@ -83,6 +84,7 @@
   }
   .topNav .langandcurrency select {
     font-size: 0.8em !important;
+    border: 1px solid #0b8071 !important;
   }
   .topNav .support {
     position: relative;
@@ -122,6 +124,30 @@
   }
   .topNav .support .profile {
     display: inline-block !important;
+  }
+}
+
+@media (max-width: 710px) {
+  .profile {
+    position: absolute;
+    top: 10px !important;
+    right: 70px;
+  }
+}
+
+@media (max-width: 554px) {
+  .profile {
+    position: absolute;
+    top: 10px !important;
+    right: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .profile {
+    position: absolute;
+    top: 10px !important;
+    right: 10px;
   }
 }
 /*# sourceMappingURL=topnav.css.map */
