@@ -13,124 +13,152 @@
 </head>
 
 <body>
-    <!-- top nav  -->
-    <div class="inner-header">
-        <div class="container">
-            <div class="navbar__header">
-                <div class="navbar__header__container--left">
-                    <div class="navbar__header__container__links">
-                        <a href="#">Support</a>
-                        <a href="#">Contact us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- top nav end  -->
-    <!-- Center nav start -->
-    <div class="center-header">
-        <div class="container">
-            <div class="navbar">
-                <div class="navbar__logo">
-                    <img src="img/header/logo.svg" alt="">
-                </div>
 
-                <div class="navbar__left">
-                    <div class="navbar__left__currency">
-                        <span class="navbar__left__currency--green responsivespan">Currency</span>
+    <div class="topNav">
+        <div class="container">
+            <div class="topnavcontainer">
+                <div class="firstcontainer">
+                    <div class="currency">
                         <form>
                             <select>
-                                <option class="navbar__left__currency__selected">USD</option>
-                                <option class="navbar__left__currency__selected">AZN</option>
+                        <option class="optioncurrency">USD</option>
+                        <option class="optioncurrency">AZN</option>
                             </select>
                         </form>
                     </div>
-                    <div class="navbar__left__language">
-                        <span class="navbar__left__currency--green responsivespan">Language</span>
+                    <div class="language">
                         <form>
                             <select>
-                                <option class="navbar__left__language__selected">English</option>
-                                <option class="navbar__left__language__selected">Azerbaijan</option>
-                            </select>
+                        <option class="optionlang">Azerbaijan</option>
+                        <option class="optionlang">English</option>
+                    </select>
                         </form>
                     </div>
-                    <div class="navbar__left__buttons">
-                        <button class="navbar__left__buttons--bgwhite btn">Login</button>
-                        <button class="navbar__left__buttons--bggreen btn">Register</button>
+                </div>
+                <div class="secondcontainer">
+                    <div class="support">
+                        <a class="supportItem" href="#">Support</a>
+                        <a class="supportItem" href="#">Contact Us</a>
                     </div>
-                    <div id="dropLogBtn" class="if-logged ">
-                        <div id="loggedContainer" class="loggedContainer">
-                            <a href="#" class="logbutton btn">Login</a>
-                            <a href="#" class="regbutton btn">Register</a>
+                    <div id="dropLogBtn" class="profile" style="background-image: url(img/profile/user.jpg)">
+                        <div id="loggedid">
+                            <a class="loggediditem" href="#">Login</a>
+                            <a class="loggediditem" href="#">Register</a>
                         </div>
                     </div>
-                    <div id="responsivenavIcon" class="responsivenavIcon">
-                        <p class="line"></p>
-                        <p class="line"></p>
-                        <p class="line"></p>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Center nav end -->
-    <!-- bottom nav start  -->
-    <div id="bottomHeader" class="bottom-header">
+
+
+    <!-- center nav  -->
+
+    <div class="centerNav">
         <div class="container">
-            <div class="navbar">
-                <div id="navbarMenu" class="navbar__menu">
-                    <a class="navbar__menu__item active" href="#">Home</a>
-                    <a class="navbar__menu__item" href="#">About</a>
-                    <a class="navbar__menu__item" href="#">Guides & Drivers</a>
-                    <a class="navbar__menu__item" href="#">Accomodation</a>
-                    <a class="navbar__menu__item" href="#">Attractive Places</a>
-                    <a class="navbar__menu__item" href="#">Offers</a>
+            <div class="logo">
+                <img src="img/header/logo.svg" alt="">
+            </div>
+            <div class="rightContent">
+                <div class="currency">
+                    <span class="currencyText">Currency</span>
+                    <form>
+                        <select>
+                            <option class="optioncurrency">USD</option>
+                            <option class="optioncurrency">AZN</option>
+                        </select>
+                    </form>
                 </div>
+                <div class="language">
+                    <span class="langText">Language</span>
+                    <form>
+                        <select>
+                            <option class="optionlang">Azerbaijan</option>
+                            <option class="optionlang">English</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="loginbuttons">
+                    <button class="loginbtn btn">Login</button>
+                    <button class="registerbtn btn">Register</button>
+                </div>
+                <div id="hamburger" class="barIcon">
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                </div>
+            </div>
+
+        </div>
+        <div id="openmenu" class="container menucontainer">
+            <div class="openmenu">
+                <a class="openmenu_item" href="#">Home</a>
+                <a class="openmenu_item" href="#">About</a>
+                <a class="openmenu_item" href="#">Guides & Drivers</a>
+                <a class="openmenu_item" href="#">Accomadation</a>
+                <a class="openmenu_item" href="#">Flight Reservation</a>
+                <a class="openmenu_item" href="#">Attractive Places</a>
+                <a class="openmenu_item" href="#">Offers</a>
+                <a class="openmenu_item" href="#">Support</a>
+                <a class="openmenu_item" href="#">Contact</a>
             </div>
         </div>
     </div>
-    <!-- bottom nav end  -->
 
 
-    <!-- slider -->
-    <section id="swiper">
-        <!-- Swiper -->
-        <div class="swiper-container bigslider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
+    <!-- Bottom nav  -->
+    <div class="bottomNav">
+        <div class="container">
+            <div class="navcontainer">
+                <a class="bottomnav_item active" href="#">Home</a>
+                <a class="bottomnav_item " href="#">About</a>
+                <a class="bottomnav_item " href="#">Guides & Drivers</a>
+                <a class="bottomnav_item " href="#">Accomadation</a>
+                <a class="bottomnav_item " href="#">Flight Reservation</a>
+                <a class="bottomnav_item " href="#">Attractive Places</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<section id="swiper">
+    <!-- Swiper -->
+    <div class="swiper-container bigslider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="https://google.az"><img src="./img/swiper/bitmap.png" alt="">
                     <div class="swiper-bottom-text">
                         <p>Title 1</p>
                     </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://google.az"><img src="./img/swiper/nature-1.jpg" alt=""> </a>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://google.az"><img src="./img/swiper/nature-1.jpg" alt="">
                     <div class="swiper-bottom-text">
                         <p>Title 2</p>
                     </div>
-
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://google.az"><img src="./img/swiper/nature-2.jpg" alt=""></a>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://google.az"><img src="./img/swiper/nature-2.jpg" alt="">
                     <div class="swiper-bottom-text">
                         <p>Title 3</p>
                     </div>
-
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://google.az"><img src="./img/swiper/nature-4.jpg" alt=""></a>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://google.az"><img src="./img/swiper/nature-4.jpg" alt="">
                     <div class="swiper-bottom-text">
                         <p>Title 4</p>
                     </div>
-
-                </div>
+                </a>
             </div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
         </div>
-    </section>
-
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
 
     <!-- START YOUR JOURNEY -->
 
@@ -501,6 +529,7 @@
         <script src="js/driverSlider.js"></script>
         <script src="js/partners.js"></script>
         <script src="js/main.js"></script>
-</body>
+        <script src="js/topNav.js"></script>
+        </body>
 
 </html>

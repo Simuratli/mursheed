@@ -7,48 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/bigSlider.css">
-    <link rel="stylesheet" href="style/swiper.css">
+    <link rel="stylesheet" href="libs/swiper/swiper.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="swiper-container bigslider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="https://google.az"><img src="./img/swiper/bitmap.png" alt="">
-                    <div class="bigsliderTitle">
-                        <p>Title 1</p>
-                    </div>
-                </a>
+    <section id="swiper">
+        <!-- Swiper -->
+        <div class="swiper-container bigslider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://google.az"><img src="./img/swiper/bitmap.png" alt="">
+                        <div class="swiper-bottom-text">
+                            <p>Title 1</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://google.az"><img src="./img/swiper/nature-1.jpg" alt="">
+                        <div class="swiper-bottom-text">
+                            <p>Title 2</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://google.az"><img src="./img/swiper/nature-2.jpg" alt="">
+                        <div class="swiper-bottom-text">
+                            <p>Title 3</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://google.az"><img src="./img/swiper/nature-4.jpg" alt="">
+                        <div class="swiper-bottom-text">
+                            <p>Title 4</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="swiper-slide">
-                <a href="https://google.az"><img src="./img/swiper/nature-1.jpg" alt="">
-                    <div class="bigsliderTitle">
-                        <p>Title 2</p>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <a href="https://google.az"><img src="./img/swiper/nature-2.jpg" alt="">
-                    <div class="bigsliderTitle">
-                        <p>Title 3</p>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <a href="https://google.az"><img src="./img/swiper/nature-4.jpg" alt="">
-                    <div class="bigsliderTitle">
-                        <p>Title 4</p>
-                    </div>
-                </a>
-            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
-
-    <script src="js/swiper.js"></script>
+    </section>
+    <script src="libs/swiper/swiper.js"></script>
     <script src="js/bigslider.js"></script>
 </body>
 

@@ -1068,156 +1068,108 @@ footer .footer_container .footer_menu button {
 }
 
 .topNav {
-  background-color: #f7f7f7;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 20px;
+  width: 100%;
+  background-color: #f7f7f7 !important;
 }
 
-.topNav .langandcurrency {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-direction: row !important;
-          flex-direction: row !important;
-  float: left !important;
-  width: 40%;
-  margin: 0 auto !important;
-  margin-left: 30px !important;
-  visibility: hidden;
+.topNav .container .topnavcontainer {
+  width: 100%;
 }
 
-.topNav .langandcurrency select {
-  font-size: 1em !important;
-  border-radius: 2px;
-  padding: 5px !important;
-  margin-left: 10px !important;
+.topNav .container .topnavcontainer .firstcontainer {
+  width: 50%;
+  float: left;
 }
 
-.topNav .container {
-  text-align: right;
-}
-
-.topNav .container a {
-  display: inline-block;
-  margin-left: 1.2em;
-}
-
-#dropLogBtn {
+.topNav .container .topnavcontainer .firstcontainer .currency,
+.topNav .container .topnavcontainer .firstcontainer .language {
   display: none;
 }
 
-@media (max-width: 900px) {
-  #dropLogBtn {
-    display: block !important;
-  }
+.topNav .container .topnavcontainer .firstcontainer .currency select,
+.topNav .container .topnavcontainer .firstcontainer .language select {
+  font-size: 0.6em;
+  border: 1px solid #0b8071;
+  -webkit-appearance: none !important;
+  text-align: center !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px !important;
 }
 
-.profile {
+.topNav .container .topnavcontainer .secondcontainer {
+  width: 100%;
+}
+
+.topNav .container .topnavcontainer .secondcontainer .dropLogBtn,
+.topNav .container .topnavcontainer .secondcontainer .support {
+  display: inline-block;
+}
+
+.topNav .container .topnavcontainer .secondcontainer .profile {
+  float: right;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-image: url(../img/profile/user.jpg);
+  display: none;
   background-size: cover;
-  display: inline-block;
-  position: absolute;
-  top: 10px !important;
-  right: 80px;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+  z-index: 13 !important;
 }
 
-.profile #loggedid {
-  position: relative;
-  left: -60px;
-  top: 20px;
-  display: none !important;
+.topNav .container .topnavcontainer .secondcontainer .profile #loggedid {
+  margin-top: 40px !important;
+  background-color: #f7f7f7;
+  width: 100px;
   text-align: right;
-  width: 100px !important;
+  margin-left: -70px;
+  border-radius: 6px;
+  display: none;
+  z-index: 13 !important;
 }
 
-.profile #loggedid .loggediditem {
+.topNav .container .topnavcontainer .secondcontainer .profile #loggedid .loggediditem {
   display: block;
-  margin-top: 10px;
-  font-size: 1.2em;
-  padding: 10px !important;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+.topNav .container .topnavcontainer .secondcontainer .profile #loggedid.open {
+  display: block;
+}
+
+.topNav .container .topnavcontainer .secondcontainer .support {
+  float: right;
+}
+
+.topNav .container .topnavcontainer .secondcontainer .support .supportItem {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
 }
 
 @media (max-width: 900px) {
-  .topNav {
-    padding-top: 10px;
-    padding-bottom: 15px;
+  .topNav .firstcontainer {
+    width: 50%;
+    float: left;
   }
-  .topNav .langandcurrency {
-    visibility: visible;
-  }
-  .topNav .langandcurrency select {
-    font-size: 0.8em !important;
-    border: 1px solid #0b8071 !important;
-  }
-  .topNav .support {
-    position: relative;
-    top: -10px !important;
-  }
-  .topNav .support .supportItem {
-    visibility: hidden !important;
-  }
-  .topNav .support .profile {
-    display: inline-block !important;
-    position: relative;
-    top: 10px !important;
-  }
-  .topNav .support .profile #loggedid {
-    display: block !important;
-  }
-}
-
-#loggedid.open {
-  display: block !important;
-  background-color: #f7f7f7;
-  width: 80px;
-  z-index: 12 !important;
-}
-
-#loggedid.open a {
-  display: inline;
-}
-
-@media (max-width: 431px) {
-  .topNav {
-    width: 100% !important;
-    height: 50px !important;
-  }
-  .topNav .support .supportItem {
-    display: none;
-  }
-  .topNav .support .profile {
+  .topNav .firstcontainer .language,
+  .topNav .firstcontainer .currency {
     display: inline-block !important;
   }
-}
-
-@media (max-width: 710px) {
-  .profile {
-    position: absolute;
-    top: 10px !important;
-    right: 70px;
+  .topNav .secondcontainer {
+    width: 50% !important;
+    float: left;
   }
-}
-
-@media (max-width: 554px) {
-  .profile {
-    position: absolute;
-    top: 10px !important;
-    right: 60px;
+  .topNav .secondcontainer .support {
+    display: none !important;
   }
-}
-
-@media (max-width: 500px) {
-  .profile {
-    position: absolute;
-    top: 10px !important;
-    right: 10px;
+  .topNav .secondcontainer .profile {
+    display: inline-block !important;
   }
 }
 
@@ -1381,10 +1333,6 @@ footer .footer_container .footer_menu button {
 }
 
 @media (max-width: 500px) {
-  .centerNav .container {
-    width: 95% !important;
-    margin: 0 auto;
-  }
   .centerNav .logo {
     width: 150px;
   }

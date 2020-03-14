@@ -158,10 +158,6 @@
 }
 
 @media (max-width: 500px) {
-  .centerNav .container {
-    width: 95% !important;
-    margin: 0 auto;
-  }
   .centerNav .logo {
     width: 150px;
   }
