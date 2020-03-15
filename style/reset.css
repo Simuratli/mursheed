@@ -159,3 +159,17 @@ input {
 .fullContainer {
     width: 100%;
 }
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 120px;
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #1e1e24
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0b8071
+}

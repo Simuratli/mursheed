@@ -929,6 +929,7 @@ footer .footer_container .footer_menu h2 {
 footer .footer_container .footer_menu a {
   margin-top: 1em;
   color: #f7f7f7;
+  text-decoration: none;
 }
 
 footer .footer_container .footer_menu input {
@@ -1041,7 +1042,28 @@ footer .footer_container .footer_menu button {
     display: flex;
     width: 100%;
     position: relative;
-    left: 30px;
+    left: 20px;
+    top: 30px;
+  }
+  .social-networks li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .social-networks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: relative;
+    left: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     top: 30px;
   }
   .social-networks li {
@@ -1365,5 +1387,26 @@ footer .footer_container .footer_menu button {
   .bottomNav {
     display: none !important;
   }
+}
+
+.siteNavigation {
+  padding-top: 15px;
+  padding-top: 15px;
+}
+
+.siteNavigation .navigation__item {
+  font-size: 0.9em;
+  text-decoration: none;
+  color: #a8a5a5;
+}
+
+.siteNavigation .navigation__item.active {
+  color: #0b8071;
+}
+
+.siteNavigation .navigation i {
+  font-size: 0.8em;
+  font-weight: lighter;
+  color: gray;
 }
 /*# sourceMappingURL=main.css.map */

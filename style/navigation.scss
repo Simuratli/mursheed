@@ -1,0 +1,21 @@
+$main-color:#0b8071;
+$bg-color: #f7f7f7;
+.siteNavigation {
+    padding-top: 15px;
+    padding-top: 15px;
+    .navigation {
+        &__item {
+            font-size: 0.9em;
+            text-decoration: none;
+            color: rgb(168, 165, 165);
+            &.active {
+                color: $main-color;
+            }
+        }
+        i {
+            font-size: 0.8em;
+            font-weight: lighter;
+            color: gray;
+        }
+    }
+}

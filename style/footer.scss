@@ -28,6 +28,7 @@ footer {
             a {
                 margin-top: 1em;
                 color: #f7f7f7;
+                text-decoration: none;
             }
             input {
                 border-top-left-radius: 5px;
@@ -132,7 +133,23 @@ footer {
         display: flex;
         width: 100%;
         position: relative;
-        left: 30px;
+        left: 20px;
+        top: 30px;
+        li {
+            display: inline-block;
+            list-style: none;
+            margin-left: 10px;
+        }
+    }
+}
+
+@media(max-width:350px) {
+    .social-networks {
+        display: flex;
+        width: 100%;
+        position: relative;
+        left: 20px;
+        flex-direction: column;
         top: 30px;
         li {
             display: inline-block;
