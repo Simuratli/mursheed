@@ -4,5 +4,5 @@ var swiper = new Swiper('.swiper-container.bigslider', {
         prevEl: '.swiper-button-prev',
     },
     observer: true,
-    observeParents: trueS
+    observeParents: true
 });
