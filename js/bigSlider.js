@@ -3,4 +3,6 @@ var swiper = new Swiper('.swiper-container.bigslider', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    observer: true,
+    observeParents: true
 });
