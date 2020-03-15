@@ -84,6 +84,11 @@
   font-weight: bold;
 }
 
+.bigslider .swiper-wrapper {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .startYourJourney {
   padding-top: 20px;
   padding-bottom: 20px;

@@ -79,4 +79,9 @@
   font-size: 1.2em;
   font-weight: bold;
 }
+
+.bigslider .swiper-wrapper {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 /*# sourceMappingURL=bigSlider.css.map */
