@@ -48,6 +48,16 @@
 
     <script src="libs/swiper/swiper.js"></script>
     <script src="/js/bigSlider.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container.bigslider', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            observer: true,
+            observeParents: trueS
+        });
+    </script>
 </body>
 
 </html>
