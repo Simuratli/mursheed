@@ -1534,6 +1534,8 @@ footer .wrapper .row .col-3 .send button {
 #touristregForm .tourist_reg_head {
   text-align: center;
   font-size: 2em;
+  color: black;
+  font-weight: bold;
 }
 
 #touristregForm input {
@@ -1554,6 +1556,7 @@ footer .wrapper .row .col-3 .send button {
 
 #touristregForm .tab p {
   margin-bottom: 5px;
+  color: black;
 }
 
 #touristregForm button {
@@ -1576,8 +1579,8 @@ footer .wrapper .row .col-3 .send button {
 }
 
 #touristregForm .step {
-  width: 49%;
-  background-color: #bbbbbb;
+  width: 40%;
+  background-color: #81c5bc;
   border: none;
   border-radius: px;
   display: inline-block;
@@ -1586,19 +1589,29 @@ footer .wrapper .row .col-3 .send button {
   border-radius: 5px;
   text-align: center;
   vertical-align: middle !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: black;
 }
 
-#touristregForm .step .num {
+#touristregForm .num {
   display: inline-block;
-  height: 20px;
-  width: 20px;
-  border-radius: 5px;
-  float: left;
+  padding: 5.1px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   background-color: #0b8071;
+  position: relative;
+  top: -13px;
+  width: 20px;
+  position: relative;
+  z-index: 123;
+  left: 8px;
 }
 
 #touristregForm .step.active {
   opacity: 1;
+  color: white;
+  background-color: #0b8071 !important;
 }
 
 #touristregForm .step.finish {
@@ -1670,5 +1683,11 @@ footer .wrapper .row .col-3 .send button {
 #touristregForm .searchable ul li.selected {
   background-color: #e8e8e8;
   color: #333;
+}
+
+@media (max-width: 932px) {
+  #touristregForm .step {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
