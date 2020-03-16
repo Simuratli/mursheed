@@ -3,7 +3,10 @@ $bg-color: #f7f7f7;
 .siteNavigation {
     padding-top: 15px;
     padding-top: 15px;
+    width: 100%;
     .navigation {
+        text-align: left !important;
+        display: block;
         &__item {
             font-size: 0.9em;
             text-decoration: none;

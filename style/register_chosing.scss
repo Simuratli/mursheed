@@ -1,0 +1,146 @@
+$main-color:#0b8071;
+$bg-color: #f7f7f7;
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .boxgray {
+        background-color: $bg-color;
+        border-radius: 10px;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        width: 70%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .register_chose {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding-top: 3em;
+            padding-bottom: 0.5em;
+            .selectregister {
+                border: 1px solid rgb(150, 150, 150);
+                margin-right: 10px;
+                border-radius: 5px;
+                width: 100px;
+                word-wrap: break-word;
+                padding: 15px;
+                transition: 1s ease-in-out !important;
+                &:last-child {
+                    background-color: rgba($color: #000000, $alpha: 0.5);
+                }
+                &:hover {
+                    border-color: $main-color !important;
+                    a {
+                        svg {
+                            fill: $main-color;
+                        }
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    word-wrap: break-word;
+                    color: black;
+                    svg {
+                        fill: gray;
+                        transition: 1s ease-in-out !important;
+                    }
+                    .blockedsvg {
+                        fill: black;
+                         :hover {
+                            fill: black;
+                        }
+                    }
+                    h2 {
+                        word-wrap: break-word;
+                    }
+                }
+            }
+            .selectregister.active {
+                border: 1px solid $main-color;
+            }
+        }
+        .regchose_button {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            a {
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                width: 540px;
+                padding: 10px;
+                background-color: $main-color;
+                border-radius: 5px;
+                margin-left: -10px;
+            }
+            .item {
+                a {
+                    text-decoration: none;
+                    color: black;
+                    display: inline;
+                    padding: 0;
+                    margin-left: 10px;
+                    background-color: transparent;
+                    img {
+                        fill: green;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:769px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        .boxgray {
+            width: 100%;
+            .register_chose {
+                display: flex;
+                justify-content: center;
+                flex-direction: column !important;
+                .selectregister {
+                    width: auto !important;
+                    padding: 10px;
+                    text-align: center;
+                    display: block;
+                    border: 1px solid rgb(150, 150, 150);
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+            .regchose_button {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+                a {
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    color: white;
+                    width: 620px;
+                    padding: 10px;
+                    background-color: $main-color;
+                    border-radius: 5px;
+                }
+                .item {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        display: inline;
+                        padding: 0;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}

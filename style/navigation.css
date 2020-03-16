@@ -1,6 +1,12 @@
 .siteNavigation {
   padding-top: 15px;
   padding-top: 15px;
+  width: 100%;
+}
+
+.siteNavigation .navigation {
+  text-align: left !important;
+  display: block;
 }
 
 .siteNavigation .navigation__item {
