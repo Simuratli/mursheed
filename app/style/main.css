@@ -1413,7 +1413,10 @@ footer .wrapper .row .col-3 .send button {
   border-radius: 5px;
   width: 100px;
   word-wrap: break-word;
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   -webkit-transition: 1s ease-in-out !important;
   transition: 1s ease-in-out !important;
 }
