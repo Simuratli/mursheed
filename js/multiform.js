@@ -7,9 +7,10 @@ function showTab(n) {
     x[n].style.display = "block";
     //... and fix the Previous/Next buttons:
     if (n == 0) {
-        document.getElementById("prevBtn").style.display = "none";
+        document.getElementById("prevBtn").style.visibility = "hidden";
+
     } else {
-        document.getElementById("prevBtn").style.display = "inline";
+        document.getElementById("prevBtn").style.visibility = "visible";
     }
     if (n == (x.length - 1)) {
         document.getElementById("nextBtn").innerHTML = "Submit";
@@ -26,7 +27,8 @@ function nextPrev(n) {
     // Exit the function if any field in the current tab is invalid:
     if (n == 1 && !validateForm()) return false;
     // Hide the current tab:
-    x[currentTab].style.display = "none";
+    x[currentTab].style.visibility = "hidden";
+    x[currentTab].style.position = "absolute";
     // Increase or decrease the current tab by 1:
     currentTab = currentTab + n;
     // if you have reached the end of the form...

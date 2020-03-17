@@ -12,6 +12,14 @@
   /* Mark the steps that are finished and valid: */
 }
 
+#touristregForm select {
+  width: 100%;
+}
+
+#touristregForm .multiple {
+  width: 95%;
+}
+
 #touristregForm .tourist_reg_head {
   text-align: center;
   font-size: 2em;
@@ -19,12 +27,25 @@
   font-weight: bold;
 }
 
+#touristregForm .tourist_sign_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#touristregForm .tourist_sign_main .tourist_sign {
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+}
+
 #touristregForm input {
-  width: 95%;
+  width: 98%;
   font-size: 17px;
-  font-family: Raleway;
-  border: 1px solid #ced4da;
-  margin-bottom: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 #touristregForm input.invalid {
@@ -36,8 +57,20 @@
 }
 
 #touristregForm .tab p {
-  margin-bottom: 5px;
+  margin-bottom: 2.5em;
   color: black;
+}
+
+#touristregForm .tab p .naming {
+  font-weight: bold;
+  display: inline-block;
+  padding-bottom: 0.4em !important;
+  font-size: 1.2em;
+}
+
+#touristregForm .tab p .row span {
+  font-weight: bold;
+  font-size: 1em;
 }
 
 #touristregForm button {
@@ -60,8 +93,8 @@
 }
 
 #touristregForm .step {
-  width: 43%;
-  background-color: #81c5bc;
+  width: 80%;
+  background-color: #d1d4d4;
   border: none;
   border-radius: px;
   display: inline-block;
@@ -112,64 +145,42 @@
   width: 100% !important;
 }
 
-#touristregForm div.searchable {
-  width: 100%;
-  background-color: white;
-}
-
-#touristregForm .searchable input {
-  width: 100%;
-  height: 50px;
-  font-size: 18px;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
-  display: block;
-  font-weight: 400;
-  line-height: 1.6;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
-  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center/8px 10px;
-}
-
-#touristregForm .searchable ul {
-  display: none;
-  list-style-type: none;
-  background-color: #fff;
-  border-radius: 0 0 5px 5px;
-  border: 1px solid #add8e6;
-  border-top: none;
-  max-height: 180px;
-  margin: 0;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  padding: 0;
-}
-
-#touristregForm .searchable ul li {
-  padding: 7px 9px;
-  border-bottom: 1px solid #e1e1e1;
-  cursor: pointer;
-  color: #6e6e6e;
-}
-
-#touristregForm .searchable ul li.selected {
-  background-color: #e8e8e8;
-  color: #333;
-}
-
-@media (max-width: 932px) {
-  #touristregForm .step {
-    width: 80%;
+@media (max-width: 1292px) {
+  #touristregForm .tourist_sign_main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
+  #touristregForm .tourist_sign_main .tourist_sign {
+    -webkit-box-flex: 10%;
+        -ms-flex: 10%;
+            flex: 10%;
+  }
+  #touristregForm .tourist_sign_main .tourist_sign .step {
+    width: 93%;
+  }
+  #touristregForm .tourist_sign_main .tourist_sign .num {
+    margin: 0px !important;
+    width: 21px;
+  }
+}
+
+.select2-selection__rendered {
+  line-height: 30px !important;
+}
+
+.select2-container .select2-selection--single {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.select2-selection__arrow {
+  height: 44px !important;
 }
 /*# sourceMappingURL=tourist_reg.css.map */
