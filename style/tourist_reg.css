@@ -60,7 +60,7 @@
 }
 
 #touristregForm .step {
-  width: 40%;
+  width: 43%;
   background-color: #81c5bc;
   border: none;
   border-radius: px;
@@ -83,10 +83,11 @@
   background-color: #0b8071;
   position: relative;
   top: -13px;
+  color: white;
   width: 20px;
   position: relative;
   z-index: 123;
-  left: 8px;
+  left: 7px;
 }
 
 #touristregForm .step.active {

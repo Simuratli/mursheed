@@ -1,4 +1,4 @@
-.container {
+.chosingmain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-.container .boxgray {
+.chosingmain .boxgray {
   background-color: #f7f7f7;
   border-radius: 10px;
   padding-top: 4em;
@@ -18,7 +18,7 @@
   margin-bottom: 20px;
 }
 
-.container .boxgray .register_chose {
+.chosingmain .boxgray .register_chose {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,7 +30,7 @@
   padding-bottom: 0.5em;
 }
 
-.container .boxgray .register_chose .selectregister {
+.chosingmain .boxgray .register_chose .selectregister {
   border: 1px solid #969696;
   margin-right: 10px;
   border-radius: 5px;
@@ -41,47 +41,47 @@
   transition: 1s ease-in-out !important;
 }
 
-.container .boxgray .register_chose .selectregister:last-child {
+.chosingmain .boxgray .register_chose .selectregister:last-child {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.container .boxgray .register_chose .selectregister:hover {
+.chosingmain .boxgray .register_chose .selectregister:hover {
   border-color: #0b8071 !important;
 }
 
-.container .boxgray .register_chose .selectregister:hover a svg {
+.chosingmain .boxgray .register_chose .selectregister:hover a svg {
   fill: #0b8071;
 }
 
-.container .boxgray .register_chose .selectregister a {
+.chosingmain .boxgray .register_chose .selectregister a {
   text-decoration: none;
   word-wrap: break-word;
   color: black;
 }
 
-.container .boxgray .register_chose .selectregister a svg {
+.chosingmain .boxgray .register_chose .selectregister a svg {
   fill: gray;
   -webkit-transition: 1s ease-in-out !important;
   transition: 1s ease-in-out !important;
 }
 
-.container .boxgray .register_chose .selectregister a .blockedsvg {
+.chosingmain .boxgray .register_chose .selectregister a .blockedsvg {
   fill: black;
 }
 
-.container .boxgray .register_chose .selectregister a .blockedsvg :hover {
+.chosingmain .boxgray .register_chose .selectregister a .blockedsvg :hover {
   fill: black;
 }
 
-.container .boxgray .register_chose .selectregister a h2 {
+.chosingmain .boxgray .register_chose .selectregister a h2 {
   word-wrap: break-word;
 }
 
-.container .boxgray .register_chose .selectregister.active {
+.chosingmain .boxgray .register_chose .selectregister.active {
   border: 1px solid #0b8071;
 }
 
-.container .boxgray .regchose_button {
+.chosingmain .boxgray .regchose_button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +91,7 @@
   margin-bottom: 20px;
 }
 
-.container .boxgray .regchose_button a {
+.chosingmain .boxgray .regchose_button a {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -103,7 +103,7 @@
   margin-left: -10px;
 }
 
-.container .boxgray .regchose_button .item a {
+.chosingmain .boxgray .regchose_button .item a {
   text-decoration: none;
   color: black;
   display: inline;
@@ -112,7 +112,7 @@
   background-color: transparent;
 }
 
-.container .boxgray .regchose_button .item a img {
+.chosingmain .boxgray .regchose_button .item a img {
   fill: green;
 }
 

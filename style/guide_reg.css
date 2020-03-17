@@ -1,0 +1,125 @@
+#guideregForm {
+  background-color: #ffffff;
+  margin: 50px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 40%;
+  min-width: 300px;
+  background-color: #f7f7f7;
+  /* Mark input boxes that gets an error on validation: */
+  /* Hide all steps by default: */
+  /* Make circles that indicate the steps of the form: */
+  /* Mark the steps that are finished and valid: */
+}
+
+#guideregForm select {
+  width: 100%;
+}
+
+#guideregForm .multiple {
+  width: 95%;
+}
+
+#guideregForm .tourist_reg_head {
+  text-align: center;
+  font-size: 2em;
+  color: black;
+  font-weight: bold;
+}
+
+#guideregForm input {
+  width: 95%;
+  font-size: 17px;
+}
+
+#guideregForm input.invalid {
+  background-color: #ffdddd;
+}
+
+#guideregForm .tab {
+  display: none;
+}
+
+#guideregForm .tab p {
+  margin-bottom: 5px;
+  color: black;
+}
+
+#guideregForm button {
+  background-color: #0b8071;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#guideregForm button:hover {
+  opacity: 0.8;
+}
+
+#guideregForm #prevBtn {
+  background-color: #bbbbbb;
+}
+
+#guideregForm .step {
+  width: 43%;
+  background-color: #81c5bc;
+  border: none;
+  border-radius: px;
+  display: inline-block;
+  opacity: 0.5;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: black;
+}
+
+#guideregForm .num {
+  display: inline-block;
+  padding: 5.1px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #0b8071;
+  position: relative;
+  top: -13px;
+  color: white;
+  width: 20px;
+  position: relative;
+  z-index: 123;
+  left: 7px;
+}
+
+#guideregForm .step.active {
+  opacity: 1;
+  color: white;
+  background-color: #0b8071 !important;
+}
+
+#guideregForm .step.finish {
+  background-color: #0b8071;
+}
+
+#guideregForm .nexprevbtncover {
+  overflow: auto;
+}
+
+#guideregForm .nexprevbtn {
+  float: right;
+}
+
+#guideregForm .register_select {
+  width: 100% !important;
+}
+
+@media (max-width: 932px) {
+  #touristregForm .step {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=guide_reg.css.map */
