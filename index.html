@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
-    <link rel="stylesheet" media="all" href="./libs/swiper/swiper.css" type="text/css" />
-    <link rel="stylesheet" media="all" href="style/reset.css" type="text/css">
-    <link rel="stylesheet" media="all" href="style/main.css" type="text/css">
-    <title>Nav</title>
+    <link rel="stylesheet" media="all" href="app/libs/swiper/swiper.css" type="text/css" />
+    <link rel="stylesheet" media="all" href="app/style/reset.css" type="text/css">
+    <link rel="stylesheet" media="all" href="app/style/main.css" type="text/css">
+    <link rel="stylesheet" href="app/style/css/select2.css">
+    <title>Murheed</title>
 </head>
 
 <body>
@@ -42,7 +43,7 @@
                     <div id="dropLogBtn" class="profile" style="background-image: url(img/profile/user.jpg)">
                         <div id="loggedid">
                             <a class="loggediditem" href="#">Login</a>
-                            <a class="loggediditem" href="#">Register</a>
+                            <a class="loggediditem" href="register_chosing.html">Register</a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +57,9 @@
     <div class="centerNav">
         <div class="container">
             <div class="logo">
-                <img src="img/header/logo.svg" alt="">
+                <a href="index.html">
+                    <img src="app/img/header/logo.svg" alt="">
+                </a>
             </div>
             <div class="rightContent">
                 <div class="currency">
@@ -78,8 +81,8 @@
                     </form>
                 </div>
                 <div class="loginbuttons">
-                    <button class="loginbtn btn">Login</button>
-                    <button class="registerbtn btn">Register</button>
+                    <a href='login.html' class="loginbtn btn">Login</button>
+                    <a href="register.html" class="registerbtn btn">Register</a>
                 </div>
                 <div id="hamburger" class="barIcon">
                     <p class="line"></p>
@@ -92,7 +95,7 @@
         <div id="openmenu" class="container menucontainer">
             <div class="openmenu">
                 <a class="openmenu_item" href="#">Home</a>
-                <a class="openmenu_item" href="#">About</a>
+                <a class="openmenu_item" href="about.html">About</a>
                 <a class="openmenu_item" href="#">Guides & Drivers</a>
                 <a class="openmenu_item" href="#">Accomadation</a>
                 <a class="openmenu_item" href="#">Flight Reservation</a>
@@ -110,7 +113,7 @@
         <div class="container">
             <div class="navcontainer">
                 <a class="bottomnav_item active" href="#">Home</a>
-                <a class="bottomnav_item " href="#">About</a>
+                <a class="bottomnav_item " href="about.html">About</a>
                 <a class="bottomnav_item " href="#">Guides & Drivers</a>
                 <a class="bottomnav_item " href="#">Accomadation</a>
                 <a class="bottomnav_item " href="#">Flight Reservation</a>
@@ -118,6 +121,7 @@
             </div>
         </div>
     </div>
+
 
 
     <!-- Swiper -->
@@ -152,7 +156,6 @@
         <div class="swiper-button-next bigSlidericon-next"></div>
         <div class="swiper-button-prev bigSlidericon-prev"></div>
     </div>
-
     <!-- START YOUR JOURNEY -->
 
 
@@ -165,16 +168,16 @@
                 <ul>
                     <li class="journeyItem">
                         <select>
-                            <option>
-                                Country
-                            </option>
-                            <option>
-                                Azerbaijan
-                            </option>
-                            <option>
-                                France
-                            </option>
-                        </select>
+                    <option>
+                        Country
+                    </option>
+                    <option>
+                        Azerbaijan
+                    </option>
+                    <option>
+                        France
+                    </option>
+                </select>
                     </li>
                     <li class="journeyItem">
                         <input placeholder="City" autocomplete="off" type="text">
@@ -198,7 +201,7 @@
             <div class="murseedContainer">
                 <div class="murseedContainer_item">
                     <div class="img">
-                        <img src="./img/why_mursheed/group-9.svg" alt="">
+                        <img src="app/img/why_mursheed/group-9.svg" alt="">
                     </div>
                     <div class="text">
                         Get deals and great trips at home and worldwide
@@ -206,7 +209,7 @@
                 </div>
                 <div class="murseedContainer_item">
                     <div class="img">
-                        <img src="./img/why_mursheed/group-9.svg" alt="">
+                        <img src="app/img/why_mursheed/group-9.svg" alt="">
                     </div>
                     <div class="text">
                         Quick and secure booking
@@ -214,7 +217,7 @@
                 </div>
                 <div class="murseedContainer_item">
                     <div class="img">
-                        <img src="./img/why_mursheed/security.svg" alt="">
+                        <img src="app/img/why_mursheed/security.svg" alt="">
                     </div>
                     <div class="text">
                         24/7 Support
@@ -222,7 +225,7 @@
                 </div>
                 <div class="murseedContainer_item">
                     <div class="img">
-                        <img src="./img/why_mursheed/24-hours.svg" alt="">
+                        <img src="app/img/why_mursheed/24-hours.svg" alt="">
                     </div>
                     <div class="text">
                         Less money
@@ -248,10 +251,10 @@
                             <div class="swiper-slide">
                                 <a href="driver_details.html">
                                     <div class="most_popular_drivers_bottom_item">
-                                        <img class="driver-img" src="./img/swiper_most_popular_drivers/rectangle1.jpg" alt="">
+                                        <img class="driver-img" src="app/img/swiper_most_popular_drivers/rectangle1.jpg" alt="">
                                         <p class="most_popular_drivers_name">Jana Strassmann</p>
                                         <div class="most_popular_drivers_bottom_item_ratings">
-                                            <img src="./img/swiper_most_popular_drivers/star-copy.svg" alt="">
+                                            <img src="app/img/swiper_most_popular_drivers/star-copy.svg" alt="">
                                             <p>4.8</p>
                                             <span>(224 ratings)</span>
                                         </div>
@@ -265,10 +268,10 @@
                             <div class="swiper-slide">
                                 <a href="driver_details.html">
                                     <div class="most_popular_drivers_bottom_item">
-                                        <img class="driver-img" src="./img/swiper_most_popular_drivers/rectangle2.jpg" alt="">
+                                        <img class="driver-img" src="app/img/swiper_most_popular_drivers/rectangle2.jpg" alt="">
                                         <p class="most_popular_drivers_name">Dusana Semenov</p>
                                         <div class="most_popular_drivers_bottom_item_ratings">
-                                            <img src="./img/swiper_most_popular_drivers/star-copy.svg" alt="">
+                                            <img src="app/img/swiper_most_popular_drivers/star-copy.svg" alt="">
                                             <p>4.8</p>
                                             <span>(224 ratings)</span>
                                         </div>
@@ -282,10 +285,10 @@
                             <div class="swiper-slide">
                                 <a href="driver_details.html">
                                     <div class="most_popular_drivers_bottom_item">
-                                        <img class="driver-img" src="./img/swiper_most_popular_drivers/rectangle3.jpg" alt="">
+                                        <img class="driver-img" src="app/img/swiper_most_popular_drivers/rectangle3.jpg" alt="">
                                         <p class="most_popular_drivers_name">Qiu Xun</p>
                                         <div class="most_popular_drivers_bottom_item_ratings">
-                                            <img src="./img/swiper_most_popular_drivers/star-copy.svg" alt="">
+                                            <img src="app/img/swiper_most_popular_drivers/star-copy.svg" alt="">
                                             <p>4.8</p>
                                             <span>(224 ratings)</span>
                                         </div>
@@ -299,10 +302,10 @@
                             <div class="swiper-slide">
                                 <a href="driver_details.html">
                                     <div class="most_popular_drivers_bottom_item">
-                                        <img class="driver-img" src="./img/swiper_most_popular_drivers/rectangle4.jpg" alt="">
+                                        <img class="driver-img" src="app/img/swiper_most_popular_drivers/rectangle4.jpg" alt="">
                                         <p class="most_popular_drivers_name">Amelia Cabal</p>
                                         <div class="most_popular_drivers_bottom_item_ratings">
-                                            <img src="./img/swiper_most_popular_drivers/star-copy.svg" alt="">
+                                            <img src="app/img/swiper_most_popular_drivers/star-copy.svg" alt="">
                                             <p>4.8</p>
                                             <span>(224 ratings)</span>
                                         </div>
@@ -326,7 +329,9 @@
     </section>
 
 
-    <!-- Atractive places -->
+
+
+
     <section id="swiper_popular_attractions_locations">
         <!-- Popular Attractions Locations -->
         <div class="container">
@@ -342,36 +347,36 @@
                             <div class="swiper-slide">
                                 <a href="attractive_single.html">
                                     <div class="popular_attractions_locations_bottom_item pb-4">
-                                        <img src="./img/swiper_popular_attractions_locations/rectangle1.jpg" alt="">
+                                        <img src="app/img/swiper_popular_attractions_locations/rectangle1.jpg" alt="">
                                         <p class="popular_attractions_locations_name">Gabaland Park</p>
-                                        <p class="city_name">Azerbaijan, Baku</p>
+                                        <p>Azerbaijan, Baku</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="attractive_single.html">
                                     <div class="popular_attractions_locations_bottom_item pb-4">
-                                        <img src="./img/swiper_popular_attractions_locations/rectangle2.jpg" alt="">
+                                        <img src="app/img/swiper_popular_attractions_locations/rectangle2.jpg" alt="">
                                         <p class="popular_attractions_locations_name">Barcelona Park</p>
-                                        <p class="city_name">Spain, Barcelona</p>
+                                        <p>Spain, Barcelona</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="attractive_single.html">
                                     <div class="popular_attractions_locations_bottom_item pb-4">
-                                        <img src="./img/swiper_popular_attractions_locations/rectangle3.jpg" alt="">
+                                        <img src="app/img/swiper_popular_attractions_locations/rectangle3.jpg" alt="">
                                         <p class="popular_attractions_locations_name">Quezon City</p>
-                                        <p class="city_name">Georgia, Tbilisi</p>
+                                        <p>Georgia, Tbilisi</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="attractive_single.html">
                                     <div class="popular_attractions_locations_bottom_item pb-4">
-                                        <img src="./img/swiper_popular_attractions_locations/rectangle4.jpg" alt="">
+                                        <img src="app/img/swiper_popular_attractions_locations/rectangle4.jpg" alt="">
                                         <p class="popular_attractions_locations_name">Cincinnati</p>
-                                        <p class="city_name">Hong Kong, Macau</p>
+                                        <p>Hong Kong, Macau</p>
                                     </div>
                                 </a>
                             </div>
@@ -383,11 +388,9 @@
                 </div>
             </div>
         </div>
+
     </section>
 
-
-
-    <!-- partners -->
     <section id="swiper_our_offers_partners">
         <!-- Our offers & Partners -->
         <div class="container">
@@ -403,7 +406,7 @@
                             <div class="swiper-slide">
                                 <a href="offers_single.html">
                                     <div class="swiper_our_offers_partners_bottom_item">
-                                        <img src="./img/swiper_our_offers_partners/rectangle1.jpg" alt="">
+                                        <img src="app/img/swiper_our_offers_partners/rectangle1.jpg" alt="">
                                         <div class="item_position_bottom">
                                             <p class="swiper_our_offers_partners_name">The House Cafe</p>
                                             <p>Azerbaijan, Baku</p>
@@ -414,7 +417,7 @@
                             <div class="swiper-slide">
                                 <a href="offers_single.html">
                                     <div class="swiper_our_offers_partners_bottom_item">
-                                        <img src="./img/swiper_our_offers_partners/rectangle2.jpg" alt="">
+                                        <img src="app/img/swiper_our_offers_partners/rectangle2.jpg" alt="">
                                         <div class="item_position_bottom">
                                             <p class="swiper_our_offers_partners_name">Nani Georgian House</p>
                                             <p>Georgia, Tbilisi</p>
@@ -425,7 +428,7 @@
                             <div class="swiper-slide">
                                 <a href="offers_single.html">
                                     <div class="swiper_our_offers_partners_bottom_item">
-                                        <img src="./img/swiper_our_offers_partners/rectangle3.jpg" alt="">
+                                        <img src="app/img/swiper_our_offers_partners/rectangle3.jpg" alt="">
                                         <div class="item_position_bottom">
                                             <p class="swiper_our_offers_partners_name">Vrelo Bosne</p>
                                             <p>Bosnia, Saraybosna</p>
@@ -436,7 +439,7 @@
                             <div class="swiper-slide">
                                 <a href="offers_single.html">
                                     <div class="swiper_our_offers_partners_bottom_item">
-                                        <img src="./img/swiper_our_offers_partners/rectangle4.jpg" alt="">
+                                        <img src="app/img/swiper_our_offers_partners/rectangle4.jpg" alt="">
                                         <div class="item_position_bottom">
                                             <p class="swiper_our_offers_partners_name">Anadolu Restaurant</p>
                                             <p>Turkey, Ankara</p>
@@ -453,36 +456,107 @@
             </div>
         </div>
 
-        <!-- Mursheed app -->
+    </section>
 
-        <section id="mursheed_app">
-            <div class="container">
-                <div class="mursheed_app_inside">
-                    <div class="mursheed_app_left">
-                        <h6>Download the Mursheed App</h6>
-                        <p>Upload your own Mursheed application to your smartphone and discover just how easy booking a car can be. With this application, you can booking a car quickly.</p>
-                        <a href=""><img src="./img/mursheed_app/apple_store.svg" alt=""></a>
-                        <a href=""><img src="./img/mursheed_app/google_play.svg" alt=""></a>
+
+
+    <section id="mursheed_app">
+        <div class="container">
+            <div class="mursheed_app_inside">
+                <div class="mursheed_app_left">
+                    <h6>Download the Mursheed App</h6>
+                    <p>Upload your own Mursheed application to your smartphone and discover just how easy booking a car can be. With this application, you can booking a car quickly.</p>
+                    <a href=""><img src="app/img/mursheed_app/apple_store.svg" alt=""></a>
+                    <a href=""><img src="app/img/mursheed_app/google_play.svg" alt=""></a>
+                </div>
+                <div class="mursheed_app_right">
+                    <img src="app/img/mursheed_app/as.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer  -->
+    <footer>
+        <div class="container">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="social">
+                            <div class="logo">
+                                <a href="index.html"><img src="app/img/footer/logo-dark.svg" alt=""></a>
+                            </div>
+                            <div class="description">
+                                <p>Mursheed helps you to have an unforgettable experience anywhere you travel to. </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mursheed_app_right">
-                        <img src="./img/mursheed_app/as.png" alt="">
+                    <div class="col-3">
+                        <p class="header-text">Site map</p>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="">Guides & Drivers</a></li>
+                            <li><a href="offers.html">Offers</a></li>
+                            <li><a href="support.html">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <p class="header-text">More</p>
+                        <ul>
+                            <li><a href="terms_conditions.html">Terms & conditions</a></li>
+                            <li><a href="privacypolicy.html">Privacy policy</a></li>
+                            <li><a href="">Cookies</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <div class="contact">
+                            <p class="header-text">Contact us</p>
+                            <ul>
+                                <li><a href="">info@mursheed.com</a></li>
+                                <li><a href="">+994 50 808 08 01</a></li>
+                            </ul>
+                            <p class="header-text">Subscribe</p>
+                            <div class="send pt-2">
+                                <input autocomplete="off" placeholder="your email address" type="text">
+                                <button><img src="app/img/footer/send.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12">
+                    <div class="social-icons ">
+                        <ul>
+                            <li class="head">
+                                <h2>Follow Us</h2>
+                            </li>
+                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i style="color:#C7C7C7;" class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-linkedin-in"></i></li>
+                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-whatsapp"></i></a></li>
+                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-snapchat-ghost"></i></a></li>
+                            <li><a href=""><i style="color:#C7C7C7;" class="fab fa-youtube"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Footer -->
-        <footer>
+    </footer>
 
-        </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
-        <script src="./libs/swiper/swiper.js"></script>
-        <script src="js/big_slider.js"></script>
-        <script src="js/atractive_places_slider.js"></script>
-        <script src="js/driverSlider.js"></script>
-        <script src="js/partners.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/topNav.js"></script>
 
+    <script src="app/libs/swiper/swiper.js"></script>
+    <script src="app/js/big_slider.js"></script>
+    <script src="app/js/atractive_places_slider.js"></script>
+    <script src="app/js/driverSlider.js"></script>
+    <script src="app/js/partners.js"></script>
+    <script src="app/js/main.js"></script>
+    <script src="app/js/topNav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script src="app/js/multiform.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app/js/search_selectbox.js"></script>
+    <script src="app/js/select2.js"></script>
 </body>
-
-</html>

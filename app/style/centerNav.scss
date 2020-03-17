@@ -8,8 +8,13 @@
                 justify-content: space-between !important;
                 .logo {
                     width: 200px;
-                    img {
-                        width: 100%;
+                    a {
+                        display: inline;
+                        position: relative;
+                        top: 5px;
+                        img {
+                            width: 100%;
+                        }
                     }
                 }
                 .rightContent {
@@ -60,12 +65,16 @@
                         }
                     }
                     .loginbuttons {
+                        position: relative;
+                        top: 12px;
                         .loginbtn {
                             border-radius: 2px !important;
+                            background-color: white;
                             border: 1px solid $main-color;
                             transition: 300ms ease;
                             width: 100px;
-                            margin-top: 0.5em !important;
+                            color: black;
+                            margin-right: 10px;
                             &:hover {
                                 background-color: $main-color;
                                 color: white;
@@ -92,6 +101,10 @@
         }
         
         @media(max-width:900px) {
+            .logo {
+                position: relative;
+                top: -5px;
+            }
             .rightContent {
                 .currency,
                 .language,
@@ -139,8 +152,12 @@
             .centerNav {
                 .logo {
                     width: 150px;
-                    img {
-                        width: 100%;
+                    position: relative;
+                    top: 5px !important;
+                    a {
+                        img {
+                            width: 150px !important;
+                        }
                     }
                 }
             }

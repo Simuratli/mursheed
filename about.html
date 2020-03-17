@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
-    <link rel="stylesheet" media="all" href="./libs/swiper/swiper.css" type="text/css" />
-    <link rel="stylesheet" media="all" href="style/reset.css" type="text/css">
-    <link rel="stylesheet" media="all" href="style/main.css" type="text/css">
-    <link href="style/css/select2.css" rel="stylesheet" />
+    <link rel="stylesheet" media="all" href="app/libs/swiper/swiper.css" type="text/css" />
+    <link rel="stylesheet" media="all" href="app/style/reset.css" type="text/css">
+    <link rel="stylesheet" media="all" href="app/style/main.css" type="text/css">
+    <link rel="stylesheet" href="app/style/css/select2.css">
     <title>Murheed</title>
 </head>
 
@@ -26,7 +26,14 @@
                             </select>
                         </form>
                     </div>
-
+                    <div class="language">
+                        <form>
+                            <select>
+                        <option class="optionlang">Azerbaijan</option>
+                        <option class="optionlang">English</option>
+                    </select>
+                        </form>
+                    </div>
                 </div>
                 <div class="secondcontainer">
                     <div class="support">
@@ -50,7 +57,9 @@
     <div class="centerNav">
         <div class="container">
             <div class="logo">
-                <img src="img/header/logo.svg" alt="">
+                <a href="index.html">
+                    <img src="app/img/header/logo.svg" alt="">
+                </a>
             </div>
             <div class="rightContent">
                 <div class="currency">
@@ -72,8 +81,8 @@
                     </form>
                 </div>
                 <div class="loginbuttons">
-                    <button class="loginbtn btn">Login</button>
-                    <button onclick="window.location.href ='register_chosing';" class="registerbtn btn">Register</button>
+                    <a href='login.html' class="loginbtn btn">Login</button>
+                    <a href="register.html" class="registerbtn btn">Register</a>
                 </div>
                 <div id="hamburger" class="barIcon">
                     <p class="line"></p>
@@ -113,75 +122,31 @@
         </div>
     </div>
 
-
-
-    <form id="touristregForm" action="/action_page.php">
-        <h1 class="tourist_reg_head">Tourist Register</h1>
-        <div style="text-align:center;margin-top:40px;">
-            <div class="row tourist_sign_main">
-                <div class="tourist_sign">
-                    <span class="num">1.</span>
-                    <span class="step">Info</span>
-                </div>
-                <div class="tourist_sign">
-                    <span class="num">2.</span>
-                    <span class="step">Addition</span>
-                </div>
-
-            </div>
-
+    <div class="siteNavigation">
+        <div class="container navigation">
+            <a class="navigation__item" href="index.html">Home</a>
+            <span><i><i class="fas fa-chevron-right"></i></i></span>
+            <a class="navigation__item active" href="about.html">About</a>
         </div>
-
-        <!-- One "tab" for each step in the form: -->
-        <div class="tab">
-
-            <p>
-                <span class="naming"> Name:</span>
-                <input required class="validate" placeholder="First name..." oninput="this.className = ''" name="fname">
-            </p>
-
-            <p>
-                <span class="naming"> Surname:</span><input required class="validate" placeholder="Last name..." oninput="this.className = ''" name="lname">
-            </p>
-            <p>
-
-                <span class="naming">Country:</span>
-                <select required oninput="this.className = ''" class="country-selector validate" name="state">
-                  <option value="" selected disabled>Country</option>
-                  <option value="AL">Alabama</option>
-                 <option value="WY">Wyoming</option>
-            </select>
-            </p>
-        </div>
-        <div class="tab">
-            <p>
-                <span class="naming">Emain:</span>
-                <input class="validate" required placeholder="Email..." oninput="this.className = ''" type="email">
-            </p>
-            <p>
-                <span class="naming">UserName:</span>
-                <input class="validate" required placeholder="UserName..." oninput="this.className = ''">
-            </p>
-            <p>
-                <span class="naming">Password:</span>
-                <input required placeholder="UserName..." oninput="this.className = ''" type="password">
-            </p>
-            <p>
-                <span class="naming">Confirm Password:</span>
-                <input class="validate" required placeholder="UserName..." oninput="this.className = ''" type="password">
-            </p>
-        </div>
+    </div>
 
 
-        <div class="nexprevbtncover">
-            <div class="nexprevbtn">
-                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-            </div>
-        </div>
-        <!-- Circles which indicates the steps of the form: -->
+    <div class="fullContainer">
+        <img class="fullphoto" src="https://images.hdqwalls.com/wallpapers/sea-serpent-digital-art-4k-t0.jpg" alt="">
+    </div>
 
-    </form>
+    <div class="container abouttext">
+        <h1 class="aboutushead">About us</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita quia eius vitae incidunt autem non aut ratione modi fugiat accusantium eligendi, quaerat accusamus asperiores, veniam architecto dolorum possimus perferendis!<br>
+        <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita quia eius vitae incidunt autem non aut ratione modi fugiat accusantium eligendi, quaerat accusamus asperiores, veniam architecto dolorum possimus perferendis!<br>
+        <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita quia eius vitae incidunt autem non aut ratione modi fugiat accusantium eligendi, quaerat accusamus asperiores, veniam architecto dolorum possimus perferendis!<br>
+        <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita quia eius vitae incidunt autem non aut ratione modi fugiat accusantium eligendi, quaerat accusamus asperiores, veniam architecto dolorum possimus perferendis!<br>
+        <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita quia eius vitae incidunt autem non aut ratione modi fugiat accusantium eligendi, quaerat accusamus asperiores, veniam architecto dolorum possimus perferendis!<br>
+        <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita quia eius vitae incidunt autem non aut ratione modi fugiat accusantium eligendi, quaerat accusamus asperiores, veniam architecto dolorum possimus perferendis!<br>
+        <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita quia eius vitae incidunt autem non aut ratione modi fugiat accusantium eligendi, quaerat accusamus asperiores, veniam architecto dolorum possimus perferendis!<br>
+        <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita quia eius vitae incidunt autem non aut ratione modi fugiat accusantium eligendi, quaerat accusamus asperiores, veniam architecto dolorum possimus perferendis!<br>
+        <br>
+    </div>
 
 
     <!-- footer  -->
@@ -192,7 +157,7 @@
                     <div class="col-2">
                         <div class="social">
                             <div class="logo">
-                                <a href="index.html"><img src="img/footer/logo-dark.svg" alt=""></a>
+                                <a href="index.html"><img src="app/img/footer/logo-dark.svg" alt=""></a>
                             </div>
                             <div class="description">
                                 <p>Mursheed helps you to have an unforgettable experience anywhere you travel to. </p>
@@ -227,7 +192,7 @@
                             <p class="header-text">Subscribe</p>
                             <div class="send pt-2">
                                 <input autocomplete="off" placeholder="your email address" type="text">
-                                <button><img src="img/footer/send.svg" alt=""></button>
+                                <button><img src="app/img/footer/send.svg" alt=""></button>
                             </div>
                         </div>
                     </div>
@@ -253,19 +218,16 @@
     </footer>
 
 
-    <script src="./libs/swiper/swiper.js"></script>
-    <script src="js/big_slider.js"></script>
-    <script src="js/atractive_places_slider.js"></script>
-    <script src="js/driverSlider.js"></script>
-    <script src="js/partners.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/topNav.js"></script>
+    <script src="app/libs/swiper/swiper.js"></script>
+    <script src="app/js/big_slider.js"></script>
+    <script src="app/js/atractive_places_slider.js"></script>
+    <script src="app/js/driverSlider.js"></script>
+    <script src="app/js/partners.js"></script>
+    <script src="app/js/main.js"></script>
+    <script src="app/js/topNav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
-    <script src="js/multiform.js"></script>
+    <script src="app/js/multiform.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/search_selectbox.js"></script>
-    <script src="js/select2.js"></script>
+    <script src="app/js/search_selectbox.js"></script>
+    <script src="app/js/select2.js"></script>
 </body>
-
-
-</html>
