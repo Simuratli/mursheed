@@ -1,0 +1,189 @@
+.centerNav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.centerNav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.centerNav .container .logo {
+  width: 200px;
+}
+
+.centerNav .container .logo a {
+  display: inline;
+  position: relative;
+  top: 5px;
+}
+
+.centerNav .container .logo a img {
+  width: 100%;
+}
+
+.centerNav .container .rightContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.centerNav .container .rightContent .barIcon {
+  margin-top: 10px !important;
+  display: none;
+}
+
+.centerNav .container .rightContent .barIcon .line {
+  width: 30px;
+  background-color: black;
+  border-radius: 5px;
+  height: 5px;
+  margin-bottom: 5px;
+}
+
+.centerNav .container .rightContent .currency {
+  position: relative;
+  left: -50px !important;
+  text-align: center !important;
+}
+
+.centerNav .container .rightContent .currency .currencyText {
+  font-size: 0.8em;
+  color: #0b8071;
+}
+
+.centerNav .container .rightContent .currency select {
+  font-size: 1em !important;
+  border: 0px !important;
+  -webkit-appearance: none !important;
+  padding: 2px !important;
+}
+
+.centerNav .container .rightContent .language {
+  position: relative;
+  left: -30px !important;
+  text-align: center !important;
+}
+
+.centerNav .container .rightContent .language .langText {
+  font-size: 0.8em;
+  color: #0b8071;
+}
+
+.centerNav .container .rightContent .language select {
+  font-size: 1em !important;
+  border: 0px !important;
+  -webkit-appearance: none !important;
+  padding: 2px !important;
+}
+
+.centerNav .container .rightContent .language select option {
+  padding: 5px !important;
+  border: 0px !important;
+}
+
+.centerNav .container .rightContent .loginbuttons {
+  position: relative;
+  top: 12px;
+}
+
+.centerNav .container .rightContent .loginbuttons .loginbtn {
+  border-radius: 2px !important;
+  background-color: white;
+  border: 1px solid #0b8071;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  width: 100px;
+  color: black;
+  margin-right: 10px;
+}
+
+.centerNav .container .rightContent .loginbuttons .loginbtn:hover {
+  background-color: #0b8071;
+  color: white;
+}
+
+.centerNav .container .rightContent .loginbuttons .registerbtn {
+  border-radius: 2px !important;
+  background-color: #0b8071;
+  border: 1px solid #0b8071;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  width: 100px;
+  color: white;
+}
+
+.centerNav .container .rightContent .loginbuttons .registerbtn:hover {
+  background-color: #f7f7f7;
+  color: black;
+}
+
+.centerNav .menucontainer {
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  .logo {
+    position: relative;
+    top: -5px;
+  }
+  .rightContent .currency,
+  .rightContent .language,
+  .rightContent .loginbuttons {
+    display: none !important;
+  }
+  .rightContent .barIcon {
+    display: block !important;
+  }
+  .menucontainer {
+    display: none;
+    height: 0px !important;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    height: 0;
+    opacity: 0;
+    -webkit-transition: height 0ms 400ms, opacity 400ms 0ms;
+    transition: height 0ms 400ms, opacity 400ms 0ms;
+  }
+  .menucontainer .openmenu {
+    text-align: right;
+    width: 100%;
+  }
+  .menucontainer .openmenu_item {
+    display: block;
+    margin-top: 15px;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    font-size: 1em !important;
+    font-weight: bold;
+    text-decoration: none;
+    color: #151515;
+  }
+  .menucontainer .openmenu_item:hover {
+    color: #0b8071 !important;
+  }
+  .menucontainer.active {
+    display: block !important;
+    height: auto !important;
+    height: auto;
+    opacity: 1;
+    -webkit-transition: height 0ms 0ms, opacity 600ms 0ms;
+    transition: height 0ms 0ms, opacity 600ms 0ms;
+  }
+}
+
+@media (max-width: 500px) {
+  .centerNav .logo {
+    width: 150px;
+    position: relative;
+    top: 5px !important;
+  }
+  .centerNav .logo a img {
+    width: 150px !important;
+  }
+}
+/*# sourceMappingURL=centerNav.css.map */

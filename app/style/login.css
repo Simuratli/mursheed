@@ -1,0 +1,349 @@
+.container .login_box {
+  width: 60%;
+  padding: 30px 20px 60px 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  height: auto;
+  margin: 10px auto;
+  margin-bottom: 20px !important;
+}
+
+.container .login_box_title {
+  font-size: 1.2em;
+  color: #324150;
+  font-weight: bold;
+  margin-bottom: 15px !important;
+}
+
+.container .login_box_content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.container .login_box_content .centered_register {
+  margin-top: 20px;
+}
+
+.container .login_box_content .centered_register a {
+  color: black;
+}
+
+.container .login_box_content .login_input_container {
+  text-align: left !important;
+}
+
+.container .login_box_content .login_input_container_title {
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.container .login_box_content .login_input_container .password_login_title {
+  position: relative;
+  top: 15px;
+}
+
+.container .login_box_content .login_input_container .input_login_box {
+  width: 100%;
+}
+
+.container .login_box_content .login_input_container .input_login_box .fa-eye {
+  position: relative;
+  float: right;
+  top: 28px;
+  color: #0b8071;
+}
+
+.container .login_box_content .login_input_container .input_login_box .login_input {
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border: 1px solid #c7c7c7;
+  background-color: #f7f7f7;
+  font-size: 1em;
+}
+
+.container .login_box_content .login_input_container .input_login_box .login_input:focus {
+  outline: none;
+}
+
+.container .login_box_content .forget_password_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .login_box_content .forget_password_box .forget_password_box_checkbox INPUT[type=checkbox]:focus {
+  outline: 0;
+  border: 0px;
+}
+
+.container .login_box_content .forget_password_box .forget_password_box_checkbox INPUT[type=checkbox] {
+  background-color: #DDD;
+  border-radius: 2px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+  border: 0px;
+}
+
+.container .login_box_content .forget_password_box .forget_password_box_checkbox INPUT[type=checkbox]:checked {
+  background: #0b8071 url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 3px 3px no-repeat;
+}
+
+.container .login_box_content .forget_password_box .forget_password_box_checkbox span {
+  font-size: 0.8em !important;
+  position: relative;
+}
+
+.container .login_box_content .forget_password_box a {
+  color: #0b8071;
+  font-size: 0.8em !important;
+}
+
+.container .login_box_content .login_button_bottom {
+  width: 100%;
+  background-color: #0b8071;
+  border: 0px;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #f7f7f7;
+  margin-top: 35px;
+}
+
+@media (max-width: 908px) {
+  .container .login_box {
+    width: 80%;
+    padding: 30px 20px 60px 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    height: auto;
+    margin: 10px auto;
+    margin-bottom: 20px !important;
+  }
+  .container .login_box_title {
+    font-size: 1.2em;
+    color: #324150;
+    font-weight: bold;
+    margin-bottom: 15px !important;
+  }
+  .container .login_box_content {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .container .login_box_content .centered_register {
+    margin-top: 20px;
+  }
+  .container .login_box_content .centered_register a {
+    color: black;
+  }
+  .container .login_box_content .login_input_container {
+    text-align: left !important;
+  }
+  .container .login_box_content .login_input_container_title {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  .container .login_box_content .login_input_container .password_login_title {
+    position: relative;
+    top: 15px;
+  }
+  .container .login_box_content .login_input_container .input_login_box {
+    width: 100%;
+  }
+  .container .login_box_content .login_input_container .input_login_box .fa-eye {
+    position: relative;
+    float: right;
+    top: 28px;
+    color: #0b8071;
+  }
+  .container .login_box_content .login_input_container .input_login_box .login_input {
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 1px solid #c7c7c7;
+    background-color: #f7f7f7;
+    font-size: 1em;
+  }
+  .container .login_box_content .login_input_container .input_login_box .login_input:focus {
+    outline: none;
+  }
+  .container .login_box_content .forget_password_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 25px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .login_box_content .forget_password_box .forget_password_box_checkbox INPUT[type=checkbox]:focus {
+    outline: 0;
+    border: 0px;
+  }
+  .container .login_box_content .forget_password_box .forget_password_box_checkbox INPUT[type=checkbox] {
+    background-color: #DDD;
+    border-radius: 2px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    border: 0px;
+  }
+  .container .login_box_content .forget_password_box .forget_password_box_checkbox INPUT[type=checkbox]:checked {
+    background: #0b8071 url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 3px 3px no-repeat;
+  }
+  .container .login_box_content .forget_password_box .forget_password_box_checkbox span {
+    font-size: 0.8em !important;
+    position: relative;
+  }
+  .container .login_box_content .forget_password_box a {
+    color: #0b8071;
+    font-size: 0.8em !important;
+  }
+  .container .login_box_content .login_button_bottom {
+    width: 100%;
+    background-color: #0b8071;
+    border: 0px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #f7f7f7;
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 590px) {
+  .container .login_box {
+    width: 100%;
+    padding: 30px 20px 60px 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    height: auto;
+    margin: 10px auto;
+    margin-bottom: 20px !important;
+  }
+  .container .login_box_title {
+    font-size: 1.2em;
+    color: #324150;
+    font-weight: bold;
+    margin-bottom: 15px !important;
+  }
+  .container .login_box_content {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .container .login_box_content .centered_register {
+    margin-top: 20px;
+  }
+  .container .login_box_content .centered_register a {
+    color: black;
+  }
+  .container .login_box_content .login_input_container {
+    text-align: left !important;
+  }
+  .container .login_box_content .login_input_container_title {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  .container .login_box_content .login_input_container .password_login_title {
+    position: relative;
+    top: 15px;
+  }
+  .container .login_box_content .login_input_container .input_login_box {
+    width: 100%;
+  }
+  .container .login_box_content .login_input_container .input_login_box .fa-eye {
+    position: relative;
+    float: right;
+    top: 28px;
+    color: #0b8071;
+  }
+  .container .login_box_content .login_input_container .input_login_box .login_input {
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 1px solid #c7c7c7;
+    background-color: #f7f7f7;
+    font-size: 1em;
+  }
+  .container .login_box_content .login_input_container .input_login_box .login_input:focus {
+    outline: none;
+  }
+  .container .login_box_content .forget_password_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 25px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .login_box_content .forget_password_box .forget_password_box_checkbox INPUT[type=checkbox]:focus {
+    outline: 0;
+    border: 0px;
+  }
+  .container .login_box_content .forget_password_box .forget_password_box_checkbox INPUT[type=checkbox] {
+    background-color: #DDD;
+    border-radius: 2px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    border: 0px;
+  }
+  .container .login_box_content .forget_password_box .forget_password_box_checkbox INPUT[type=checkbox]:checked {
+    background: #0b8071 url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 3px 3px no-repeat;
+  }
+  .container .login_box_content .forget_password_box .forget_password_box_checkbox span {
+    font-size: 0.8em !important;
+    position: relative;
+  }
+  .container .login_box_content .forget_password_box a {
+    color: #0b8071;
+    font-size: 0.8em !important;
+  }
+  .container .login_box_content .login_button_bottom {
+    width: 100%;
+    background-color: #0b8071;
+    border: 0px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #f7f7f7;
+    margin-top: 35px;
+  }
+}
+/*# sourceMappingURL=login.css.map */

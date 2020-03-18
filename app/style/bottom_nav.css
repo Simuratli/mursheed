@@ -1,0 +1,31 @@
+.bottomNav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #f7f7f7;
+  width: 100%;
+}
+
+.bottomNav .container .navcontainer .bottomnav_item {
+  margin-left: 20px;
+  font-size: 1.2em !important;
+  font-weight: bold;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  text-decoration: none;
+  color: black;
+}
+
+.bottomNav .container .navcontainer .bottomnav_item:hover {
+  color: #0b8071;
+}
+
+.bottomNav .container .navcontainer .bottomnav_item.active {
+  color: #0b8071;
+}
+
+@media (max-width: 900px) {
+  .bottomNav {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=bottom_nav.css.map */

@@ -1,0 +1,186 @@
+#touristregForm {
+  background-color: #ffffff;
+  margin: 50px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 40%;
+  min-width: 300px;
+  background-color: #f7f7f7;
+  /* Mark input boxes that gets an error on validation: */
+  /* Hide all steps by default: */
+  /* Make circles that indicate the steps of the form: */
+  /* Mark the steps that are finished and valid: */
+}
+
+#touristregForm select {
+  width: 100%;
+}
+
+#touristregForm .multiple {
+  width: 95%;
+}
+
+#touristregForm .tourist_reg_head {
+  text-align: center;
+  font-size: 2em;
+  color: black;
+  font-weight: bold;
+}
+
+#touristregForm .tourist_sign_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#touristregForm .tourist_sign_main .tourist_sign {
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+}
+
+#touristregForm input {
+  width: 98%;
+  font-size: 17px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#touristregForm input.invalid {
+  background-color: #ffdddd;
+}
+
+#touristregForm .tab {
+  display: none;
+}
+
+#touristregForm .tab p {
+  margin-bottom: 2.5em;
+  color: black;
+}
+
+#touristregForm .tab p .naming {
+  font-weight: bold;
+  display: inline-block;
+  padding-bottom: 0.4em !important;
+  font-size: 1.2em;
+}
+
+#touristregForm .tab p .row span {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+#touristregForm button {
+  background-color: #0b8071;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#touristregForm button:hover {
+  opacity: 0.8;
+}
+
+#touristregForm #prevBtn {
+  background-color: #bbbbbb;
+}
+
+#touristregForm .step {
+  width: 80%;
+  background-color: #d1d4d4;
+  border: none;
+  border-radius: px;
+  display: inline-block;
+  opacity: 0.5;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: black;
+}
+
+#touristregForm .num {
+  display: inline-block;
+  padding: 5.1px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #0b8071;
+  position: relative;
+  top: -13px;
+  color: white;
+  width: 20px;
+  position: relative;
+  z-index: 123;
+  left: 7px;
+}
+
+#touristregForm .step.active {
+  opacity: 1;
+  color: white;
+  background-color: #0b8071 !important;
+}
+
+#touristregForm .step.finish {
+  background-color: #0b8071;
+}
+
+#touristregForm .nexprevbtncover {
+  overflow: auto;
+}
+
+#touristregForm .nexprevbtn {
+  float: right;
+}
+
+#touristregForm .register_select {
+  width: 100% !important;
+}
+
+@media (max-width: 1292px) {
+  #touristregForm .tourist_sign_main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #touristregForm .tourist_sign_main .tourist_sign {
+    -webkit-box-flex: 10%;
+        -ms-flex: 10%;
+            flex: 10%;
+  }
+  #touristregForm .tourist_sign_main .tourist_sign .step {
+    width: 93%;
+  }
+  #touristregForm .tourist_sign_main .tourist_sign .num {
+    margin: 0px !important;
+    width: 21px;
+  }
+}
+
+.select2-selection__rendered {
+  line-height: 30px !important;
+}
+
+.select2-container .select2-selection--single {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.select2-selection__arrow {
+  height: 44px !important;
+}
+/*# sourceMappingURL=tourist_reg.css.map */
