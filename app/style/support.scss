@@ -1,0 +1,107 @@
+$main-color:#0b8071;
+$bg-color: #f7f7f7;
+@mixin paddintopbottom {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.support_container {
+    width: 100%;
+    background-color: $bg-color;
+    @include paddintopbottom();
+    .container {
+        .support_header {
+            display: flex;
+            .support_header_title {
+                flex: 1.5;
+                .header_support_h1 {
+                    font-size: 2.6em;
+                    color: $main-color;
+                }
+                .header_support_h5 {
+                    font-size: 1.2em;
+                }
+            }
+            .support_header_title_box {
+                flex: 1;
+                .support_card_link {
+                    .support_card {
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        width: 70%;
+                        margin: 0 auto;
+                        text-align: center;
+                        color: white;
+                        border-radius: 10px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        .fa-question-circle,
+                        .fa-user {
+                            font-size: 2em;
+                        }
+                    }
+                    .support_card.blue {
+                        background-color: #306594;
+                    }
+                    .support_card.purple {
+                        background-color: #593194;
+                    }
+                }
+            }
+        }
+    }
+    .faq_container {
+        .accordion {
+            border-top: 1px solid #777 !important;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            background-color: transparent;
+            &.active,
+            &:hover {
+                background-color: #ccc;
+            }
+            &:after {
+                content: '\002B';
+                font-weight: bold;
+                float: right;
+                color: $main-color;
+                margin-left: 5px;
+            }
+            &.active:after {
+                content: "\2212";
+                color: $main-color;
+            }
+        }
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    }
+}
+
+@media(max-width:900px) {
+    .support_container {
+        .container {
+            .support_header {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .support_card_link {
+                .support_card {
+                    margin-bottom: 15px !important;
+                }
+            }
+        }
+    }
+}
