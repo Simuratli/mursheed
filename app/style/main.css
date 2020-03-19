@@ -481,7 +481,8 @@
 
 #swiper_popular_attractions_locations {
   text-align: center;
-  margin: 30px 0px;
+  position: relative;
+  top: -30px;
 }
 
 #swiper_popular_attractions_locations .swiper_popular_attractions_locations_top {
@@ -495,6 +496,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  top: 50px;
 }
 
 #swiper_popular_attractions_locations .swiper_popular_attractions_locations_top h6 {
@@ -552,12 +555,17 @@
   align-items: center;
 }
 
+#swiper_popular_attractions_locations .swiper_popular_attractions_locations_bottom .swiper_popular_attractions_locations_bottom_center .swiper-container .swiper-wrapper .swiper-slide a {
+  color: black;
+}
+
 #swiper_popular_attractions_locations .swiper_popular_attractions_locations_bottom .swiper_popular_attractions_locations_bottom_center .swiper-container .swiper-wrapper .swiper-slide .popular_attractions_locations_bottom_item {
   margin: 1px;
   -webkit-box-shadow: 0px 0px 0px 1px #c9c9c9;
           box-shadow: 0px 0px 0px 1px #c9c9c9;
   border-radius: 3px;
   text-align: left;
+  padding-bottom: 15px;
 }
 
 #swiper_popular_attractions_locations .swiper_popular_attractions_locations_bottom .swiper_popular_attractions_locations_bottom_center .swiper-container .swiper-wrapper .swiper-slide .popular_attractions_locations_bottom_item img {
@@ -1327,7 +1335,7 @@ footer .wrapper .row .col-3 .send button {
 }
 
 .siteNavigation {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-top: 15px;
   width: 100%;
 }
@@ -2467,6 +2475,107 @@ footer .wrapper .row .col-3 .send button {
     font-weight: bold;
     color: #f7f7f7;
     margin-top: 35px;
+  }
+}
+
+.contact_us_container {
+  background-color: #f7f7f7;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.contact_us_container .container .contact_us_header {
+  padding: 15px;
+}
+
+.contact_us_container .container .contact_us_header h1 {
+  color: #0b8071;
+}
+
+.contact_us_container .container .contact_us_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact_us_container .container .contact_us_content .contact_us_input_area1 {
+  padding: 15px;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.contact_us_container .container .contact_us_content .contact_us_input_area1 .contact_us_input_div {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contact_us_container .container .contact_us_content .contact_us_input_area1 .contact_us_input_div span {
+  color: #0b8071;
+  font-weight: bold;
+}
+
+.contact_us_container .container .contact_us_content .contact_us_input_area1 .contact_us_input_div .contact_us_input {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #0b8071;
+}
+
+.contact_us_container .container .contact_us_content .contact_us_input_area2 {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  padding: 15px;
+}
+
+.contact_us_container .container .contact_us_content .contact_us_input_area2 .contact_us_input_div {
+  width: 100%;
+}
+
+.contact_us_container .container .contact_us_content .contact_us_input_area2 .contact_us_input_div span {
+  font-weight: bold;
+  color: #0b8071;
+}
+
+.contact_us_container .container .contact_us_content .contact_us_input_area2 .contact_us_input_div .contact_us_textarea {
+  width: 100%;
+  height: 190px;
+  border: 1px solid #0b8071;
+  border-radius: 5px;
+}
+
+.contact_us_container .container .contact_us_input_button {
+  padding: 15px;
+  text-align: right;
+}
+
+.contact_us_container .container .contact_us_input_button button {
+  width: 120px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid #0b8071;
+}
+
+.contact_us_container .container .contact_us_map {
+  padding: 15px;
+}
+
+.contact_us_container .container .contact_us_map iframe {
+  width: 100%;
+  height: 260px;
+}
+
+@media (max-width: 601px) {
+  .contact_us_container .container .contact_us_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=main.css.map */

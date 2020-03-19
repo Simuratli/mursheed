@@ -8,6 +8,7 @@
     <link rel="stylesheet" media="all" href="app/libs/swiper/swiper.css" type="text/css" />
     <link rel="stylesheet" media="all" href="app/style/reset.css" type="text/css">
     <link rel="stylesheet" media="all" href="app/style/main.css" type="text/css">
+    <link rel="stylesheet" href="app/style/css/select2.css">
     <title>Murheed</title>
 </head>
 
@@ -37,7 +38,7 @@
                 <div class="secondcontainer">
                     <div class="support">
                         <a class="supportItem" href="#">Support</a>
-                        <a class="supportItem" href="#">Contact Us</a>
+                        <a class="supportItem" href="contact.html">Contact Us</a>
                     </div>
                     <div id="dropLogBtn" class="profile" style="background-image: url(img/profile/user.jpg)">
                         <div id="loggedid">
@@ -52,7 +53,6 @@
 
 
     <!-- center nav  -->
-
 
     <div class="centerNav">
         <div class="container">
@@ -99,10 +99,10 @@
                 <a class="openmenu_item" href="#">Guides & Drivers</a>
                 <a class="openmenu_item" href="#">Accomadation</a>
                 <a class="openmenu_item" href="#">Flight Reservation</a>
-                <a class="openmenu_item" href="#">Attractive Places</a>
+                <a class="openmenu_item" href="attractive_locations.html">Attractive Places</a>
                 <a class="openmenu_item" href="#">Offers</a>
                 <a class="openmenu_item" href="#">Support</a>
-                <a class="openmenu_item" href="#">Contact</a>
+                <a class="openmenu_item" href="contact.html">Contact</a>
             </div>
         </div>
     </div>
@@ -113,59 +113,57 @@
         <div class="container">
             <div class="navcontainer">
                 <a class="bottomnav_item active" href="#">Home</a>
-                <a class="bottomnav_item " href="#">About</a>
+                <a class="bottomnav_item " href="about.html">About</a>
                 <a class="bottomnav_item " href="#">Guides & Drivers</a>
                 <a class="bottomnav_item " href="#">Accomadation</a>
                 <a class="bottomnav_item " href="#">Flight Reservation</a>
-                <a class="bottomnav_item " href="#">Attractive Places</a>
+                <a class="bottomnav_item " href="attractive_locations.html">Attractive Places</a>
             </div>
         </div>
     </div>
 
-    <div class="siteNavigation">
-        <div class="container navigation">
-            <a class="navigation__item" href="index.html">Home</a>
-            <span><i><i class="fas fa-chevron-right"></i></i></span>
-            <a class="navigation__item active" href="about.html">Login</a>
-        </div>
-    </div>
 
-    <div class="container">
-        <div class="login_box">
-            <div class="login_box_title">
-                <h1>Login</h1>
+    <div class="contact_us_container">
+        <div class="container">
+            <div class="contact_us_header">
+                <h1>Sizdən eşitmək istərdik.</h1>
             </div>
-            <form method="post">
-                <div class="login_box_content">
-                    <div class="login_input_container">
-                        <p class="login_input_container_title">İstifadəçi Adı:</p>
-                        <div class="input_login_box">
-                            <input type="email" class="login_input" placeholder="Email">
+            <form>
+                <div class="contact_us_content">
+                    <div class="contact_us_input_area1">
+                        <div class="contact_us_input_div">
+                            <span>Ad</span>
+                            <input class="contact_us_input" placeholder="Name" type="text">
+                        </div>
+                        <div class="contact_us_input_div">
+                            <span>Email</span>
+                            <input class="contact_us_input" placeholder="Email" type="email">
+                        </div>
+                        <div class="contact_us_input_div">
+                            <span>Company</span>
+                            <input class="contact_us_input" placeholder="Company" type="text">
                         </div>
                     </div>
-                    <div class="login_input_container">
-                        <p class="login_input_container_title password_login_title">Password:</p>
-                        <div class="input_login_box">
-                            <i class="fa fa-eye"> </i>
-                            <input type="password" class="login_input" placeholder="Password">
+                    <div class="contact_us_input_area2">
+                        <div class="contact_us_input_div">
+                            <span>Company</span>
+                            <textarea class="contact_us_textarea"></textarea>
                         </div>
                     </div>
-                    <div class="forget_password_box">
-                        <div class="forget_password_box_checkbox">
-                            <input type="checkbox"><span>Yadda Saxla</span>
-                        </div>
-                        <div class="forget_password_box_forget">
-                            <a href="#">Forget Password</a>
-                        </div>
-                    </div>
-                    <button class="login_button_bottom" type="submit">Login</button>
-                    <div class="centered_register">
-                        <a href="register.html">Do you have account? Log in</a>
-                    </div>
+
+                </div>
+                <div class="contact_us_input_button">
+                    <button type="submit">Send</button>
                 </div>
             </form>
+
+            <div class="contact_us_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d412505.2712427151!2d-115.45519761572709!3d36.12522845546416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80beb782a4f57dd1%3A0x3accd5e6d5b379a3!2sLas%20Vegas%2C%20Nevada%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2s!4v1584610157845!5m2!1str!2s"
+                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
         </div>
     </div>
+
 
 
     <!-- footer  -->
@@ -245,4 +243,8 @@
     <script src="app/js/main.js"></script>
     <script src="app/js/topNav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script src="app/js/multiform.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app/js/search_selectbox.js"></script>
+    <script src="app/js/select2.js"></script>
 </body>

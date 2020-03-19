@@ -1,6 +1,7 @@
 #swiper_popular_attractions_locations {
   text-align: center;
-  margin: 30px 0px;
+  position: relative;
+  top: -30px;
 }
 
 #swiper_popular_attractions_locations .swiper_popular_attractions_locations_top {
@@ -14,6 +15,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  top: 50px;
 }
 
 #swiper_popular_attractions_locations .swiper_popular_attractions_locations_top h6 {
@@ -71,12 +74,17 @@
   align-items: center;
 }
 
+#swiper_popular_attractions_locations .swiper_popular_attractions_locations_bottom .swiper_popular_attractions_locations_bottom_center .swiper-container .swiper-wrapper .swiper-slide a {
+  color: black;
+}
+
 #swiper_popular_attractions_locations .swiper_popular_attractions_locations_bottom .swiper_popular_attractions_locations_bottom_center .swiper-container .swiper-wrapper .swiper-slide .popular_attractions_locations_bottom_item {
   margin: 1px;
   -webkit-box-shadow: 0px 0px 0px 1px #c9c9c9;
           box-shadow: 0px 0px 0px 1px #c9c9c9;
   border-radius: 3px;
   text-align: left;
+  padding-bottom: 15px;
 }
 
 #swiper_popular_attractions_locations .swiper_popular_attractions_locations_bottom .swiper_popular_attractions_locations_bottom_center .swiper-container .swiper-wrapper .swiper-slide .popular_attractions_locations_bottom_item img {
