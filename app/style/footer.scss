@@ -57,10 +57,12 @@ footer {
     .social-icons {
         margin-top: 10px !important;
         .head {
-            h2 {
+            .head_h2 {
                 font-weight: bold;
                 color: #C7C7C7;
                 font-size: 1.2em;
+                position: relative;
+                top: -20px;
             }
         }
         width: 100%;
@@ -95,10 +97,12 @@ footer {
             .social-icons {
                 margin-top: 10px !important;
                 .head {
-                    h2 {
+                    .head_h2 {
                         font-weight: bold;
                         color: #C7C7C7;
                         font-size: 1em;
+                        position: relative;
+                        top: -7px;
                     }
                 }
                 width: 100%;

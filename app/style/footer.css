@@ -80,10 +80,12 @@ footer .wrapper .row .col-3 .send button {
   display: flex;
 }
 
-.col-12 .social-icons .head h2 {
+.col-12 .social-icons .head .head_h2 {
   font-weight: bold;
   color: #C7C7C7;
   font-size: 1.2em;
+  position: relative;
+  top: -20px;
 }
 
 .col-12 .social-icons ul li {
@@ -121,10 +123,12 @@ footer .wrapper .row .col-3 .send button {
     display: -ms-flexbox;
     display: flex;
   }
-  footer .col-12 .social-icons .head h2 {
+  footer .col-12 .social-icons .head .head_h2 {
     font-weight: bold;
     color: #C7C7C7;
     font-size: 1em;
+    position: relative;
+    top: -7px;
   }
   footer .col-12 .social-icons ul li {
     font-size: 0.8em !important;

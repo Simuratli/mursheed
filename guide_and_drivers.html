@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" media="all" href="app/libs/swiper/swiper.css" type="text/css" />
+    <link rel="stylesheet" media="all" href="app/style/reset.css" type="text/css">
+    <link rel="stylesheet" media="all" href="app/style/main.css" type="text/css">
+    <link rel="stylesheet" href="app/style/css/select2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" />
+    <title>Murheed</title>
+</head>
+
+<body>
+
+    <div class="topNav">
+        <div class="container">
+            <div class="topnavcontainer">
+                <div class="firstcontainer">
+                    <div class="currency">
+                        <form>
+                            <select>
+                        <option class="optioncurrency">USD</option>
+                        <option class="optioncurrency">AZN</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="language">
+                        <form>
+                            <select>
+                        <option class="optionlang">Azerbaijan</option>
+                        <option class="optionlang">English</option>
+                    </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="secondcontainer">
+                    <div class="support">
+                        <a class="supportItem" href="support.html">Support</a>
+                        <a class="supportItem" href="contact.html">Contact Us</a>
+                    </div>
+                    <div id="dropLogBtn" class="profile" style="background-image: url(img/profile/user.jpg)">
+                        <div id="loggedid">
+                            <a class="loggediditem" href="#">Login</a>
+                            <a class="loggediditem" href="register_chosing.html">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- center nav  -->
+
+    <div class="centerNav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="app/img/header/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="rightContent">
+                <div class="currency">
+                    <span class="currencyText">Currency</span>
+                    <form>
+                        <select>
+                            <option class="optioncurrency">USD</option>
+                            <option class="optioncurrency">AZN</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="language">
+                    <span class="langText">Language</span>
+                    <form>
+                        <select>
+                            <option class="optionlang">Azerbaijan</option>
+                            <option class="optionlang">English</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="loginbuttons">
+                    <a href='login.html' class="loginbtn btn">Login</button>
+                    <a href="register.html" class="registerbtn btn">Register</a>
+                </div>
+                <div id="hamburger" class="barIcon">
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                </div>
+            </div>
+
+        </div>
+        <div id="openmenu" class="container menucontainer">
+            <div class="openmenu">
+                <a class="openmenu_item" href="#">Home</a>
+                <a class="openmenu_item" href="about.html">About</a>
+                <a class="openmenu_item" href="guide_and_drivers.html">Guides & Drivers</a>
+                <a class="openmenu_item" href="accomadation.html">Accomadation</a>
+                <a class="openmenu_item" href="flight.html">Flight Reservation</a>
+                <a class="openmenu_item" href="attractive_locations.html">Attractive Places</a>
+                <a class="openmenu_item" href="#">Offers</a>
+                <a class="openmenu_item" href="#">Support</a>
+                <a class="openmenu_item" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bottom nav  -->
+    <div class="bottomNav">
+        <div class="container">
+            <div class="navcontainer">
+                <a class="bottomnav_item active" href="#">Home</a>
+                <a class="bottomnav_item " href="about.html">About</a>
+                <a class="bottomnav_item " href="guide_and_drivers.html">Guides & Drivers</a>
+                <a class="bottomnav_item " href="accomadation.html">Accomadation</a>
+                <a class="bottomnav_item " href="flight.html">Flight Reservation</a>
+                <a class="bottomnav_item " href="attractive_locations.html">Attractive Places</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="guide_container">
+            <div class="guide_col1">
+                <div class="guide_filter">
+                    <label class="control2 control-radio">
+                            <input type="radio" name="radio" /> Drivers
+                        <div class="control_indicator"></div>
+                    </label>
+                    <label class="control2 control-radio">
+                            <input type="radio" name="radio" />
+                            Guides
+                        <div class="control_indicator"></div>
+                    </label>
+                </div>
+                <div class="guide_search">
+                    <div class="guide_search_header">
+                        <div class="gui_head_search">Search</div>
+                        <a class="gui_head_sifir" href="#">Sıfırlayın</a>
+                    </div>
+                    <div class="guide_search_content">
+                        <div id="guide_search_content_header1" class="guide_search_content_header">
+                            <div>By City</div>
+                            <a class="plussign" href="#">+</a>
+                        </div>
+                        <div id="guide_search_content_bottom1" class="guide_search_content_bottom">
+                            <select required class="country-selector ">
+                                <option value="" selected disabled >By city</option>
+                                <option >Baku</option>
+                                <option value="AL">Gabala</option>
+                               <option value="WY">Ujar</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="guide_search_content">
+                        <div id="guide_search_content_header2" class="guide_search_content_header">
+                            <div>By Car</div>
+                            <a class="plussign" href="#">+</a>
+                        </div>
+                        <div id="guide_search_content_bottom2" class="guide_search_content_bottom">
+                            <select required class="country-selector ">
+                                <option value="" selected disabled >Brand</option>
+                                <option >Baku</option>
+                                <option value="AL">Kia</option>
+                               <option value="WY">Mercedes</option>
+                          </select>
+                            <br><br>
+                            <select required class="country-selector ">
+                            <option value="" selected disabled >Model</option>
+                            <option >Baku</option>
+                            <option value="AL">Optima</option>
+                           <option value="WY">E220</option>
+                      </select>
+                        </div>
+                    </div>
+                    <div class="guide_search_content">
+                        <div id="guide_search_content_header3" class="guide_search_content_header">
+                            <div>By Language</div>
+                            <a href="#">+</a>
+                        </div>
+                        <div id="guide_search_content_bottom3" class="guide_search_content_bottom">
+                            <select required multiple='multiple' class="country-selector ">
+                                <option value=""  >Italian</option>
+                                <option >Russian</option>
+                                <option value="AL">English</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="guide_search_content">
+                        <div id="guide_search_content_header4" class="guide_search_content_header">
+                            <div>By gender</div>
+                            <a href="#">+</a>
+                        </div>
+                        <div id="guide_search_content_bottom4" class="guide_search_content_bottom">
+                            <form action="">
+                                <label class="control control-checkbox">
+                                   
+                                        <input type="checkbox" />
+                                        Male
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <label class="control control-checkbox">
+                                   
+                                        <input type="checkbox" />
+                                        Female
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="guide_search_content">
+                        <div id="guide_search_content_header5" class="guide_search_content_header">
+                            <div>By avability</div>
+                            <a href="#">+</a>
+                        </div>
+                        <div id="guide_search_content_bottom5" class="guide_search_content_bottom">
+                            <form action="">
+                                <label class="control control-checkbox">
+                                   
+                                        <input type="checkbox" />
+                                        Avaible
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <label class="control control-checkbox">
+                                   
+                                        <input type="checkbox" />
+                                        Busy
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="guide_col2">
+                <div class="guide_col2_container">
+                    <div class="guide_head">
+                        <h1 class="guide_head_title">Guides (13)</h1>
+                    </div>
+                    <div class="guide_col2_contant">
+                        <div class="guide_row">
+                            <div class="guide_col_12">
+                                <div class="guide_card">
+                                    <div class="guide_card_image">
+                                        <img class="guide_card_image_img" src="app/img/guides_drivers/rectangle4.jpg" alt="">
+                                    </div>
+                                    <div class="guide_card_info">
+                                        <h1 class="guide_card_info_name">Alexa Richardson</h1>
+                                        <p class="guide_card_info_time">120 times tour</p>
+                                        <p class="guide_card_info_lang">Spanish,turkish</p>
+                                        <div class="guide_card_info_icons">
+                                            <button class="avaible">Avaible</button>
+                                            <img class="icon_img" src="app/img/guides_drivers/group-4.svg" alt="">
+                                            <img class="icon_img" src="app/img/guides_drivers/user.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="guide_card_hirebuttons">
+                                        <img src="app/img/guides_drivers/star.svg" alt="">
+                                        <img src="app/img/guides_drivers/star.svg" alt="">
+                                        <img src="app/img/guides_drivers/star.svg" alt="">
+                                        <img src="app/img/guides_drivers/star.svg" alt="">
+                                        <img src="app/img/guides_drivers/star.svg" alt=""><span>(23)</span>
+                                        <div class="guide_card_hirebuttons_btn">
+                                            <a href="#" class="btnguide ">Details</a>
+                                            <a href="#" class="btnguide activeguide">Hire</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="guide_card">
+                                    <div class="guide_card_image">
+                                        <img class="guide_card_image_img" src="app/img/guides_drivers/rectangle4.jpg" alt="">
+                                    </div>
+                                    <div class="guide_card_info">
+                                        <h1 class="guide_card_info_name">Alexa Richardson</h1>
+                                        <p class="guide_card_info_time">120 times tour</p>
+                                        <p class="guide_card_info_lang">Spanish,turkish</p>
+                                        <div class="guide_card_info_icons">
+                                            <button class="busy">Busy</button>
+                                            <img class="icon_img" src="app/img/guides_drivers/group-4.svg" alt="">
+                                            <img class="icon_img" src="app/img/guides_drivers/user.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="guide_card_hirebuttons">
+                                        <img src="app/img/guides_drivers/star.svg" alt="">
+                                        <img src="app/img/guides_drivers/star.svg" alt="">
+                                        <img src="app/img/guides_drivers/star.svg" alt="">
+                                        <img src="app/img/guides_drivers/star.svg" alt="">
+                                        <img src="app/img/guides_drivers/star.svg" alt=""><span>(23)</span>
+                                        <div class="guide_card_hirebuttons_btn">
+                                            <a href="#" class="btnguide ">Details</a>
+                                            <a href="#" class="btnguide activeguide">Hire</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer  -->
+    <footer>
+        <div class="container">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="social">
+                            <div class="logo">
+                                <a href="index.html"><img src="app/img/footer/logo-dark.svg" alt=""></a>
+                            </div>
+                            <div class="description">
+                                <p>Mursheed helps you to have an unforgettable experience anywhere you travel to. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <p class="header-text">Site map</p>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="">Guides & Drivers</a></li>
+                            <li><a href="offers.html">Offers</a></li>
+                            <li><a href="support.html">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <p class="header-text">More</p>
+                        <ul>
+                            <li><a href="terms_conditions.html">Terms & conditions</a></li>
+                            <li><a href="privacypolicy.html">Privacy policy</a></li>
+                            <li><a href="">Cookies</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <div class="contact">
+                            <p class="header-text">Contact us</p>
+                            <ul>
+                                <li><a href="">info@mursheed.com</a></li>
+                                <li><a href="">+994 50 808 08 01</a></li>
+                            </ul>
+                            <p class="header-text">Subscribe</p>
+                            <div class="send pt-2">
+                                <input autocomplete="off" placeholder="your email address" type="text">
+                                <button><img src="app/img/footer/send.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12">
+                    <div class="social-icons ">
+                        <ul>
+                            <li class="head">
+                                <h2>Follow Us</h2>
+                            </li>
+                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i style="color:#C7C7C7;" class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-linkedin-in"></i></li>
+                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-whatsapp"></i></a></li>
+                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-snapchat-ghost"></i></a></li>
+                            <li><a href=""><i style="color:#C7C7C7;" class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+
+
+    <script src="app/libs/swiper/swiper.js"></script>
+    <script src="app/js/big_slider.js"></script>
+    <script src="app/js/atractive_places_slider.js"></script>
+    <script src="app/js/driverSlider.js"></script>
+    <script src="app/js/partners.js"></script>
+    <script src="app/js/main.js"></script>
+    <script src="app/js/topNav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script src="app/js/multiform.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app/js/search_selectbox.js"></script>
+    <script src="app/js/select2.js"></script>
+    <script src="app/js/accordionmenu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="app/js/range_slider.js"></script>
+    <script src="app/js/toggle_menus.js"></script>
+</body>

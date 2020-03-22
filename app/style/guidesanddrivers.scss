@@ -1,0 +1,532 @@
+$main-color:#0b8071;
+$bg-color: #f7f7f7;
+.container {
+    .guide_container {
+        .control2 {
+            font-family: arial;
+            display: block;
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 5px;
+            padding-top: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .control2 input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+        .control_indicator {
+            position: absolute;
+            top: 2px;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background: #e6e6e6;
+            border: 0px solid #000000;
+            border-radius: undefinedpx;
+        }
+        .control2:hover input~.control_indicator,
+        .control2 input:focus~.control_indicator {
+            background: #cccccc;
+        }
+        .control2 input:checked~.control_indicator {
+            background: #0b8071;
+        }
+        .control:hover input:not([disabled]):checked~.control_indicator,
+        .control2 input:checked:focus~.control_indicator {
+            background: $main-color;
+        }
+        .control2 input:disabled~.control_indicator {
+            background: #e6e6e6;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+        .control_indicator:after {
+            box-sizing: unset;
+            content: '';
+            position: absolute;
+            display: none;
+        }
+        .control2 input:checked~.control_indicator:after {
+            display: block;
+        }
+        .control-radio .control_indicator {
+            border-radius: 50%;
+        }
+        .control-radio .control_indicator:after {
+            left: 7px;
+            top: 7px;
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background: #ffffff;
+            transition: background 250ms;
+        }
+        .control-radio input:disabled~.control_indicator:after {
+            background: #7b7b7b;
+        }
+        .control-radio .control_indicator::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4.5rem;
+            height: 4.5rem;
+            margin-left: -1.3rem;
+            margin-top: -1.3rem;
+            background: #2aa1c0;
+            border-radius: 3rem;
+            opacity: 0.6;
+            z-index: 99999;
+            transform: scale(0);
+        }
+        @keyframes s-ripple {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            20% {
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0.01;
+                transform: scale(1);
+            }
+        }
+        @keyframes s-ripple-dup {
+            0% {
+                transform: scale(0);
+            }
+            30% {
+                transform: scale(1);
+            }
+            60% {
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
+        .control-radio input+.control_indicator::before {
+            animation: s-ripple 250ms ease-out;
+        }
+        .control-radio input:checked+.control_indicator::before {
+            animation-name: s-ripple-dup;
+        }
+        .control {
+            font-family: arial;
+            display: block;
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 5px;
+            padding-top: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .control input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+        .control_indicator {
+            position: absolute;
+            top: 2px;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background: #e6e6e6;
+            border: 0px solid #000000;
+            border-radius: 0px;
+        }
+        .control:hover input~.control_indicator,
+        .control input:focus~.control_indicator {
+            background: #cccccc;
+        }
+        .control input:checked~.control_indicator {
+            background: #0b8071;
+        }
+        .control:hover input:not([disabled]):checked~.control_indicator,
+        .control input:checked:focus~.control_indicator {
+            background: $main-color
+        }
+        .control input:disabled~.control_indicator {
+            background: #e6e6e6;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+        .control_indicator:after {
+            box-sizing: unset;
+            content: '';
+            position: absolute;
+            display: none;
+        }
+        .control input:checked~.control_indicator:after {
+            display: block;
+        }
+        .control-checkbox .control_indicator:after {
+            left: 8px;
+            top: 4px;
+            width: 3px;
+            height: 8px;
+            border: solid #ffffff;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+        .control-checkbox input:disabled~.control_indicator:after {
+            border-color: #7b7b7b;
+        }
+        .control-checkbox .control_indicator::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4.5rem;
+            height: 4.5rem;
+            margin-left: -1.3rem;
+            margin-top: -1.3rem;
+            background: $main-color;
+            border-radius: 3rem;
+            opacity: 0.6;
+            z-index: 99999;
+            transform: scale(0);
+        }
+        @keyframes s-ripple {
+            0% {
+                transform: scale(0);
+            }
+            20% {
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
+        @keyframes s-ripple-dup {
+            0% {
+                transform: scale(0);
+            }
+            30% {
+                transform: scale(1);
+            }
+            60% {
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
+        .control-checkbox input+.control_indicator::before {
+            animation: s-ripple 250ms ease-out;
+        }
+        .control-checkbox input:checked+.control_indicator::before {
+            animation-name: s-ripple-dup;
+        }
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        .guide_col1 {
+            flex: 1;
+            .guide_filter {
+                border-radius: 10px;
+                border: 1px solid $main-color;
+                padding: 15px;
+                margin-bottom: 15px !important;
+                &_label {
+                    display: block;
+                }
+            }
+            .guide_search {
+                background-color: $bg-color;
+                border-radius: 10px;
+                &_header {
+                    padding-bottom: 5px;
+                    padding-top: 5px;
+                    border-bottom: 1px solid rgb(223, 223, 223) !important;
+                    display: flex;
+                    padding: 15px;
+                    justify-content: space-between;
+                    .gui_head_search {
+                        font-size: 1.2em;
+                    }
+                    .gui_head_sifir {
+                        color: $main-color;
+                    }
+                }
+                &_content {
+                    padding: 15px;
+                    &_header {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    &_bottom {
+                        border-top: 2px solid rgb(223, 223, 223) !important;
+                        padding-top: 10px;
+                        margin-top: 10px;
+                        .range_slide {
+                            position: relative;
+                            border-radius: 50%;
+                            width: 40px;
+                            height: 40px;
+                            border: 1px solid $main-color;
+                        }
+                        select {
+                            width: 100%;
+                        }
+                        input[type=range] {
+                            -webkit-appearance: none;
+                            width: 100%;
+                            margin: 12.65px 0;
+                        }
+                        input[type=range]:focus {
+                            outline: none;
+                        }
+                        input[type=range]::-webkit-slider-runnable-track {
+                            width: 100%;
+                            height: 5.7px;
+                            cursor: pointer;
+                            box-shadow: 0.9px 0.9px 1.7px #002200, 0px 0px 0.9px #003c00;
+                            background: rgba(119, 119, 119, 0.4);
+                            border-radius: 25px;
+                            border: 0.1px solid #18d501;
+                        }
+                        input[type=range]::-webkit-slider-thumb {
+                            box-shadow: 0px 0px 1.6px #0b8071, 0px 0px 0px #0d9786;
+                            border: 4.1px solid #0b8071;
+                            height: 31px;
+                            width: 30px;
+                            border-radius: 50px;
+                            background: #ffffff;
+                            cursor: pointer;
+                            -webkit-appearance: none;
+                            margin-top: -12.75px;
+                        }
+                        input[type=range]:focus::-webkit-slider-runnable-track {
+                            background: rgba(132, 132, 132, 0.4);
+                        }
+                        input[type=range]::-moz-range-track {
+                            width: 100%;
+                            height: 5.7px;
+                            cursor: pointer;
+                            box-shadow: 0.9px 0.9px 1.7px #002200, 0px 0px 0.9px #003c00;
+                            background: rgba(119, 119, 119, 0.4);
+                            border-radius: 25px;
+                            border: 0.1px solid #18d501;
+                        }
+                        input[type=range]::-moz-range-thumb {
+                            box-shadow: 0px 0px 1.6px #0b8071, 0px 0px 0px #0d9786;
+                            border: 4.1px solid #0b8071;
+                            height: 31px;
+                            width: 30px;
+                            border-radius: 50px;
+                            background: #ffffff;
+                            cursor: pointer;
+                        }
+                        input[type=range]::-ms-track {
+                            width: 100%;
+                            height: 5.7px;
+                            cursor: pointer;
+                            background: transparent;
+                            border-color: transparent;
+                            color: transparent;
+                        }
+                        input[type=range]::-ms-fill-lower {
+                            background: rgba(106, 106, 106, 0.4);
+                            border: 0.1px solid #18d501;
+                            border-radius: 50px;
+                            box-shadow: 0.9px 0.9px 1.7px #002200, 0px 0px 0.9px #003c00;
+                        }
+                        input[type=range]::-ms-fill-upper {
+                            background: rgba(119, 119, 119, 0.4);
+                            border: 0.1px solid #18d501;
+                            border-radius: 50px;
+                            box-shadow: 0.9px 0.9px 1.7px #002200, 0px 0px 0.9px #003c00;
+                        }
+                        input[type=range]::-ms-thumb {
+                            box-shadow: 0px 0px 1.6px #0b8071, 0px 0px 0px #0d9786;
+                            border: 4.1px solid #0b8071;
+                            height: 31px;
+                            width: 30px;
+                            border-radius: 50px;
+                            background: #ffffff;
+                            cursor: pointer;
+                            height: 5.7px;
+                        }
+                        input[type=range]:focus::-ms-fill-lower {
+                            background: rgba(119, 119, 119, 0.4);
+                        }
+                        input[type=range]:focus::-ms-fill-upper {
+                            background: rgba(132, 132, 132, 0.4);
+                        }
+                    }
+                }
+            }
+        }
+        .guide_col2 {
+            flex: 3;
+            margin-left: 15px !important;
+            margin-top: 10px;
+            &_container {
+                background-color: $bg-color;
+                .guide_head {
+                    padding: 15px;
+                    &_title {
+                        font-size: 1.5em;
+                    }
+                }
+                .guide_col2_contant {
+                    padding: 15px;
+                    .guide_row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .guide_col_12 {
+                            flex: 100%;
+                            .guide_card {
+                                display: flex;
+                                flex-wrap: wrap;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                border-bottom: 2px solid #d6d6d6;
+                                .guide_card_image {
+                                    flex: 1;
+                                    width: 140px;
+                                    height: 140px;
+                                    margin-right: 15px;
+                                    .guide_card_image_img {
+                                        width: 140px;
+                                        height: 140px;
+                                        object-fit: cover;
+                                    }
+                                }
+                                &_info {
+                                    flex: 3;
+                                    position: relative;
+                                    top: -20px;
+                                    &_name {
+                                        font-size: 1.6em;
+                                        color: black;
+                                        margin-top: 20px;
+                                    }
+                                    &_time {
+                                        color: black;
+                                        margin-bottom: 5px;
+                                    }
+                                    &_lang {
+                                        color: black;
+                                        margin-bottom: 10px;
+                                    }
+                                    &_icons {
+                                        margin-top: 20px;
+                                        .busy {
+                                            background-color: #b73838;
+                                            border-radius: 2px;
+                                            border: 0;
+                                            color: white;
+                                            width: 50px;
+                                        }
+                                        .avaible {
+                                            background-color: #38b77b;
+                                            border-radius: 2px;
+                                            border: 0;
+                                            color: white;
+                                            width: 90px;
+                                        }
+                                        .icon_img {
+                                            position: relative;
+                                            top: 5px;
+                                        }
+                                    }
+                                }
+                                &_hirebuttons {
+                                    flex: 1;
+                                    &_btn {
+                                        .btnguide {
+                                            display: block;
+                                            text-align: center;
+                                            margin-top: 10px;
+                                            color: black;
+                                            padding: 5px;
+                                            margin-bottom: 10px;
+                                            border-radius: 4px;
+                                            border: 1px solid $main-color;
+                                        }
+                                        .activeguide {
+                                            background-color: $main-color;
+                                            color: white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:740px) {
+    .guide_container {
+        display: flex;
+        flex-direction: column;
+        .guide_col2 {
+            margin-left: 0 !important;
+            width: 100%;
+            .guide_col2_container {
+                .guide_col2_contant {
+                    .guide_row {
+                        .guide_col_12 {
+                            .guide_card {
+                                flex-direction: column;
+                                .guide_card_image {
+                                    width: 100%;
+                                    height: 500px;
+                                    .guide_card_image_img {
+                                        width: 100%;
+                                        height: 500px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:460px) {
+    .guide_container {
+        display: flex;
+        flex-direction: column;
+        .guide_col2 {
+            margin-left: 0 !important;
+            width: 100%;
+            .guide_col2_container {
+                .guide_col2_contant {
+                    .guide_row {
+                        .guide_col_12 {
+                            .guide_card {
+                                flex-direction: column;
+                                .guide_card_image {
+                                    width: 100%;
+                                    height: 300px;
+                                    .guide_card_image_img {
+                                        width: 100%;
+                                        height: 300px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
