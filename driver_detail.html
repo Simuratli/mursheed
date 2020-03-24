@@ -10,6 +10,7 @@
     <link rel="stylesheet" media="all" href="app/style/main.css" type="text/css">
     <link rel="stylesheet" href="app/style/css/select2.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="app/style/magiczoomplus.css">
     <title>Murheed</title>
 </head>
 
@@ -97,7 +98,7 @@
             <div class="openmenu">
                 <a class="openmenu_item" href="#">Home</a>
                 <a class="openmenu_item" href="about.html">About</a>
-                <a class="openmenu_item" href="#">Guides & Drivers</a>
+                <a class="openmenu_item" href="guide_and_drivers.html">Guides & Drivers</a>
                 <a class="openmenu_item" href="accomadation.html">Accomadation</a>
                 <a class="openmenu_item" href="flight.html">Flight Reservation</a>
                 <a class="openmenu_item" href="attractive_locations.html">Attractive Places</a>
@@ -115,7 +116,7 @@
             <div class="navcontainer">
                 <a class="bottomnav_item active" href="#">Home</a>
                 <a class="bottomnav_item " href="about.html">About</a>
-                <a class="bottomnav_item " href="#">Guides & Drivers</a>
+                <a class="bottomnav_item " href="guide_and_drivers.html">Guides & Drivers</a>
                 <a class="bottomnav_item " href="accomadation.html">Accomadation</a>
                 <a class="bottomnav_item " href="flight.html">Flight Reservation</a>
                 <a class="bottomnav_item " href="attractive_locations.html">Attractive Places</a>
@@ -123,147 +124,116 @@
         </div>
     </div>
 
+
     <div class="siteNavigation">
         <div class="container navigation">
             <a class="navigation__item" href="index.html">Home</a>
             <span><i><i class="fas fa-chevron-right"></i></i></span>
-            <a class="navigation__item active" href="accomadation.html">Accomadation</a>
+            <a class="navigation__item active" href="flight.html">Driver</a>
         </div>
     </div>
-
-
 
 
     <div class="container">
-        <div class="accomadation_container">
-            <div class="accomadation_col1">
-                <div class="accomadation_filter">
-                    <label class="accomadation_filter_label" for="otel">
-                        <input type="radio" name="filter" id="otel">Otel
-                    </label>
-                    <label class="accomadation_filter_label" for="menzil">
-                        <input type="radio" name="filter" id="menzil">Mənzillər
-                    </label>
+        <div class="driver_detail_container">
+            <div class="guide_row">
+                <div class="guide_col_12">
+                    <div class="guide_card">
+                        <div class="guide_card_image">
+                            <img class="guide_card_image_img" src="app/img/guides_drivers/rectangle4.jpg" alt="">
+                        </div>
+                        <div class="guide_card_info">
+                            <h1 class="guide_card_info_name">Alexa Richardson</h1>
+                            <p class="guide_card_info_time">120 times tour</p>
+                            <p class="guide_card_info_lang">Spanish,turkish</p>
+                            <div class="guide_card_info_icons">
+                                <button class="avaible">Avaible</button>
+                                <img class="icon_img" src="app/img/guides_drivers/group-4.svg" alt="">
+                                <img class="icon_img" src="app/img/guides_drivers/user.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="guide_card_hirebuttons">
+                            <img src="app/img/guides_drivers/star.svg" alt="">
+                            <img src="app/img/guides_drivers/star.svg" alt="">
+                            <img src="app/img/guides_drivers/star.svg" alt="">
+                            <img src="app/img/guides_drivers/star.svg" alt="">
+                            <img src="app/img/guides_drivers/star.svg" alt=""><span>(23)</span>
+                            <div class="guide_card_hirebuttons_btn">
+                                <a href="#" class="btnguide ">Details</a>
+                                <a href="#" class="btnguide activeguide">Hire</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="accomadation_search">
-                    <div class="accomadation_search_header">
-                        <div class="acc_head_search">Search</div>
-                        <a class="acc_head_sifir" href="#">Sıfırlayın</a>
-                    </div>
-                    <div class="accomadation_search_content">
-                        <div id="accomadation_search_content_header1" class="accomadation_search_content_header">
-                            <div>Otaga gore</div>
-                            <a href="#">+</a>
-                        </div>
-                        <div id="accomadation_search_content_bottom1" class="accomadation_search_content_bottom">
-                            <select aria-placeholder="Room" required multiple='multiple' class="country-selector ">
-                                <option >1</option>
-                                <option value="AL">1</option>
-                               <option value="WY">2</option>
-                          </select>
-                        </div>
-                    </div>
-                    <div class="accomadation_search_content">
-                        <div id="accomadation_search_content_header2" class="accomadation_search_content_header">
-                            <div>Qiymətə görə</div>
-                            <a href="#">+</a>
-                        </div>
-                        <div id="accomadation_search_content_bottom2" class="accomadation_search_content_bottom">
-                            <form action="">
-                                <div align='center'>
-                                    <p>
-                                        <input type="text" id="amount" style="border:0; color:#0b8071; background-color: transparent; font-weight:bold;">
-                                    </p>
+            </div>
 
-                                    <div id="slider-range"></div>
-                                </div>
+            <br>
 
-                            </form>
+            <div class="driver_detail_slider">
+
+
+                <div id="driver_details" class="swiper-container">
+                    <div class="driver_details_cars_header">
+                        <h6>Car photos</h6>
+
+                        <div class="driver_details_cars_inside_next_prev">
+                            <div class="swiper-button-next">
+                            </div>
+                            <div class="swiper-button-prev">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a id="Zoom-1" class="MagicZoom" href="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-zoom-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80"
+                                class="MagicZoom" id="zoom" data-options="zoomMode: off; zoomOn: click"><img src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a id="Zoom-1" class="MagicZoom" href="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-zoom-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80"
+                                class="MagicZoom" id="zoom" data-options="zoomMode: off; zoomOn: click"><img src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a id="Zoom-1" class="MagicZoom" href="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-zoom-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80"
+                                class="MagicZoom" id="zoom" data-options="zoomMode: off; zoomOn: click"><img src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a id="Zoom-1" class="MagicZoom" href="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-zoom-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80"
+                                class="MagicZoom" id="zoom" data-options="zoomMode: off; zoomOn: click"><img src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a id="Zoom-1" class="MagicZoom" href="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-zoom-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80"
+                                class="MagicZoom" id="zoom" data-options="zoomMode: off; zoomOn: click"><img src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a id="Zoom-1" class="MagicZoom" href="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-zoom-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80"
+                                class="MagicZoom" id="zoom" data-options="zoomMode: off; zoomOn: click"><img src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" alt=""></a>
                         </div>
                     </div>
 
                 </div>
             </div>
-            <div class="accomadation_col2">
-                <div class="accomadation_col2_container">
-                    <div class="accomadation_head">
-                        <h1 class="accomadation_head_title">Məskənlər (13)</h1>
-                    </div>
-                    <div class="accomadation_col2_contant">
-                        <div class="accomadation_row">
-                            <div class="acc_col_4">
-                                <a class="acc_fulimg_card_link" href="accomadation_detail.html">
-                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-thumb.jpg);">
-                                        <div class="ful_img_text">
-                                            <h5 class="acc_where">Theatre</h5>
-                                            <h6 class="type_acc">Oteller</h6>
-                                            <h6 class="country_acc">Azerbaijan Baku</h6>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="acc_col_4">
-                                <a class="acc_fulimg_card_link" href="accomadation_detail.html">
-                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-thumb.jpg);">
-                                        <div class="ful_img_text">
-                                            <h5 class="acc_where">Theatre</h5>
-                                            <h6 class="type_acc">Oteller</h6>
-                                            <h6 class="country_acc">Azerbaijan Baku</h6>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="acc_col_4">
-                                <a class="acc_fulimg_card_link" href="accomadation_detail.html">
-                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-thumb.jpg);">
-                                        <div class="ful_img_text">
-                                            <h5 class="acc_where">Theatre</h5>
-                                            <h6 class="type_acc">Oteller</h6>
-                                            <h6 class="country_acc">Azerbaijan Baku</h6>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="acc_col_4">
-                                <a class="acc_fulimg_card_link" href="accomadation_detail.html">
-                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-thumb.jpg);">
-                                        <div class="ful_img_text">
-                                            <h5 class="acc_where">Theatre</h5>
-                                            <h6 class="type_acc">Oteller</h6>
-                                            <h6 class="country_acc">Azerbaijan Baku</h6>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="acc_col_4">
-                                <a class="acc_fulimg_card_link" href="accomadation_detail.html">
-                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-thumb.jpg);">
-                                        <div class="ful_img_text">
-                                            <h5 class="acc_where">Theatre</h5>
-                                            <h6 class="type_acc">Oteller</h6>
-                                            <h6 class="country_acc">Azerbaijan Baku</h6>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="acc_col_4">
-                                <a class="acc_fulimg_card_link" href="accomadation_detail.html">
-                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-thumb.jpg);">
-                                        <div class="ful_img_text">
-                                            <h5 class="acc_where">Theatre</h5>
-                                            <h6 class="type_acc">Oteller</h6>
-                                            <h6 class="country_acc">Azerbaijan Baku</h6>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
 
-                        </div>
-                    </div>
+
+            <div class="table_container">
+                <div class="head_table">
+                    <h3>Marsurutlar</h3>
                 </div>
+                <table class="table">
+                    <tr>
+                        <th>id</th>
+                        <th>from</th>
+                        <th>to</th>
+                        <th>price</th>
+                        <th>info</th>
+                    </tr>
+                </table>
             </div>
+
         </div>
+
     </div>
+
+
 
 
     <!-- footer  -->
@@ -319,7 +289,7 @@
                     <div class="social-icons ">
                         <ul>
                             <li class="head">
-                                <h2>Follow Us</h2>
+                                <h2 class="head_h2">Follow Us</h2>
                             </li>
                             <li><a href=""><i style="color:#C7C7C7; " class="fab fa-facebook-f"></i></a></li>
                             <li><a href=""><i style="color:#C7C7C7; " class="fab fa-instagram"></i></a></li>
@@ -333,6 +303,7 @@
                 </div>
             </div>
     </footer>
+
 
 
     <script src="app/libs/swiper/swiper.js"></script>
@@ -351,4 +322,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="app/js/range_slider.js"></script>
     <script src="app/js/toggle_menus.js"></script>
+    <script src="app/js/magiczoomplus.js"></script>
+    <script src="app/js/popupimg.js"></script>
+    <script src="app/js/driver_detail.js"></script>
 </body>

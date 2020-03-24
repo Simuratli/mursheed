@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" media="all" href="app/libs/swiper/swiper.css" type="text/css" />
+    <link rel="stylesheet" media="all" href="app/style/reset.css" type="text/css">
+    <link rel="stylesheet" media="all" href="app/style/main.css" type="text/css">
+    <link rel="stylesheet" href="app/style/css/select2.css">
+    <link rel="stylesheet" href="app/style/magiczoomplus.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" />
+    <title>Murheed</title>
+</head>
+
+<body>
+
+    <div class="topNav">
+        <div class="container">
+            <div class="topnavcontainer">
+                <div class="firstcontainer">
+                    <div class="currency">
+                        <form>
+                            <select>
+                        <option class="optioncurrency">USD</option>
+                        <option class="optioncurrency">AZN</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="language">
+                        <form>
+                            <select>
+                        <option class="optionlang">Azerbaijan</option>
+                        <option class="optionlang">English</option>
+                    </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="secondcontainer">
+                    <div class="support">
+                        <a class="supportItem" href="support.html">Support</a>
+                        <a class="supportItem" href="contact.html">Contact Us</a>
+                    </div>
+                    <div id="dropLogBtn" class="profile" style="background-image: url(img/profile/user.jpg)">
+                        <div id="loggedid">
+                            <a class="loggediditem" href="#">Login</a>
+                            <a class="loggediditem" href="register_chosing.html">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- center nav  -->
+
+    <div class="centerNav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="app/img/header/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="rightContent">
+                <div class="currency">
+                    <span class="currencyText">Currency</span>
+                    <form>
+                        <select>
+                            <option class="optioncurrency">USD</option>
+                            <option class="optioncurrency">AZN</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="language">
+                    <span class="langText">Language</span>
+                    <form>
+                        <select>
+                            <option class="optionlang">Azerbaijan</option>
+                            <option class="optionlang">English</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="loginbuttons">
+                    <a href='login.html' class="loginbtn btn">Login</button>
+                    <a href="register.html" class="registerbtn btn">Register</a>
+                </div>
+                <div id="hamburger" class="barIcon">
+                    <p class="line"></p>
+                    <p class="line"></p>
+                    <p class="line"></p>
+                </div>
+            </div>
+
+        </div>
+        <div id="openmenu" class="container menucontainer">
+            <div class="openmenu">
+                <a class="openmenu_item" href="#">Home</a>
+                <a class="openmenu_item" href="about.html">About</a>
+                <a class="openmenu_item" href="guide_and_drivers.html">Guides & Drivers</a>
+                <a class="openmenu_item" href="accomadation.html">Accomadation</a>
+                <a class="openmenu_item" href="flight.html">Flight Reservation</a>
+                <a class="openmenu_item" href="attractive_locations.html">Attractive Places</a>
+                <a class="openmenu_item" href="#">Offers</a>
+                <a class="openmenu_item" href="#">Support</a>
+                <a class="openmenu_item" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bottom nav  -->
+    <div class="bottomNav">
+        <div class="container">
+            <div class="navcontainer">
+                <a class="bottomnav_item active" href="#">Home</a>
+                <a class="bottomnav_item " href="about.html">About</a>
+                <a class="bottomnav_item " href="guide_and_drivers.html">Guides & Drivers</a>
+                <a class="bottomnav_item " href="accomadation.html">Accomadation</a>
+                <a class="bottomnav_item " href="flight.html">Flight Reservation</a>
+                <a class="bottomnav_item " href="attractive_locations.html">Attractive Places</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="driver_profile_container">
+            <div class="driver_profile_col1">
+                <div class="profile_navigator">
+                    <ul class="profile_nav_ul">
+                        <li><a class="profile_nav_link" href="#tab1">Personal info</a></li>
+                        <li><a class="profile_nav_link " href="#tab2">Car</a></li>
+                        <li><a class="profile_nav_link" href="#tab3">Rides Table</a></li>
+                        <li><a class="profile_nav_link" href="#tab4">Routes</a></li>
+                        <li><a class="profile_nav_link" href="#tab5">Packages</a></li>
+                        <li><a class="profile_nav_link" href="#tab6">Comments</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="driver_profile_col2">
+                <div class="driverProfile_card">
+                    <div class="driverProfile_card_img">
+                        <img src="app/img/popular_location/rectangle2.jpg" alt="">
+                    </div>
+                    <div class="driverProfile_card_name">
+                        <h1>Vilayat Muslumzada</h1>
+                        <p>User since date (12.12.19- 120 days)</p>
+                    </div>
+                </div>
+
+                <div class="drivers_input_area">
+                    <form id='tab1' class="tab_content">
+                        <div class="inputs">
+                            <label for="name">Company Name</label>
+                            <input autocomplete="off" id="name" type="text" placeholder="Your Company Name">
+                        </div>
+                        <div class="inputs">
+                            <label for="name">Age Name</label>
+                            <input autocomplete="off" id="name" type="text" placeholder="Your Company Name">
+                        </div>
+                        <label class="required" for="">
+                            Add language
+                        </label>
+                        <div class="custom-selectbox w-trash">
+                            <select>
+                                    <option value="0">All languages</option>
+                                    <option value="1">English</option>
+                                    <option value="2">Russian</option>
+                                </select>
+                            <div class="trash">
+                                <i class="fas fa-trash"></i>
+                            </div>
+                        </div>
+
+                        <div class="add_lang">
+                            <i class="fas fa-plus"></i>
+                            <p>add language</p>
+                        </div>
+                        <div class="save">
+                            <button class="save-btn">Save changes</button>
+                        </div>
+                    </form>
+                    <form id='tab2' class="tab_content">
+                        <div class="inputs">
+
+                            <div class="custom-selectbox">
+                                <label class="required" for="">
+                                    Add language
+                                </label>
+                                <select>
+                                    <option value="0">All languages</option>
+                                    <option value="1">English</option>
+                                    <option value="2">Russian</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="inputs">
+                            <label class="required" for="">
+                                Add language
+                            </label>
+                            <div class="custom-selectbox">
+                                <select>
+                                    <option value="0">All languages</option>
+                                    <option value="1">English</option>
+                                    <option value="2">Russian</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="inputs">
+
+                            <div class="custom-selectbox">
+                                <label class="required" for="">
+                                    Add language
+                                </label>
+                                <select>
+                                    <option value="0">All languages</option>
+                                    <option value="1">English</option>
+                                    <option value="2">Russian</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class='file-input'>
+                            <label for="file">
+                                <span class='button'><img src="app/img/profile/upload.svg" alt=""></span>
+                                <span class='label' data-js-label>upload image</label>
+                            <input id="file" autocomplete="off" type='file'>
+                            </label>
+
+
+                        </div>
+
+                        <div class="save">
+                            <button class="save-btn">Save changes</button>
+                        </div>
+                    </form>
+
+
+                    <form id="tab3" class="tab_content">
+                        <div class="inputs">
+                            <label for="tourist_name">Tourist name</label>
+                            <input autocomplete="off" id="tourist_name" type="text" placeholder="Tourist name">
+                        </div>
+                        <p>Journey</p>
+                        <div class="journey">
+                            <div class="inputs">
+                                <label for="price">Price</label>
+                                <input autocomplete="off" id="price" type="text" placeholder="580$">
+                            </div>
+                            <div class="inputs">
+                                <label for="start">Start date</label>
+                                <input autocomplete="off" type="date" placeholder="Date">
+                            </div>
+                            <div class="inputs">
+                                <label for="End">End date</label>
+                                <input autocomplete="off" type="date" placeholder="Date">
+                            </div>
+                        </div>
+                        <div class="save">
+                            <button class="save-btn">Save changes</button>
+                        </div>
+                    </form>
+
+
+
+
+                    <form id="tab4" class="tab_content">
+                        <p class="heading">Add new route</p>
+                        <div class="new_route">
+                            <div class="inputs">
+                                <label for="">From</label>
+                                <div class="custom-selectbox ">
+                                    <select>
+                                        <option value="0">All languages</option>
+                                        <option value="1">English</option>
+                                        <option value="2">Russian</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="inputs">
+                                <label for="">To</label>
+                                <div class="custom-selectbox ">
+                                    <select>
+                                        <option value="0">All languages</option>
+                                        <option value="1">English</option>
+                                        <option value="2">Russian</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="inputs cost">
+                                <label for="">Route Cost</label>
+                                <p>100$</p>
+                            </div>
+                        </div>
+                        <p class="heading">All routes</p>
+                        <div class="all_routes details">
+                            <div class="thead">
+                                <ul>
+                                    <li>FROM</li>
+                                    <li>TO</li>
+                                    <li>COST</li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="line"></div>
+                            <div class="tbody">
+                                <ul>
+                                    <li>Baku</li>
+                                    <li>Nakhcivan</li>
+                                    <li>300$</li>
+                                    <li class="icons">
+                                        <i class="fas fa-pencil-alt"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>Baku</li>
+                                    <li>Nakhcivan</li>
+                                    <li>300$</li>
+                                    <li>
+                                        <i class="fas fa-pencil-alt"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </li>
+                                </ul>
+                                <ul>
+
+                                    <li>Baku</li>
+                                    <li>Nakhcivan</li>
+                                    <li>300$</li>
+                                    <li>
+                                        <i class="fas fa-pencil-alt"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>Baku</li>
+                                    <li>Nakhcivan</li>
+                                    <li>300$</li>
+                                    <li>
+                                        <i class="fas fa-pencil-alt"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>Baku</li>
+                                    <li>Nakhcivan</li>
+                                    <li>300$</li>
+                                    <li>
+                                        <i class="fas fa-pencil-alt"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <form id="tab5" class="tab_content">
+                        <div class="inputs">
+                            <label for="name">Package Name</label>
+                            <input autocomplete="off" id="name" type="text" placeholder="Your Package Name">
+                        </div>
+                        <div class="inputs">
+                            <label for="name">Package Price</label>
+                            <input autocomplete="off" id="name" type="text" placeholder="Your Package price">
+                        </div>
+                        <p class="heading">Add new route</p>
+                        <div class="new_route">
+                            <div class="inputs">
+                                <label for="">From</label>
+                                <div class="custom-selectbox ">
+                                    <select>
+                                        <option value="0">All languages</option>
+                                        <option value="1">English</option>
+                                        <option value="2">Russian</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="inputs">
+                                <label for="">To</label>
+                                <div class="custom-selectbox ">
+                                    <select>
+                                        <option value="0">All languages</option>
+                                        <option value="1">English</option>
+                                        <option value="2">Russian</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="inputs cost">
+                                <label for="">Route Cost</label>
+                                <p>100$</p>
+                            </div>
+                        </div>
+                        <p class="heading">All routes</p>
+                        <div class="all_routes details">
+                            <div class="thead">
+                                <ul>
+                                    <li>FROM</li>
+                                    <li>TO</li>
+                                    <li>COST</li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="line"></div>
+                            <div class="tbody">
+                                <ul>
+                                    <li>Baku</li>
+                                    <li>Nakhcivan</li>
+                                    <li>300$</li>
+                                    <li class="icons">
+                                        <i class="fas fa-pencil-alt"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>Baku</li>
+                                    <li>Nakhcivan</li>
+                                    <li>300$</li>
+                                    <li>
+                                        <i class="fas fa-pencil-alt"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </li>
+                                </ul>
+                                <ul>
+
+                                    <li>Baku</li>
+                                    <li>Nakhcivan</li>
+                                    <li>300$</li>
+                                    <li>
+                                        <i class="fas fa-pencil-alt"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>Baku</li>
+                                    <li>Nakhcivan</li>
+                                    <li>300$</li>
+                                    <li>
+                                        <i class="fas fa-pencil-alt"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>Baku</li>
+                                    <li>Nakhcivan</li>
+                                    <li>300$</li>
+                                    <li>
+                                        <i class="fas fa-pencil-alt"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </form>
+
+
+                    <form id="tab6" class="tab_content">
+                        <div class="driver_detail_comment_card">
+                            <div class="driver_detail_comment_card_img">
+                                <img src="app/img/profile/rectangle.jpg" alt="">
+                            </div>
+                            <div class="driver_detail_comment_content">
+                                <h4>John Doe</h4>
+                                <div class="stars">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <span>19 June 2019</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fugit culpa soluta odio unde tenetur in provident veritatis asperiores, id voluptatibus iusto temporibus, nulla ipsa, dolores inventore hic laboriosam magnam?</p>
+
+                            </div>
+                        </div>
+                        <div class="driver_detail_comment_card">
+                            <div class="driver_detail_comment_card_img">
+                                <img src="app/img/profile/rectangle.jpg" alt="">
+                            </div>
+                            <div class="driver_detail_comment_content">
+                                <h4>John Doe</h4>
+                                <div class="stars">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <span>19 June 2019</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fugit culpa soluta odio unde tenetur in provident veritatis asperiores, id voluptatibus iusto temporibus, nulla ipsa, dolores inventore hic laboriosam magnam?</p>
+
+                            </div>
+                        </div>
+                        <div class="driver_detail_comment_card">
+                            <div class="driver_detail_comment_card_img">
+                                <img src="app/img/profile/rectangle.jpg" alt="">
+                            </div>
+                            <div class="driver_detail_comment_content">
+                                <h4>John Doe</h4>
+                                <div class="stars">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <img src="app/img/profile/star.svg" alt="">
+                                    <span>19 June 2019</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fugit culpa soluta odio unde tenetur in provident veritatis asperiores, id voluptatibus iusto temporibus, nulla ipsa, dolores inventore hic laboriosam magnam?</p>
+
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+        <div class="container">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="social">
+                            <div class="logo">
+                                <a href="index.html"><img src="app/img/footer/logo-dark.svg" alt=""></a>
+                            </div>
+                            <div class="description">
+                                <p>Mursheed helps you to have an unforgettable experience anywhere you travel to. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <p class="header-text">Site map</p>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="">Guides & Drivers</a></li>
+                            <li><a href="offers.html">Offers</a></li>
+                            <li><a href="support.html">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <p class="header-text">More</p>
+                        <ul>
+                            <li><a href="terms_conditions.html">Terms & conditions</a></li>
+                            <li><a href="privacypolicy.html">Privacy policy</a></li>
+                            <li><a href="">Cookies</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <div class="contact">
+                            <p class="header-text">Contact us</p>
+                            <ul>
+                                <li><a href="">info@mursheed.com</a></li>
+                                <li><a href="">+994 50 808 08 01</a></li>
+                            </ul>
+                            <p class="header-text">Subscribe</p>
+                            <div class="send pt-2">
+                                <input autocomplete="off" placeholder="your email address" type="text">
+                                <button><img src="app/img/footer/send.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12">
+                    <div class="social-icons ">
+                        <ul>
+                            <li class="head">
+                                <h2 class="head_h2">Follow Us</h2>
+                            </li>
+                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i style="color:#C7C7C7;" class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-linkedin-in"></i></li>
+                                <li><a href=""><i style="color:#C7C7C7; " class="fab fa-whatsapp"></i></a></li>
+                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-snapchat-ghost"></i></a></li>
+                            <li><a href=""><i style="color:#C7C7C7;" class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+
+
+    <script src="app/libs/swiper/swiper.js"></script>
+    <script src="app/js/big_slider.js"></script>
+    <script src="app/js/atractive_places_slider.js"></script>
+    <script src="app/js/driverSlider.js"></script>
+    <script src="app/js/partners.js"></script>
+    <script src="app/js/main.js"></script>
+    <script src="app/js/topNav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script src="app/js/multiform.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app/js/search_selectbox.js"></script>
+    <script src="app/js/select2.js"></script>
+    <script src="app/js/accordionmenu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="app/js/range_slider.js"></script>
+    <script src="app/js/toggle_menus.js"></script>
+    <script src="app/js/magiczoomplus.js"></script>
+    <script src="app/js/popupimg.js"></script>
+    <script src="app/js/driver_detail.js"></script>
+    <script src="app/js/tabs.js"></script>
+</body>

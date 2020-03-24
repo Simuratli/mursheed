@@ -1,0 +1,62 @@
+.acc_contain {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.acc_contain .container .acc_main_thumb {
+  width: 100%;
+}
+
+.acc_contain .container .acc_main_thumb .acc_main_thumbimg {
+  width: 100%;
+}
+
+.acc_contain .container .acc_bottom_thumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.acc_contain .container .acc_bottom_thumbs .accimg_div {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  margin-right: 5px;
+}
+
+.acc_contain .container .acc_bottom_thumbs .accimg_div:last-child {
+  margin-right: 0px !important;
+}
+
+.acc_contain .container .acc_bottom_thumbs img {
+  margin-right: 10px;
+  width: 100%;
+}
+
+.acc_contain .container .acc_bottom_features .features_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+
+.acc_contain .container .acc_bottom_features .features_container .features_container_element {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  color: #d3d2d2;
+  border: 1px solid #d3d2d2;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.acc_contain .container .acc_additional {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=accomadation_detail.css.map */

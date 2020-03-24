@@ -1,0 +1,214 @@
+.container .driver_detail_container {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+  width: 100%;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.container .driver_detail_container .driver_detail_slider {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container .driver_detail_container .guide_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container .driver_detail_container .guide_row .guide_col_12 {
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+}
+
+.container .driver_detail_container .guide_row .guide_col_12 .guide_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #d6d6d6;
+}
+
+.container .driver_detail_container .guide_row .guide_col_12 .guide_card .guide_card_image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 140px;
+  height: 140px;
+  margin-right: 15px;
+}
+
+.container .driver_detail_container .guide_row .guide_col_12 .guide_card .guide_card_image .guide_card_image_img {
+  width: 140px;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .driver_detail_container .guide_row .guide_col_12 .guide_card_info {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  position: relative;
+  top: -20px;
+}
+
+.container .driver_detail_container .guide_row .guide_col_12 .guide_card_info_name {
+  font-size: 1.6em;
+  color: black;
+  margin-top: 20px;
+}
+
+.container .driver_detail_container .guide_row .guide_col_12 .guide_card_info_time {
+  color: black;
+  margin-bottom: 5px;
+}
+
+.container .driver_detail_container .guide_row .guide_col_12 .guide_card_info_lang {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.container .driver_detail_container .guide_row .guide_col_12 .guide_card_info_icons {
+  margin-top: 20px;
+}
+
+.container .driver_detail_container .guide_row .guide_col_12 .guide_card_info_icons .busy {
+  background-color: #b73838;
+  border-radius: 2px;
+  border: 0;
+  color: white;
+  width: 50px;
+}
+
+.container .driver_detail_container .guide_row .guide_col_12 .guide_card_info_icons .avaible {
+  background-color: #38b77b;
+  border-radius: 2px;
+  border: 0;
+  color: white;
+  width: 90px;
+}
+
+.container .driver_detail_container .guide_row .guide_col_12 .guide_card_info_icons .icon_img {
+  position: relative;
+  top: 5px;
+}
+
+.container .driver_detail_container .guide_row .guide_col_12 .guide_card_hirebuttons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .driver_detail_container .guide_row .guide_col_12 .guide_card_hirebuttons_btn .btnguide {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #0b8071;
+}
+
+.container .driver_detail_container .guide_row .guide_col_12 .guide_card_hirebuttons_btn .activeguide {
+  background-color: #0b8071;
+  color: white;
+}
+
+.container .driver_detail_container .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.container .driver_detail_container .swiper-container .driver_details_cars_header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.container .driver_detail_container .swiper-container .driver_details_cars_header .driver_details_cars_inside_next_prev {
+  width: 85px;
+  position: relative;
+}
+
+.container .driver_detail_container .swiper-container .driver_details_cars_header .driver_details_cars_inside_next_prev .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  background: white;
+}
+
+.container .driver_detail_container .swiper-container .driver_details_cars_header .driver_details_cars_inside_next_prev .swiper-button-next::after {
+  content: url("../img/cars_modal/next.svg");
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.container .driver_detail_container .swiper-container .driver_details_cars_header .driver_details_cars_inside_next_prev .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  background: white;
+}
+
+.container .driver_detail_container .swiper-container .driver_details_cars_header .driver_details_cars_inside_next_prev .swiper-button-prev::after {
+  content: url("../img/cars_modal/prev.svg");
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.container .driver_detail_container .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container .driver_detail_container .table_container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container .driver_detail_container .table_container .table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #bebebe;
+}
+
+.container .driver_detail_container .table_container .table tr th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container .driver_detail_container .table_container .table tr td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/*# sourceMappingURL=driver_detail.css.map */

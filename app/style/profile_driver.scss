@@ -1,0 +1,219 @@
+$main-color:#0b8071;
+$bg-color: #f7f7f7;
+.container {
+    .driver_profile_container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        .driver_profile_col1 {
+            flex: 1;
+            .profile_navigator {
+                .profile_nav_ul {
+                    .profile_nav_link {
+                        background-color: $bg-color;
+                        display: block;
+                        padding: 15px;
+                        width: 80%;
+                        margin: 0 auto;
+                        border-bottom: 1px solid #d1d1d1;
+                        color: gray;
+                        &:hover {
+                            color: $main-color;
+                            border-right: 3px solid $main-color;
+                        }
+                    }
+                    .profile_nav_link.active {
+                        color: $main-color;
+                        border-right: 3px solid $main-color;
+                    }
+                }
+            }
+        }
+        .driver_profile_col2 {
+            flex: 2;
+            .driver_detail_comment_card {
+                display: flex !important;
+                .driver_detail_comment_card_img {
+                    flex: 1;
+                    width: 150px;
+                    height: 150px;
+                    margin-right: 10px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        margin-top: 20px;
+                        object-fit: cover;
+                    }
+                }
+                .driver_detail_comment_content {
+                    flex: 3;
+                }
+            }
+            .driverProfile_card {
+                display: flex;
+                flex-wrap: wrap;
+                &_img {
+                    width: 150px;
+                    height: 150px;
+                    margin-right: 15px !important;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .drivers_input_area {
+                background-color: $bg-color;
+                padding: 25px;
+                border-radius: 5px;
+                margin-top: 15px;
+                form {
+                    .inputs {
+                        width: 100%;
+                        margin-bottom: 15px;
+                        label {
+                            font-weight: bold;
+                        }
+                        input {
+                            width: 100%;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            font-size: 1em;
+                            background-color: $bg-color;
+                        }
+                    }
+                    .w-trash {
+                        width: 100% !important;
+                        display: flex;
+                        select {
+                            width: 100% !important;
+                            border-radius: 5px
+                        }
+                        .trash {
+                            width: 10%;
+                            border: 1px solid rgb(198, 199, 199);
+                            margin-left: 10px;
+                            border-radius: 5px;
+                            padding-top: 10px;
+                            padding-bottom: 5px;
+                            text-align: center;
+                            color: gray;
+                        }
+                    }
+                    .add_lang {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        border-radius: 5px;
+                        border: 1px solid rgb(198, 199, 199);
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        color: $main-color;
+                        p {
+                            margin-left: 15px;
+                        }
+                    }
+                    .save {
+                        width: 100%;
+                        text-align: right;
+                        button {
+                            width: 150px;
+                            height: 30px;
+                            background-color: $main-color;
+                            border: 0px;
+                            border-radius: 5px;
+                            color: white;
+                            font-size: 1em;
+                        }
+                    }
+                    .new_route {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        .inputs {
+                            flex: 1;
+                            margin-left: 10px;
+                        }
+                        .inputs:last-child {
+                            text-align: center;
+                        }
+                    }
+                    .all_routes {
+                        padding: 15px;
+                        .thead {
+                            width: 100%;
+                            ul {
+                                display: flex;
+                                margin-bottom: 5px;
+                                li {
+                                    flex: 1 1 auto;
+                                }
+                            }
+                        }
+                        .tbody {
+                            ul {
+                                margin-bottom: 15px;
+                                display: flex;
+                                li {
+                                    flex: 1 1 auto;
+                                }
+                            }
+                        }
+                        .line {
+                            width: 100%;
+                            height: 1px;
+                            margin-bottom: 5px;
+                        }
+                    }
+                    .file-input {
+                        cursor: pointer;
+                        text-align: center;
+                        border: 1px solid rgb(198, 199, 199);
+                        width: 100%;
+                        border-radius: 5px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        color: $main-color;
+                        margin-bottom: 15px;
+                        .button {
+                            margin-top: -10px !important;
+                        }
+                        input[type="file"] {
+                            width: 0.1px;
+                            height: 0.1px;
+                            opacity: 0;
+                            overflow: hidden;
+                            position: absolute;
+                            z-index: -1;
+                        }
+                    }
+                    .journey {
+                        border: 1px solid rgb(198, 199, 199);
+                        border-radius: 5px;
+                        padding: 20px;
+                        margin-bottom: 15px;
+                    }
+                    .custom-selectbox {
+                        label {
+                            font-weight: bold !important;
+                        }
+                        select {
+                            border-radius: 5px;
+                            width: 101%;
+                            padding-top: 10px !important;
+                            padding-bottom: 10px !important;
+                            background-color: $bg-color;
+                            font-size: 1em;
+                            color: gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
