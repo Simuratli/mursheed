@@ -1,0 +1,70 @@
+.container .input_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .input_container .offers_div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.container .input_container .offers_div .offer_inoutarea {
+  width: 300px;
+}
+
+.container .offer_cont_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .offer_cont_main .offers_col4 {
+  -ms-flex: 0 0 33.333333%;
+  -webkit-box-flex: 0;
+          flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  margin-top: 20px;
+}
+
+.container .offer_cont_main .offers_col4 .swiper_our_offers_partners_bottom_item {
+  border-radius: 3px;
+  text-align: left;
+  position: relative;
+  width: 85%;
+}
+
+.container .offer_cont_main .offers_col4 .swiper_our_offers_partners_bottom_item img {
+  width: 100%;
+}
+
+.container .offer_cont_main .offers_col4 .swiper_our_offers_partners_bottom_item .item_position_bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.container .offer_cont_main .offers_col4 .swiper_our_offers_partners_bottom_item .item_position_bottom .swiper_our_offers_partners_name {
+  margin-left: 12px;
+  font-family: Averta;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+}
+
+.container .offer_cont_main .offers_col4 .swiper_our_offers_partners_bottom_item .item_position_bottom p {
+  margin-left: 12px;
+  font-family: Averta;
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: white;
+}
+/*# sourceMappingURL=offers.css.map */

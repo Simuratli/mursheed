@@ -14,24 +14,37 @@
           flex: 1;
 }
 
-.container .driver_profile_container .driver_profile_col1 .profile_navigator .profile_nav_ul .profile_nav_link {
-  background-color: #f7f7f7;
+.container .driver_profile_container .driver_profile_col1 .profile_navigator .profile_nav_ul li {
   display: block;
   padding: 15px;
+  background-color: #f7f7f7;
+  display: block;
   width: 80%;
   margin: 0 auto;
   border-bottom: 1px solid #d1d1d1;
+}
+
+.container .driver_profile_container .driver_profile_col1 .profile_navigator .profile_nav_ul li a {
   color: gray;
 }
 
-.container .driver_profile_container .driver_profile_col1 .profile_navigator .profile_nav_ul .profile_nav_link:hover {
+.container .driver_profile_container .driver_profile_col1 .profile_navigator .profile_nav_ul li:hover {
   color: #0b8071;
   border-right: 3px solid #0b8071;
 }
 
-.container .driver_profile_container .driver_profile_col1 .profile_navigator .profile_nav_ul .profile_nav_link.active {
+.container .driver_profile_container .driver_profile_col1 .profile_navigator .profile_nav_ul li:hover a {
   color: #0b8071;
+}
+
+.container .driver_profile_container .driver_profile_col1 .profile_navigator .profile_nav_ul .activeprofile {
+  color: #0b8071 !important;
   border-right: 3px solid #0b8071;
+  display: block;
+}
+
+.container .driver_profile_container .driver_profile_col1 .profile_navigator .profile_nav_ul .activeprofile a {
+  color: #0b8071;
 }
 
 .container .driver_profile_container .driver_profile_col2 {
@@ -47,11 +60,11 @@
 }
 
 .container .driver_profile_container .driver_profile_col2 .driver_detail_comment_card .driver_detail_comment_card_img {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 150px;
-  height: 150px;
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+  width: 100px;
+  height: 100px;
   margin-right: 10px;
 }
 
@@ -67,6 +80,14 @@
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
+}
+
+.container .driver_profile_container .driver_profile_col2 .driver_detail_comment_card .driver_detail_comment_content h4 {
+  margin-bottom: -5px;
+}
+
+.container .driver_profile_container .driver_profile_col2 .driver_detail_comment_card .driver_detail_comment_content .stars span {
+  font-size: 0.8em;
 }
 
 .container .driver_profile_container .driver_profile_col2 .driverProfile_card {
@@ -99,11 +120,13 @@
 
 .container .driver_profile_container .driver_profile_col2 .drivers_input_area form .inputs {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 
 .container .driver_profile_container .driver_profile_col2 .drivers_input_area form .inputs label {
   font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .container .driver_profile_container .driver_profile_col2 .drivers_input_area form .inputs input {

@@ -73,8 +73,6 @@
 
 #swiper_our_offers_partners .swiper_our_offers_partners_bottom .swiper_our_offers_partners_bottom_center .swiper-container .swiper-wrapper .swiper-slide .swiper_our_offers_partners_bottom_item {
   margin: 1px;
-  -webkit-box-shadow: 0px 0px 0px 1px #c9c9c9;
-          box-shadow: 0px 0px 0px 1px #c9c9c9;
   border-radius: 3px;
   text-align: left;
   position: relative;
