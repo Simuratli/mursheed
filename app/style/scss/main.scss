@@ -1,0 +1,35 @@
+$main-color:#0b8071;
+$bg-color: #f7f7f7;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import "../../fonts/averta/stylesheet.css";
+@import '_accomadation_detail';
+@import '_accomadation_main';
+@import '_atractive_places';
+@import '_atractive_single';
+@import '_contact_us_page';
+@import '_driver_detail';
+@import '_driver_hire';
+@import '_driver_profile';
+@import '_driver_register';
+@import '_driver_slider';
+@import '_flight';
+@import '_fullpage_slider';
+@import '_guide_register';
+@import '_guides_and_drivers';
+@import '_login';
+@import '_mursheed_app';
+@import '_navigation_for_site';
+@import '_offers_page';
+@import '_partners_page';
+@import '_register_chosing_page';
+@import '_responsive';
+@import '_start_your_journey';
+@import '_support';
+@import '_tourist_register';
+@import '_why_mursheed';
+// header
+@import 'partials/header/_navbar_top';
+@import 'partials/header/_navbar_center';
+@import 'partials/header/_navbar_bottom';
+//footer
+@import 'partials/footer/footer';
