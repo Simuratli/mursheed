@@ -26,6 +26,9 @@ $bg-color: #f7f7f7;
         margin: 0;
         .driver_sign {
             flex: 100%;
+            display: flex;
+            margin-right: 5px;
+            justify-content: space-between;
         }
     }
     input {
@@ -76,14 +79,13 @@ $bg-color: #f7f7f7;
     }
     /* Make circles that indicate the steps of the form: */
     .step {
-        width: 60%;
+        width: 100%;
         background-color: #d1d4d4;
         border: none;
-        border-radius: px;
-        display: inline-block;
         opacity: 0.5;
         margin-bottom: 30px;
-        border-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
         text-align: center;
         vertical-align: middle !important;
         padding-top: 5px;
@@ -92,17 +94,13 @@ $bg-color: #f7f7f7;
     }
     .num {
         display: inline-block;
-        padding: 5.1px;
+        padding: 5px;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         background-color: $main-color;
-        position: relative;
-        top: -13px;
         color: white;
         width: 20px;
-        position: relative;
-        z-index: 123;
-        left: 7px;
+        height: 20px;
     }
     .step.active {
         opacity: 1;
@@ -121,27 +119,6 @@ $bg-color: #f7f7f7;
     }
     .register_select {
         width: 100% !important;
-    }
-}
-
-@media(max-width:1292px) {
-    #driverregForm {
-        .driver_sign_main {
-            display: flex;
-            padding: 0;
-            margin: 0;
-            flex-direction: column;
-            .driver_sign {
-                flex: 10%;
-                .step {
-                    width: 80%;
-                }
-                .num {
-                    margin: 0px !important;
-                    width: 21px;
-                }
-            }
-        }
     }
 }
 
