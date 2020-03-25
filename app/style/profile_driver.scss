@@ -237,3 +237,334 @@ $bg-color: #f7f7f7;
         }
     }
 }
+
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 2;
+}
+
+@media(max-width:900px) {
+    .container {
+        .driver_profile_container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            .driver_profile_col1 {
+                margin-bottom: 15px;
+                .profile_navigator {
+                    .profile_nav_ul {
+                        li {
+                            display: block;
+                            padding: 15px;
+                            background-color: $bg-color;
+                            display: block;
+                            width: 90%;
+                            margin: 0 auto;
+                            border-bottom: 1px solid #d1d1d1;
+                            &:first-child {
+                                border-top-left-radius: 5px;
+                                border-top-right-radius: 5px;
+                            }
+                            &:last-child {
+                                border-bottom-left-radius: 5px;
+                                border-bottom-right-radius: 5px;
+                            }
+                            a {
+                                color: gray;
+                            }
+                            &:hover {
+                                color: $main-color;
+                                border-right: 3px solid $main-color;
+                                a {
+                                    color: $main-color;
+                                }
+                            }
+                        }
+                        .activeprofile {
+                            color: $main-color !important;
+                            border-right: 3px solid $main-color;
+                            display: block;
+                            a {
+                                color: $main-color;
+                            }
+                        }
+                    }
+                }
+            }
+            .driver_profile_col2 {
+                flex: 2;
+                .driver_detail_comment_card {
+                    display: flex !important;
+                    .driver_detail_comment_card_img {
+                        flex: 0.6;
+                        width: 100px;
+                        height: 100px;
+                        margin-right: 10px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            margin-top: 20px;
+                            object-fit: cover;
+                        }
+                    }
+                    .driver_detail_comment_content {
+                        flex: 3;
+                        h4 {
+                            margin-bottom: -5px;
+                        }
+                        .stars {
+                            span {
+                                font-size: 0.8em;
+                            }
+                        }
+                    }
+                }
+                .driverProfile_card {
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    &_img {
+                        width: 100%;
+                        display: inline-block;
+                        max-height: 450px;
+                        min-height: 350px;
+                        margin: 0 auto;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .drivers_input_area {
+                    background-color: $bg-color;
+                    padding: 25px;
+                    border-radius: 5px;
+                    margin-top: 15px;
+                    form {
+                        .inputs {
+                            width: 100%;
+                            margin-bottom: 35px;
+                            label {
+                                font-weight: bold;
+                                display: block;
+                                margin-bottom: 10px;
+                            }
+                            input {
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 1em;
+                                background-color: $bg-color;
+                            }
+                        }
+                        .w-trash {
+                            width: 100% !important;
+                            display: flex;
+                            select {
+                                width: 100% !important;
+                                border-radius: 5px
+                            }
+                            .trash {
+                                width: 10%;
+                                border: 1px solid rgb(198, 199, 199);
+                                margin-left: 10px;
+                                border-radius: 5px;
+                                padding-top: 10px;
+                                padding-bottom: 5px;
+                                text-align: center;
+                                color: gray;
+                            }
+                        }
+                        .add_lang {
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            border-radius: 5px;
+                            border: 1px solid rgb(198, 199, 199);
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            color: $main-color;
+                            p {
+                                margin-left: 15px;
+                            }
+                        }
+                        .save {
+                            width: 100%;
+                            text-align: right;
+                            button {
+                                width: 150px;
+                                height: 30px;
+                                background-color: $main-color;
+                                border: 0px;
+                                border-radius: 5px;
+                                color: white;
+                                font-size: 1em;
+                            }
+                        }
+                        .new_route {
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            justify-content: center;
+                            .inputs {
+                                flex: 1;
+                                margin-left: 10px;
+                            }
+                            .inputs:last-child {
+                                text-align: center;
+                            }
+                        }
+                        .all_routes {
+                            padding: 15px;
+                            .thead {
+                                width: 100%;
+                                ul {
+                                    display: flex;
+                                    margin-bottom: 5px;
+                                    li {
+                                        flex: 1 1 auto;
+                                    }
+                                }
+                            }
+                            .tbody {
+                                ul {
+                                    margin-bottom: 15px;
+                                    display: flex;
+                                    li {
+                                        flex: 1 1 auto;
+                                    }
+                                }
+                            }
+                            .line {
+                                width: 100%;
+                                height: 1px;
+                                margin-bottom: 5px;
+                            }
+                        }
+                        .file-input {
+                            cursor: pointer;
+                            text-align: center;
+                            border: 1px solid rgb(198, 199, 199);
+                            width: 100%;
+                            border-radius: 5px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            color: $main-color;
+                            margin-bottom: 15px;
+                            .button {
+                                margin-top: -10px !important;
+                            }
+                            input[type="file"] {
+                                width: 0.1px;
+                                height: 0.1px;
+                                opacity: 0;
+                                overflow: hidden;
+                                position: absolute;
+                                z-index: -1;
+                            }
+                        }
+                        .journey {
+                            border: 1px solid rgb(198, 199, 199);
+                            border-radius: 5px;
+                            padding: 20px;
+                            margin-bottom: 15px;
+                        }
+                        .custom-selectbox {
+                            label {
+                                font-weight: bold !important;
+                            }
+                            select {
+                                border-radius: 5px;
+                                width: 101%;
+                                padding-top: 10px !important;
+                                padding-bottom: 10px !important;
+                                background-color: $bg-color;
+                                font-size: 1em;
+                                color: gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.table_div {
+    table {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+    }
+    table caption {
+        font-size: 1.5em;
+        margin: .5em 0 .75em;
+    }
+    table tr {
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        padding: .35em;
+    }
+    table th,
+    table td {
+        padding: .625em;
+        text-align: center;
+    }
+    table th {
+        font-size: .85em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+    table caption {
+        font-size: 1.3em;
+    }
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+    table td::before {
+        /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    table td:last-child {
+        border-bottom: 0;
+    }
+}

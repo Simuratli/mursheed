@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/css/select2.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="driver_profile_container">
+            <div class="driver_profile_col1">
+                <div class="profile_navigator">
+                    <ul class="profile_nav_ul">
+                        <li><a class="profile_nav_link" href="#tab1">Personal info</a></li>
+                        <li><a class="profile_nav_link " href="#tab2">Account</a></li>
+                        <li><a class="profile_nav_link" href="#tab3">Journey Table</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="driver_profile_col2">
+                <div class="driverProfile_card">
+                    <div class="driverProfile_card_img">
+                        <img src="img/popular_location/rectangle2.jpg" alt="">
+                    </div>
+                    <div class="driverProfile_card_name">
+                        <h1>Vilayat Muslumzada</h1>
+                        <p>User since date (12.12.19- 120 days)</p>
+                    </div>
+                </div>
+
+                <div class="drivers_input_area">
+                    <form id='tab1' class="tab_content">
+                        <div class="inputs">
+                            <label for="name">Company Name</label>
+                            <input autocomplete="off" id="name" type="text" placeholder="Your Company Name">
+                        </div>
+                        <div class="inputs">
+                            <label for="name">Age Name</label>
+                            <input autocomplete="off" id="name" type="text" placeholder="Your Company Name">
+                        </div>
+
+
+                        <div class="inputs">
+                            <label for="birthdate">Birthdate</label>
+                            <input autocomplete="off" id="birthdate" type="date" placeholder="Your birthdate">
+                            <!-- <span asp-validation-for="Phone" class="text-danger"></span> -->
+                        </div>
+                        <div class="inputs">
+                            <label for="country">Country</label>
+                            <select class="country-selector" style="width: 100%;">
+                                <option>Azerbaijan</option>
+                                <option>Turkey</option>
+                                <option>Norway</option>
+                            </select>
+                        </div>
+                    </form>
+                    <form id='tab2' class="tab_content">
+                        <div class="inputs">
+                            <label for="name">Email</label>
+                            <input autocomplete="off" id="name" type="text" placeholder="Email">
+                        </div>
+
+                        <div class="inputs">
+                            <label for="name">Phone</label>
+                            <input autocomplete="off" id="name" type="text" placeholder="Phone">
+                        </div>
+
+
+
+                        <div class="inputs">
+                            <label for="name">Username</label>
+                            <input autocomplete="off" id="name" type="text" placeholder="Password again">
+                        </div>
+
+                        <div class="inputs">
+                            <label for="name">Password </label>
+                            <input placeholder="Password" id="password-field" type="password">
+                            <span toggle="#password-field" class=" field-icon toggle-password"><img src="img/login/view-copy.svg"
+                                alt=""></span>
+                        </div>
+                        <div class="inputs">
+                            <label for="name">Password again</label>
+                            <input placeholder="Password" id="password-field" type="password">
+                            <span toggle="#password-field" class=" field-icon toggle-password"><img src="img/login/view-copy.svg"
+                                alt=""></span>
+                        </div>
+
+                        <div class="save">
+                            <button class="save-btn">Save changes</button>
+                        </div>
+                    </form>
+
+
+                    <form id="tab3" class="tab_content">
+                        <div class="table_div">
+                            <table>
+                                <caption>Statement Summary</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">COUNTRY</th>
+                                        <th scope="col">FROM DATE</th>
+                                        <th scope="col">TO DATE</th>
+                                        <th scope="col">PRICE</th>
+                                        <th scope="col">STATUS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="COUNTRY">Azerbaijan</td>
+                                        <td data-label="FROM DATE">04/01/2016</td>
+                                        <td data-label="TO DATE">04/01/2016</td>
+                                        <td data-label="PRICE">123$</td>
+                                        <td data-label="STATUS">ACTIVE</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="COUNTRY">Azerbaijan</td>
+                                        <td data-label="FROM DATE">04/01/2016</td>
+                                        <td data-label="TO DATE">04/01/2016</td>
+                                        <td data-label="PRICE">123$</td>
+                                        <td data-label="STATUS">ACTIVE</td>
+                                    </tr>
+
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/search_selectbox.js"></script>
+</body>
+
+<script src="js/tabs.js"></script>
+
+</html>
