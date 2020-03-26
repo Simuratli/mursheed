@@ -1,0 +1,1 @@
+const dropLogBtn=document.getElementById("dropLogBtn"),loggedid=document.getElementById("loggedid");dropLogBtn.addEventListener("click",(function(){loggedid.classList.toggle("open")}));
