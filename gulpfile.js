@@ -130,7 +130,7 @@ if (gulpversion == 3) {
 if (gulpversion == 4) {
     gulp.task('watch', async function() {
         // gulp.watch('app/img/**/*', gulp.parallel('imgminify'));
-        gulp.watch(['app/js/*.js', 'app/js/script.js'], gulp.parallel('jsMin'));
+        gulp.watch(['app/js/*.js'], gulp.parallel('jsMin'));
         gulp.watch('app/style/css/*.css', gulp.parallel('cssMin'))
         gulp.watch('app/js/minify/*.js', gulp.parallel('jsConnect'))
         gulp.watch('app/libs/**/*.js', gulp.parallel('concectLibJS'))

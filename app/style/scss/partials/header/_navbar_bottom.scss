@@ -1,16 +1,16 @@
 $main-color:#0b8071;
 $bg-color: #f7f7f7;
 .bottomNav {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     background-color: $bg-color;
     width: 100%;
     .container {
         .navcontainer {
             .bottomnav_item {
-                margin-left: 20px;
+                margin-right: 20px;
                 font-size: 1.2em !important;
-                font-weight: bold;
+                font-weight: 600;
                 transition: 500ms;
                 text-decoration: none;
                 color: black;
