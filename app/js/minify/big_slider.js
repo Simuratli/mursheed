@@ -1,1 +1,1 @@
-var swiper=new Swiper(".swiper-container.bigslider",{autoplay:{delay:3e3},speed:3e3,effect:"fade",loop:!0,loopFillGroupWithBlank:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
+var swiper=new Swiper(".swiper-container.bigslider",{autoplay:{delay:1e3},speed:1e3,effect:"fade",loop:!0,loopFillGroupWithBlank:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
