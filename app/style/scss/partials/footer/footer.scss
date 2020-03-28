@@ -1,9 +1,13 @@
 $main-color:#0b8071;
 $bg-color: #f7f7f7;
 footer {
-    padding: 50px 0;
     background-color: #222222;
+    position: relative;
+    z-index: 12 !important;
     .wrapper {
+        display: block;
+        padding-top: 120px;
+        padding-bottom: 60px;
         .row {
             color: #C7C7C7;
             display: flex;

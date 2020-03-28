@@ -1,14 +1,15 @@
 .startYourJourney {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 35px;
+    margin-bottom: 35px;
     width: 100%;
     .journeyHead {
         text-align: center;
         width: 100%;
         h1 {
-            font-size: 1.8em;
-            margin-top: 40px;
-            margin-bottom: 40px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            font-weight: 600;
+            font-size: 1.5em;
         }
     }
     .journeyBottom {
@@ -29,7 +30,7 @@
                     border-radius: 5px;
                 }
                 button {
-                    width: 200px;
+                    width: 150px !important;
                     padding: 10px;
                     border: 1px solid #0b8071;
                     border-radius: 5px;
@@ -52,8 +53,8 @@
 
 @media(max-width:900px) {
     .startYourJourney {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         width: 100%;
         .journeyHead {
             text-align: center;
@@ -80,8 +81,9 @@
                         border-radius: 5px;
                     }
                     button {
-                        width: 250px;
-                        padding: 10px;
+                        width: 150px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
                         border: 1px solid #0b8071;
                         border-radius: 5px;
                         background-color: #0b8071;
