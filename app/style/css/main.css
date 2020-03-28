@@ -294,7 +294,7 @@
           top: 50%; }
           #swiper_popular_attractions_locations .swiper_popular_attractions_locations_bottom .swiper_popular_attractions_locations_bottom_center .swiper-container .swiper-button-next::after {
             content: "";
-            background-image: url("../img/swiper_popular_attractions_locations/right.svg");
+            background-image: url("../../img/swiper_popular_attractions_locations/right.svg");
             width: 30px;
             height: 30px;
             background-repeat: no-repeat; }
@@ -302,7 +302,7 @@
           top: 50%; }
           #swiper_popular_attractions_locations .swiper_popular_attractions_locations_bottom .swiper_popular_attractions_locations_bottom_center .swiper-container .swiper-button-prev::after {
             content: "";
-            background-image: url("../img/swiper_popular_attractions_locations/left.svg");
+            background-image: url("../../img/swiper_popular_attractions_locations/left.svg");
             width: 30px;
             height: 30px;
             background-repeat: no-repeat; }
@@ -1472,7 +1472,7 @@ content: attr(aria-label);
           top: 50%; }
           #swiper_most_popular_drivers .swiper_most_popular_drivers_bottom .swiper_most_popular_drivers_bottom_center .swiper-container .swiper-button-next::after {
             content: "";
-            background-image: url("../img/swiper_most_popular_drivers/right.svg");
+            background-image: url("../../img/swiper_most_popular_drivers/right.svg");
             width: 30px;
             height: 30px;
             background-repeat: no-repeat; }
@@ -1480,7 +1480,7 @@ content: attr(aria-label);
           top: 50%; }
           #swiper_most_popular_drivers .swiper_most_popular_drivers_bottom .swiper_most_popular_drivers_bottom_center .swiper-container .swiper-button-prev::after {
             content: "";
-            background-image: url("../img/swiper_most_popular_drivers/left.svg");
+            background-image: url("../../img/swiper_most_popular_drivers/left.svg");
             width: 30px;
             height: 30px;
             background-repeat: no-repeat; }
@@ -1607,10 +1607,10 @@ content: attr(aria-label);
   align-items: center; }
   .swiper-slide .bigsliderImg {
     width: 100%;
-    height: 500px; }
+    height: 680px; }
     .swiper-slide .bigsliderImg img {
       width: 100%;
-      height: 500px;
+      height: 680px;
       object-fit: cover; }
   .swiper-slide .bigsliderTitle {
     padding-top: 15px;
@@ -2602,7 +2602,7 @@ content: attr(aria-label);
           top: 50%; }
           #swiper_our_offers_partners .swiper_our_offers_partners_bottom .swiper_our_offers_partners_bottom_center .swiper-container .swiper-button-next::after {
             content: "";
-            background-image: url("../img/swiper_our_offers_partners/right.svg");
+            background-image: url("../../img/swiper_our_offers_partners/right.svg");
             width: 30px;
             height: 30px;
             background-repeat: no-repeat; }
@@ -2610,7 +2610,7 @@ content: attr(aria-label);
           top: 50%; }
           #swiper_our_offers_partners .swiper_our_offers_partners_bottom .swiper_our_offers_partners_bottom_center .swiper-container .swiper-button-prev::after {
             content: "";
-            background-image: url("../img/swiper_our_offers_partners/left.svg");
+            background-image: url("../../img/swiper_our_offers_partners/left.svg");
             width: 30px;
             height: 30px;
             background-repeat: no-repeat; }
@@ -3032,8 +3032,8 @@ content: attr(aria-label);
         margin-bottom: 10px; }
 
 .topNav {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   height: 20px;
   width: 100%;
   background-color: #f7f7f7 !important; }
@@ -3106,8 +3106,8 @@ content: attr(aria-label);
     .topNav .secondcontainer .profile {
       display: inline-block !important; } }
 .centerNav {
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-top: 15px;
+  padding-bottom: 15px; }
   .centerNav .container {
     display: flex;
     justify-content: space-between !important; }
@@ -3133,30 +3133,51 @@ content: attr(aria-label);
       .centerNav .container .rightContent .currency {
         position: relative;
         left: -50px !important;
-        text-align: center !important; }
+        text-align: right !important; }
         .centerNav .container .rightContent .currency .currencyText {
           font-size: 0.8em;
           color: #0b8071; }
-        .centerNav .container .rightContent .currency select {
-          font-size: 1em !important;
-          border: 0px !important;
-          -webkit-appearance: none !important;
-          padding: 2px !important; }
+        .centerNav .container .rightContent .currency .custom-selectbox select {
+          display: none; }
+        .centerNav .container .rightContent .currency .custom-selectbox .select-selected {
+          border: none;
+          color: black;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 0; }
+          .centerNav .container .rightContent .currency .custom-selectbox .select-selected::after {
+            content: "";
+            background: none;
+            border: none; }
+        .centerNav .container .rightContent .currency .custom-selectbox .select-items {
+          width: 80px;
+          overflow: hidden; }
+          .centerNav .container .rightContent .currency .custom-selectbox .select-items div {
+            font-size: 14px; }
       .centerNav .container .rightContent .language {
         position: relative;
         left: -30px !important;
-        text-align: center !important; }
+        text-align: right; }
         .centerNav .container .rightContent .language .langText {
           font-size: 0.8em;
           color: #0b8071; }
-        .centerNav .container .rightContent .language select {
-          font-size: 1em !important;
-          border: 0px !important;
-          -webkit-appearance: none !important;
-          padding: 2px !important; }
-          .centerNav .container .rightContent .language select option {
-            padding: 5px !important;
-            border: 0px !important; }
+        .centerNav .container .rightContent .language .custom-selectbox select {
+          display: none; }
+        .centerNav .container .rightContent .language .custom-selectbox .select-selected {
+          border: none;
+          color: black;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 0; }
+          .centerNav .container .rightContent .language .custom-selectbox .select-selected::after {
+            content: "";
+            background: none;
+            border: none; }
+        .centerNav .container .rightContent .language .custom-selectbox .select-items {
+          width: 80px;
+          overflow: hidden; }
+          .centerNav .container .rightContent .language .custom-selectbox .select-items div {
+            font-size: 14px; }
       .centerNav .container .rightContent .loginbuttons {
         position: relative;
         top: 12px; }
@@ -3165,22 +3186,22 @@ content: attr(aria-label);
           background-color: white;
           border: 1px solid #0b8071;
           transition: 300ms ease;
-          width: 100px;
-          color: black;
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          color: #0b8071;
           margin-right: 10px; }
-          .centerNav .container .rightContent .loginbuttons .loginbtn:hover {
-            background-color: #0b8071;
-            color: white; }
         .centerNav .container .rightContent .loginbuttons .registerbtn {
           border-radius: 2px !important;
           background-color: #0b8071;
           border: 1px solid #0b8071;
-          transition: 300ms ease;
-          width: 100px;
+          transition: 300ms ease !important;
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-top: 5px;
+          padding-bottom: 5px;
           color: white; }
-          .centerNav .container .rightContent .loginbuttons .registerbtn:hover {
-            background-color: #f7f7f7;
-            color: black; }
   .centerNav .menucontainer {
     display: none !important; }
 
@@ -3230,15 +3251,70 @@ content: attr(aria-label);
     top: 5px !important; }
     .centerNav .logo a img {
       width: 150px !important; } }
+.select-selected {
+  background-color: transparent; }
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #dfdfdf transparent transparent transparent; }
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #dfdfdf transparent;
+  top: 7px; }
+
+.select-items div,
+.select-selected {
+  font-family: Averta;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666666;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: solid 1px #dfdfdf;
+  cursor: pointer;
+  user-select: none; }
+
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-radius: 3px; }
+  .select-items div {
+    border: none !important; }
+
+.select-hide {
+  display: none; }
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.custom-select select {
+  display: none !important;
+  /*hide original SELECT element:*/ }
+
 .bottomNav {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: #f7f7f7;
   width: 100%; }
   .bottomNav .container .navcontainer .bottomnav_item {
-    margin-left: 20px;
+    margin-right: 20px;
     font-size: 1.2em !important;
-    font-weight: bold;
+    font-weight: 600;
     transition: 500ms;
     text-decoration: none;
     color: black; }

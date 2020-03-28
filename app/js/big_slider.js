@@ -1,8 +1,8 @@
 var swiper = new Swiper('.swiper-container.bigslider', {
     autoplay: {
-        delay: 3000,
+        delay: 1000,
     },
-    speed: 3000,
+    speed: 1000,
     effect: 'fade',
     loop: true,
     loopFillGroupWithBlank: true,

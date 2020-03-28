@@ -1,4 +1,4 @@
-@import '../fonts/averta/stylesheet.css';
+@import '../../fonts/averta/stylesheet.css';
 * {
     font-family: Averta !important;
 }
@@ -138,7 +138,7 @@ table {
 }
 
 .container {
-    width: 80%;
+    width: 82%;
     margin: 0 auto;
     padding: 0 !important;
 }
