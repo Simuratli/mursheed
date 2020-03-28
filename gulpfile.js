@@ -9,9 +9,10 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var gutil = require('gulp-util');
 var rsync = require('gulp-rsync');
-sass.compiler = require('node-sass');
-var fileinclude = require('gulp-file-include');
 var bower = require('gulp-bower');
+const fileinclude = require('gulp-file-include');
+var sourcemaps = require('gulp-sourcemaps');
+let lec = require('gulp-line-ending-corrector');
 var gulpversion = '4';
 gulp.task('bower', function() {
     return bower({ directory: 'app/' })
@@ -19,8 +20,18 @@ gulp.task('bower', function() {
 
 
 
-
-
+// #3 target the source files. Mine are located in the source/templates folder. ** means all the folders. * means all the files
+// #3 target the source files. Mine are located in the source/templates folder. ** means all the folders. * means all the files
+gulp.task('fileinclude', function() {
+    gulp.src(['app/*.html'])
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(gulp.dest('app/'))
+        .pipe(browserSync.reload({ stream: true }))
+});
+// for minimize image 
 // gulp.task('imgminify', async function() {
 //     gulp.src('app/img/**/*')
 //         .pipe(imagemin())
@@ -51,15 +62,16 @@ gulp.task("cssMin", async() => {
 
 
 
-gulp.task("jsConnect", async() => {
-    gulp.src('app/js/*.js')
-        .pipe(uglify())
-        .pipe(concat('all_js_files.js'))
-        .pipe(gulp.dest('app/js/_all_minified_js/'))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
-})
+// gulp.task("jsConnect", async() => {
+//     gulp.src('app/js/*.js')
+//         .pipe(uglify())
+//         .pipe(concat('all_js_files.js'))
+//         .pipe(gulp.dest('app/js/_all_minified_js/'))
+//         .pipe(browserSync.reload({
+//             stream: true
+//         }))
+// })
+
 gulp.task('code', function() {
     gulp.src('app/*.html')
         .pipe(browserSync.reload({ stream: true }))
@@ -106,22 +118,31 @@ gulp.task('browser-sync', async function() {
         'app/libs/**/*'
     ];
     browserSync.init({
-        server: "app/"
+        injectChanges: true,
+        server: "app/",
     });
 
 });
 
 
+gulp.task('sass', function() {
+    return gulp.src('app/style/scss/main.scss')
+        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('app/style/css'))
+        .pipe(browserSync.reload({ stream: true }))
+});
+
 if (gulpversion == 3) {
-    gulp.task('watch', ['rsync', 'code', 'browser-sync', 'cssMin', 'jsMin', 'jsConnect', 'concectLibJS', 'concectLibCSS'], async function() {
+    gulp.task('watch', ['rsync', 'sass', 'code', 'fileinclude', 'browser-sync', 'cssMin', 'jsMin', 'concectLibJS', 'concectLibCSS'], async function() {
         // gulp.watch('app/img/**/*', ['imgminify']);
         gulp.watch('app/js/*.js', ['jsMin']);
         gulp.watch('app/style/css/*.css', ['cssMin']);
-        gulp.watch('app/js/minify/*.js', ['jsConnect']);
+        // gulp.watch('app/js/minify/*.js', ['jsConnect']);
         gulp.watch('app/libs/**/*.js', ['concectLibJS']);
         gulp.watch('app/libs/**/*.css', ['concectLibCSS']);
         gulp.watch('app/template/*.html', ['code']);
         gulp.watch('app/**', ['rsync']);
+        gulp.watch('app/style/scss/main.scss', ['sass']);
     });
     gulp.task('default', ['watch']);
 }
@@ -132,11 +153,12 @@ if (gulpversion == 4) {
         // gulp.watch('app/img/**/*', gulp.parallel('imgminify'));
         gulp.watch(['app/js/*.js'], gulp.parallel('jsMin'));
         gulp.watch('app/style/css/*.css', gulp.parallel('cssMin'))
-        gulp.watch('app/js/minify/*.js', gulp.parallel('jsConnect'))
+            // gulp.watch('app/js/minify/*.js', gulp.parallel('jsConnect'))
         gulp.watch('app/libs/**/*.js', gulp.parallel('concectLibJS'))
         gulp.watch('app/libs/**/*.css', gulp.parallel('concectLibCSS'))
         gulp.watch('app/**', gulp.parallel('rsync'))
         gulp.watch('app/template/*.html', gulp.parallel('code'))
+        gulp.watch('app/style/scss/main.scss', gulp.parallel('sass'))
     });
-    gulp.task('default', gulp.parallel('browser-sync', 'rsync', 'code', 'cssMin', 'jsMin', 'jsConnect', 'concectLibJS', 'concectLibCSS'));
+    gulp.task('default', gulp.parallel('browser-sync', 'sass', 'fileinclude', 'rsync', 'code', 'cssMin', 'jsMin', 'concectLibJS', 'concectLibCSS'));
 }

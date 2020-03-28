@@ -7,6 +7,12 @@
 html,
 body,
 div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 span,
 applet,
 object,
@@ -159,17 +165,19 @@ input {
 }
 
 body::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0.6em;
     height: 120px;
     border-radius: 20px;
 }
 
 body::-webkit-scrollbar-track {
-    background-color: #1e1e24
+    background-color: #ccc
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #0b8071
+    border: 1px solid#034d43;
+    background-color: #ccc;
+    border-radius: 15px;
 }
 
 a {

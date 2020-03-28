@@ -1,5 +1,6 @@
 #mursheed_app {
-    margin-top: 80px;
+    position: relative;
+    top: 50px;
     .mursheed_app_inside {
         display: flex;
         justify-content: space-evenly;
@@ -14,7 +15,7 @@
                 font-style: normal;
                 line-height: normal;
                 letter-spacing: normal;
-                margin-bottom: 22px;
+                margin-bottom: 26px;
             }
             p {
                 opacity: 0.75;

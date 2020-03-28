@@ -1,5 +1,12 @@
 .whyMursheed {
-    padding: 3em;
+    .whymursheedheader {
+        text-align: center;
+        h1 {
+            font-weight: 600;
+        }
+    }
+    padding-left: 3em;
+    padding-right: 3em;
     .murseedContainer {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
