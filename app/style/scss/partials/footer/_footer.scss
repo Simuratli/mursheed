@@ -1,0 +1,119 @@
+footer {
+    width: 100%;
+    height: 404px;
+    position: relative;
+    background-color: #222;
+    z-index: 12;
+    .container {
+        .wrapper {
+            padding-top: 40px;
+            padding-bottom: 70px;
+            .footer {
+                .footer_row {
+                    display: flex;
+                    .aboutcol {
+                        flex: 2 !important;
+                        padding-right: 10px;
+                        .footer_logo {
+                            width: 150px;
+                            height: 30px;
+                            object-fit: cover;
+                        }
+                    }
+                    .footer_row_col {
+                        flex: 2;
+                        margin-right: 10px;
+                        ul {
+                            list-style: none;
+                            li {
+                                color: #c7c7c7;
+                                margin-bottom: 10px;
+                                .send {
+                                    display: flex;
+                                    width: 100%;
+                                    input {
+                                        width: 80%;
+                                        border-top-left-radius: 5px;
+                                        border-bottom-left-radius: 5px;
+                                        border: solid 1px #dfdfdf;
+                                        background-color: #ffffff;
+                                        padding: 7px;
+                                    }
+                                    button {
+                                        width: 20%;
+                                        padding: 7px 10px;
+                                        border-top-right-radius: 5px;
+                                        border-bottom-right-radius: 5px;
+                                        background-color: #0b8071;
+                                        border: $main-color;
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                }
+                                h6 {
+                                    color: white;
+                                    margin-bottom: -10px !important;
+                                    font-size: 1em;
+                                }
+                                a {
+                                    color: #c7c7c7;
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_social_row {
+                margin-top: 25px;
+                ul {
+                    display: flex;
+                    li {
+                        h5 {
+                            position: relative;
+                            top: 5px;
+                        }
+                        margin-right: 20px;
+                        font-size: 1.2em;
+                        color: white;
+                        a {
+                            color: #c7c7c7;
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:900px) {
+    footer {
+        .container {
+            .wrapper {
+                .footer {
+                    .footer_row {
+                        display: flex;
+                        flex-direction: column;
+                        .aboutcol {
+                            flex: 3 !important;
+                        }
+                        .footer_row_col {
+                            flex: 2;
+                            margin-right: 10px;
+                            ul {
+                                list-style: none;
+                                li {
+                                    color: #c7c7c7;
+                                    a {
+                                        color: #c7c7c7;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
