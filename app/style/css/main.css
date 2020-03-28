@@ -5165,14 +5165,15 @@ input[type="date"]:hover::-webkit-calendar-picker-indicator:hover {
 
 footer {
   width: 100%;
+  height: 404px;
   position: relative;
-  background-color: #2c2c2c;
+  background-color: #222;
   z-index: 12;
 }
 
 footer .container .wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 70px;
 }
 
 footer .container .wrapper .footer .footer_row {
@@ -5186,6 +5187,13 @@ footer .container .wrapper .footer .footer_row .aboutcol {
       -ms-flex: 2 !important;
           flex: 2 !important;
   padding-right: 10px;
+}
+
+footer .container .wrapper .footer .footer_row .aboutcol .footer_logo {
+  width: 150px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer .container .wrapper .footer .footer_row .footer_row_col {
@@ -5238,10 +5246,16 @@ footer .container .wrapper .footer .footer_row .footer_row_col ul li .send butto
 footer .container .wrapper .footer .footer_row .footer_row_col ul li h6 {
   color: white;
   margin-bottom: -10px !important;
+  font-size: 1em;
 }
 
 footer .container .wrapper .footer .footer_row .footer_row_col ul li a {
   color: #c7c7c7;
+  font-size: 1em;
+}
+
+footer .container .wrapper .footer_social_row {
+  margin-top: 25px;
 }
 
 footer .container .wrapper .footer_social_row ul {
@@ -5251,12 +5265,19 @@ footer .container .wrapper .footer_social_row ul {
 }
 
 footer .container .wrapper .footer_social_row ul li {
-  margin-right: 10px;
+  margin-right: 20px;
+  font-size: 1.2em;
   color: white;
+}
+
+footer .container .wrapper .footer_social_row ul li h5 {
+  position: relative;
+  top: 5px;
 }
 
 footer .container .wrapper .footer_social_row ul li a {
   color: #c7c7c7;
+  font-size: 1.2em;
 }
 
 @media (max-width: 900px) {
