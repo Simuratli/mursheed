@@ -1,1 +1,1 @@
-$(document).ready((function(){$(".multiple").select2(),$(".country-selector").select2()}));
+$(document).ready((function(){$(".multiple").select2(),$(".country-selector").select2(),$(".languageselector").select2({placeholder:{id:"-1",text:"Language"}}),$(".roomsize").select2({placeholder:{id:"-1",text:"Otaq Sayını seçin"}})}));

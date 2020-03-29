@@ -5,17 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
-    <link rel="stylesheet" media="all" href="../libs/swiper/swiper.css" type="text/css" />
-    <link rel="stylesheet" media="all" href="../style/css/reset.css" type="text/css">
-    <link rel="stylesheet" media="all" href="../style/css/main.css" type="text/css">
-    <link rel="stylesheet" href="../libs/select2/select2.css">
-    <link rel="stylesheet" href="../libs/magiczoom/magiczoomplus.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style/css/main.css">
+    <link rel="stylesheet" href="style/css/reset.css">
+    <link rel="stylesheet" href="libs/main/css/_all_css_lib_files/all_css_lib_files.css">
     <title>Murheed</title>
 </head>
 
 <body>
-
+    <!-- navbar -->
     <div class="topNav">
         <div class="container">
             <div class="topnavcontainer">
@@ -31,7 +29,7 @@
                     <div class="language">
                         <form>
                             <select>
-                        <option class="optionlang">Azerbaijan</option>
+                        <option class="optionlang">Azərbaycan</option>
                         <option class="optionlang">English</option>
                     </select>
                         </form>
@@ -39,13 +37,13 @@
                 </div>
                 <div class="secondcontainer">
                     <div class="support">
-                        <a class="supportItem" href="support.html">Support</a>
-                        <a class="supportItem" href="contact.html">Contact Us</a>
+                        <a class="supportItem" href="support.html">Dəstək</a>
+                        <a class="supportItem" href="contact.html">Bizimlə Əlaqə</a>
                     </div>
                     <div id="dropLogBtn" class="profile" style="background-image: url(img/profile/user.jpg)">
                         <div id="loggedid">
-                            <a class="loggediditem" href="#">Login</a>
-                            <a class="loggediditem" href="register_chosing.html">Register</a>
+                            <a class="loggediditem" href="#">Daxil ol</a>
+                            <a class="loggediditem" href="register_chosing.html">Qeydiyyat</a>
                         </div>
                     </div>
                 </div>
@@ -60,31 +58,38 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="../img/header/logo.svg" alt="">
+                    <img src="img/header/logo.svg" alt="">
                 </a>
             </div>
             <div class="rightContent">
                 <div class="currency">
-                    <span class="currencyText">Currency</span>
+                    <span class="currencyText">Valyuta</span>
                     <form>
-                        <select>
-                            <option class="optioncurrency">USD</option>
-                            <option class="optioncurrency">AZN</option>
-                        </select>
+                        <div class="custom-selectbox">
+                            <select>
+                                    <option value="0">USD</option>
+                                   <option value="1">EURO</option>
+                                    <option value="2">TRY</option>
+                                </select>
+                        </div>
                     </form>
                 </div>
                 <div class="language">
-                    <span class="langText">Language</span>
+                    <span class="langText">Dil</span>
                     <form>
-                        <select>
-                            <option class="optionlang">Azerbaijan</option>
-                            <option class="optionlang">English</option>
-                        </select>
+                        <div class="custom-selectbox">
+                            <select>
+                                    <option value="0">English</option>
+                                   <option value="1">Turkey</option>
+                                    <option value="2">Germany</option>
+                                    <option value="3">France</option>
+                                </select>
+                        </div>
                     </form>
                 </div>
                 <div class="loginbuttons">
-                    <a href='login.html' class="loginbtn btn">Login</button>
-                    <a href="register.html" class="registerbtn btn">Register</a>
+                    <a href='login.html' class="loginbtn btn">Daxil Ol</button>
+                    <a href="register.html" class="registerbtn btn">Qeydiyyat</a>
                 </div>
                 <div id="hamburger" class="barIcon">
                     <p class="line"></p>
@@ -96,15 +101,15 @@
         </div>
         <div id="openmenu" class="container menucontainer">
             <div class="openmenu">
-                <a class="openmenu_item" href="#">Home</a>
-                <a class="openmenu_item" href="about.html">About</a>
-                <a class="openmenu_item" href="guide_and_drivers.html">Guides & Drivers</a>
-                <a class="openmenu_item" href="accomadation.html">Accomadation</a>
-                <a class="openmenu_item" href="flight.html">Flight Reservation</a>
-                <a class="openmenu_item" href="attractive_locations.html">Attractive Places</a>
-                <a class="openmenu_item" href="offers.html">Offers</a>
-                <a class="openmenu_item" href="#">Support</a>
-                <a class="openmenu_item" href="contact.html">Contact</a>
+                <a class="openmenu_item" href="#">Ana səhifə</a>
+                <a class="openmenu_item" href="about.html"> Haqqımızda</a>
+                <a class="openmenu_item" href="guide_and_drivers.html"> Sürücülər & Bələdçilər</a>
+                <a class="openmenu_item" href="accomadation.html"> Məskən</a>
+                <a class="openmenu_item" href="flight.html">Uçuş Rezervasiyası</a>
+                <a class="openmenu_item" href="attractive_locations.html"> Cəlbedici Yerlər</a>
+                <a class="openmenu_item" href="offers.html">  Təkliflər</a>
+                <a class="openmenu_item" href="#">Dəstək</a>
+                <a class="openmenu_item" href="contact.html">Bizimlə Əlaqə</a>
             </div>
         </div>
     </div>
@@ -114,18 +119,16 @@
     <div class="bottomNav">
         <div class="container">
             <div class="navcontainer">
-                <a class="bottomnav_item active" href="#">Home</a>
-                <a class="bottomnav_item " href="about.html">About</a>
-                <a class="bottomnav_item " href="guide_and_drivers.html">Guides & Drivers</a>
-                <a class="bottomnav_item " href="accomadation.html">Accomadation</a>
-                <a class="bottomnav_item " href="flight.html">Flight Reservation</a>
-                <a class="bottomnav_item " href="attractive_locations.html">Attractive Places</a>
-                <a class="bottomnav_item " href="offers.html">Offers</a>
+                <a class="bottomnav_item active" href="#">Ana səhifə</a>
+                <a class="bottomnav_item " href="about.html">Haqqımızda</a>
+                <a class="bottomnav_item " href="guide_and_drivers.html">Sürücülər & Bələdçilər</a>
+                <a class="bottomnav_item " href="accomadation.html">Məskən</a>
+                <a class="bottomnav_item " href="flight.html">Uçuş Rezervasiyası</a>
+                <a class="bottomnav_item " href="attractive_locations.html">Cəlbedici Yerlər</a>
+                <a class="bottomnav_item " href="offers.html">Təkliflər</a>
             </div>
         </div>
     </div>
-
-
 
     <div class="siteNavigation">
         <div class="container navigation">
@@ -142,12 +145,15 @@
         <div class="accomadation_container">
             <div class="accomadation_col1">
                 <div class="accomadation_filter">
-                    <label class="accomadation_filter_label" for="otel">
-                        <input type="radio" name="filter" id="otel">Otel
-                    </label>
-                    <label class="accomadation_filter_label" for="menzil">
-                        <input type="radio" name="filter" id="menzil">Mənzillər
-                    </label>
+                    <label class="control2 control-radio">
+                        <input type="radio" name="radio" /> Otellər
+                    <div class="control_indicator"></div>
+                </label>
+                    <label class="control2 control-radio">
+                        <input type="radio" name="radio" />
+                        Mənzillər
+                    <div class="control_indicator"></div>
+                </label>
                 </div>
                 <div class="accomadation_search">
                     <div class="accomadation_search_header">
@@ -157,10 +163,10 @@
                     <div class="accomadation_search_content">
                         <div id="accomadation_search_content_header1" class="accomadation_search_content_header">
                             <div>Otaga gore</div>
-                            <a href="#">+</a>
+
                         </div>
                         <div id="accomadation_search_content_bottom1" class="accomadation_search_content_bottom">
-                            <select aria-placeholder="Room" required multiple='multiple' class="country-selector ">
+                            <select aria-placeholder="Room" required multiple='multiple' class="country-selector roomsize">
                                 <option >1</option>
                                 <option value="AL">1</option>
                                <option value="WY">2</option>
@@ -170,13 +176,13 @@
                     <div class="accomadation_search_content">
                         <div id="accomadation_search_content_header2" class="accomadation_search_content_header">
                             <div>Qiymətə görə</div>
-                            <a href="#">+</a>
+
                         </div>
                         <div id="accomadation_search_content_bottom2" class="accomadation_search_content_bottom">
                             <form action="">
                                 <div align='center'>
                                     <p>
-                                        <input type="text" id="amount" style="border:0; color:#0b8071; background-color: transparent; font-weight:bold;">
+                                        <input readonly type="text" id="amount" style="border:0; color:#0b8071; background-color: transparent; font-weight:bold;">
                                     </p>
 
                                     <div id="slider-range"></div>
@@ -197,7 +203,7 @@
                         <div class="accomadation_row">
                             <div class="acc_col_4">
                                 <a class="acc_fulimg_card_link" href="accomadation_detail.html">
-                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-thumb.jpg);">
+                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://q-cf.bstatic.com/images/hotel/max1024x768/797/79726354.jpg);">
                                         <div class="ful_img_text">
                                             <h5 class="acc_where">Theatre</h5>
                                             <h6 class="type_acc">Oteller</h6>
@@ -208,7 +214,7 @@
                             </div>
                             <div class="acc_col_4">
                                 <a class="acc_fulimg_card_link" href="accomadation_detail.html">
-                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-thumb.jpg);">
+                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://pix10.agoda.net/hotelImages/124/1246280/1246280_16061017110043391702.jpg?s=1024x768);">
                                         <div class="ful_img_text">
                                             <h5 class="acc_where">Theatre</h5>
                                             <h6 class="type_acc">Oteller</h6>
@@ -219,7 +225,7 @@
                             </div>
                             <div class="acc_col_4">
                                 <a class="acc_fulimg_card_link" href="accomadation_detail.html">
-                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-thumb.jpg);">
+                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://pix10.agoda.net/hotelImages/96605/-1/dd32d9b188d86d6d8dc40d1ff9a0ebf6.jpg?s=1024x768);">
                                         <div class="ful_img_text">
                                             <h5 class="acc_where">Theatre</h5>
                                             <h6 class="type_acc">Oteller</h6>
@@ -230,7 +236,7 @@
                             </div>
                             <div class="acc_col_4">
                                 <a class="acc_fulimg_card_link" href="accomadation_detail.html">
-                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-thumb.jpg);">
+                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://lh3.googleusercontent.com/proxy/BfHipcNTOELT6fvrlBTFvT3mPsgs8qGCLQ_O72hRiJWcv_eXteg6r0y48UMO9v8QFgZyy36-X6RP3rC2j083kZhEZxDQ_5xoRvOUvRNL2ADBPrCAqM3o4PSjlYtrgB_Iv5zx16zm);">
                                         <div class="ful_img_text">
                                             <h5 class="acc_where">Theatre</h5>
                                             <h6 class="type_acc">Oteller</h6>
@@ -241,7 +247,7 @@
                             </div>
                             <div class="acc_col_4">
                                 <a class="acc_fulimg_card_link" href="accomadation_detail.html">
-                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-thumb.jpg);">
+                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://travelji.com/wp-content/uploads/Hotel-Tips.jpg);">
                                         <div class="ful_img_text">
                                             <h5 class="acc_where">Theatre</h5>
                                             <h6 class="type_acc">Oteller</h6>
@@ -252,7 +258,7 @@
                             </div>
                             <div class="acc_col_4">
                                 <a class="acc_fulimg_card_link" href="accomadation_detail.html">
-                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-thumb.jpg);">
+                                    <div class="acc_fulimg_card_link_div" style="background-image: url(https://www.neu-hintertux.com/files/images/neuhintertux/content/hotel/aussenansicht-hotel-terrasse.jpg);">
                                         <div class="ful_img_text">
                                             <h5 class="acc_where">Theatre</h5>
                                             <h6 class="type_acc">Oteller</h6>
@@ -268,96 +274,154 @@
             </div>
         </div>
     </div>
-
-
     <!-- footer  -->
     <footer>
+
         <div class="container">
             <div class="wrapper">
-                <div class="row">
-                    <div class="col-2">
-                        <div class="social">
-                            <div class="logo">
-                                <a href="index.html"><img src="../img/footer/logo-dark.svg" alt=""></a>
-                            </div>
-                            <div class="description">
-                                <p>Mursheed helps you to have an unforgettable experience anywhere you travel to. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <p class="header-text">Site map</p>
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="">Guides & Drivers</a></li>
-                            <li><a href="offers.html">Offers</a></li>
-                            <li><a href="support.html">Support</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <p class="header-text">More</p>
-                        <ul>
-                            <li><a href="terms_conditions.html">Terms & conditions</a></li>
-                            <li><a href="privacypolicy.html">Privacy policy</a></li>
-                            <li><a href="">Cookies</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <div class="contact">
-                            <p class="header-text">Contact us</p>
+                <div class="footer">
+                    <div class="footer_row">
+                        <div class="footer_row_col aboutcol">
                             <ul>
-                                <li><a href="">info@mursheed.com</a></li>
-                                <li><a href="">+994 50 808 08 01</a></li>
+                                <li>
+                                    <img class="footer_logo" src="img/footer/logo-dark.svg" alt="">
+                                </li>
+                                <li>
+                                    Mursheed, səyahət etdiyiniz hər yerdə unudulmaz bir təcrübəyə sahib olmağınıza kömək edir.
+                                </li>
+
+
                             </ul>
-                            <p class="header-text">Subscribe</p>
-                            <div class="send pt-2">
-                                <input autocomplete="off" placeholder="your email address" type="text">
-                                <button><img src="../img/footer/send.svg" alt=""></button>
-                            </div>
+                        </div>
+                        <div class="footer_row_col">
+                            <ul>
+                                <li>
+                                    <h6>Sayt xəritəsi</h6>
+                                </li>
+                                <li>
+                                    <a href="#">Ana Səhifə</a>
+                                </li>
+                                <li>
+                                    <a href="#">Haqqımızda</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bələdçilər & Sürücülər</a>
+                                </li>
+                                <li>
+                                    <a href="#">Məskən</a>
+                                </li>
+                                <li>
+                                    <a href="#">Uçuş Rezervasiyası</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cəlbedici Yerlər</a>
+                                </li>
+                                <li>
+                                    <a href="#">Təkliflər</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="footer_row_col">
+                            <ul>
+                                <li>
+                                    <h6>Daha çox</h6>
+                                </li>
+                                <li>
+                                    <a href="#">Şərtlər & qaydalar</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Gizlilik şərtləri</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cookies</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_row_col">
+                            <ul>
+                                <li>
+                                    <h6>Bizimlə Əlaqə</h6>
+                                </li>
+                                <li>
+                                    <a href="#">info@mursheed.com</a>
+                                </li>
+                                <li>
+                                    <a href="#">+994 50 808 08 01</a>
+                                </li>
+                                <li>
+                                    <form action="#">
+                                        <label>
+                                           Abonə Ol
+                                          <div class="send">
+                                            <input type="text"><button><img src="img/footer/send.svg" alt=""></button>
+                                          </div>
+                                       </label>
+                                    </form>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-
-                </div>
-                <div class="col-12">
-                    <div class="social-icons ">
+                    <div class="footer_social_row">
                         <ul>
-                            <li class="head">
-                                <h2 class="head_h2">Follow Us</h2>
+                            <li>
+                                <h5>Bizi izlə:</h5>
                             </li>
-                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-facebook-f"></i></a></li>
-                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-instagram"></i></a></li>
-                            <li><a href=""><i style="color:#C7C7C7;" class="fab fa-twitter"></i></a></li>
-                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-linkedin-in"></i></li>
-                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-whatsapp"></i></a></li>
-                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-snapchat-ghost"></i></a></li>
-                            <li><a href=""><i style="color:#C7C7C7;" class="fab fa-youtube"></i></a></li>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
+        </div>
     </footer>
 
 
-    <script src="../js/jquery.3.4.1.js"></script>
-    <script src="../libs/swiper/swiper.js"></script>
-    <script src="../js/big_slider.js"></script>
-    <script src="../js/atractive_places_slider.js"></script>
-    <script src="../js/driverSlider.js"></script>
-    <script src="../js/partners.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../js/topNav.js"></script>
+
+    <script src='js/minify/jquery.3.4.1.js'></script>
+    <script src='js/minify/jqueryui.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
-    <script src="../js/multiform.js"></script>
-    <script src="../libs/select2/select2.js"></script>
-    <script src="../js/search_selectbox.js"></script>
-    <script src="../js/accordionmenu.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="../js/range_slider.js"></script>
-    <script src="../js/toggle_menus.js"></script>
-    <script src="../js/magiczoomplus.js"></script>
-    <script src="../js/popupimg.js"></script>
-    <script src="../js/driver_detail.js"></script>
-    <script src="../js/tabs.js"></script>
+    <script src="libs/main/js/_all_js_lib_files/all_js_lib_files.js"></script>
+    <script src="js/minify/accordionmenu.js"></script>
+    <script src="js/minify/atractive_places_slider.js"></script>
+    <script src="js/minify/big_slider.js"></script>
+    <script src="js/minify/centerNav.js"></script>
+    <script src="js/minify/driver_detail.js"></script>
+    <script src="js/minify/driverSlider.js"></script>
+    <script src="js/minify/main.js"></script>
+    <script src="js/minify/multiform.js"></script>
+    <script src="js/minify/partners.js"></script>
+    <script src="js/minify/popupimg.js"></script>
+    <script src="js/minify/range_slider.js"></script>
+    <script src="js/minify/search_selectbox.js"></script>
+    <script src="js/minify/tabs.js"></script>
+    <script src="js/minify/toggle_menus.js"></script>
+    <script src="js/minify/topNav.js"></script>
+    <script src="js/minify/customselecbox.js"></script>
+
+
 
 </body>
+
+
+
+</html>
