@@ -1,27 +1,44 @@
-$("#accomadation_search_content_header1").click(function() {
-    $("#accomadation_search_content_bottom1").toggle();
-});
-$("#accomadation_search_content_header2").click(function() {
-    $("#accomadation_search_content_bottom2").toggle();
-});
+var acc = document.getElementsByClassName("guide_search_content_header");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var c = this.children;
+        for (i = 0; i < c.length; i++) {
+            if (c[i].classList.contains("plus")) {
+                c[i].classList.toggle("activate");
+            }
+        }
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "none") {
+            panel.style.display = "block";
+
+        } else {
+            panel.style.display = "none";
+        }
+    });
+}
 
 
-$("#guide_search_content_header1").click(function() {
-    $("#guide_search_content_bottom1").toggle();
-});
-$("#guide_search_content_header2").click(function() {
-    $("#guide_search_content_bottom2").toggle();
-});
-$("#guide_search_content_header3").click(function() {
-    $("#guide_search_content_bottom3").toggle();
-});
-$("#guide_search_content_header4").click(function() {
-    $("#guide_search_content_bottom4").toggle();
-});
-$("#guide_search_content_header5").click(function() {
-    $("#guide_search_content_bottom5").toggle();
-});
+var acc = document.getElementsByClassName("accomadation_search_content_header");
+var i;
 
-$("#guide_search_content_header6").click(function() {
-    $("#guide_search_content_bottom6").toggle();
-});
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var c = this.children;
+        for (i = 0; i < c.length; i++) {
+            if (c[i].classList.contains("plus")) {
+                c[i].classList.toggle("activate");
+            }
+        }
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "none") {
+            panel.style.display = "block";
+
+        } else {
+            panel.style.display = "none";
+        }
+    });
+}

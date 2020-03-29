@@ -1,8 +1,8 @@
 $main-color:#0b8071;
 $bg-color: #f7f7f7;
 .siteNavigation {
-    padding-bottom: 10px;
-    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     width: 100%;
     .navigation {
         text-align: left !important;
@@ -10,6 +10,7 @@ $bg-color: #f7f7f7;
         &__item {
             font-size: 0.9em;
             text-decoration: none;
+            margin-right: 6px;
             color: rgb(168, 165, 165);
             &.active {
                 color: $main-color;
@@ -17,8 +18,9 @@ $bg-color: #f7f7f7;
         }
         i {
             font-size: 0.8em;
-            font-weight: lighter;
+            font-weight: 100 !important;
             color: gray;
+            margin-right: 6px;
         }
     }
 }
@@ -27,16 +29,38 @@ $bg-color: #f7f7f7;
     width: 100%;
     .fullphoto {
         width: 100%;
-        max-height: 300px;
+        max-height: 380px;
         object-fit: cover;
         object-position: center;
     }
 }
 
 .abouttext {
-    word-spacing: 0.2em;
-    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    p {
+        padding: 10px 0 10px 0;
+        font-family: Averta;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.63;
+        letter-spacing: normal;
+        color: black;
+        text-align: justify;
+    }
     .aboutushead {
-        font-weight: bold;
+        font-family: Averta;
+        font-size: 25px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #324150;
+        margin-bottom: 20px;
     }
 }

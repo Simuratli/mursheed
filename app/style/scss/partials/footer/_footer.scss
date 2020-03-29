@@ -89,6 +89,7 @@ footer {
 
 @media(max-width:900px) {
     footer {
+        height: auto;
         .container {
             .wrapper {
                 .footer {
@@ -109,6 +110,25 @@ footer {
                                         color: #c7c7c7;
                                     }
                                 }
+                            }
+                        }
+                    }
+                }
+                .footer_social_row {
+                    margin-top: 25px;
+                    ul {
+                        display: flex;
+                        li {
+                            h5 {
+                                position: relative;
+                                top: 5px;
+                            }
+                            margin-right: 10px;
+                            font-size: 1.1em;
+                            color: white;
+                            a {
+                                color: #c7c7c7;
+                                font-size: 1em;
                             }
                         }
                     }
