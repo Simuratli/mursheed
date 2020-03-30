@@ -26,12 +26,12 @@ $bg-color: #f7f7f7;
                     border-bottom: 2px solid #d6d6d6;
                     .guide_card_image {
                         flex: 1;
-                        width: 140px;
-                        height: 140px;
-                        margin-right: 15px;
+                        width: 130px;
+                        height: 130px;
+                        margin-right: -85px;
                         .guide_card_image_img {
-                            width: 140px;
-                            height: 140px;
+                            width: 130px;
+                            height: 130px;
                             object-fit: cover;
                         }
                     }
@@ -40,9 +40,11 @@ $bg-color: #f7f7f7;
                         position: relative;
                         top: -20px;
                         &_name {
-                            font-size: 1.6em;
+                            font-size: 20px;
                             color: black;
                             margin-top: 20px;
+                            font-weight: bold;
+                            margin-bottom: 10px;
                         }
                         &_time {
                             color: black;
@@ -50,10 +52,9 @@ $bg-color: #f7f7f7;
                         }
                         &_lang {
                             color: black;
-                            margin-bottom: 10px;
+                            margin-bottom: 5px;
                         }
                         &_icons {
-                            margin-top: 20px;
                             .busy {
                                 background-color: #b73838;
                                 border-radius: 2px;
@@ -112,7 +113,7 @@ $bg-color: #f7f7f7;
                         height: 30px;
                         background: white;
                         &::after {
-                            content: url("../img/cars_modal/next.svg");
+                            content: url("../../img/cars_modal/next.svg");
                             width: 30px;
                             height: 30px;
                             text-align: center;
@@ -124,7 +125,7 @@ $bg-color: #f7f7f7;
                         height: 30px;
                         background: white;
                         &::after {
-                            content: url("../img/cars_modal/prev.svg");
+                            content: url("../../img/cars_modal/prev.svg");
                             width: 30px;
                             height: 30px;
                             text-align: center;
@@ -150,24 +151,212 @@ $bg-color: #f7f7f7;
                 -ms-flex-align: center;
                 -webkit-align-items: center;
                 align-items: center;
+                .driver_car_slider_size {
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
             }
         }
         .table_container {
             padding-left: 15px;
             padding-right: 15px;
             .table {
+                align-items: center;
                 border-collapse: collapse;
                 border-spacing: 0;
                 width: 100%;
-                border: 1px solid #bebebe;
                 tr {
+                    border: 1px solid #c7c7c7;
                     th {
                         padding-top: 10px;
                         padding-bottom: 10px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: #666 !important;
                     }
                     td {
+                        text-align: center;
+                        padding-top: 10px;
+                        border: 1px solid #c7c7c7;
+                        padding-bottom: 10px;
+                        width: auto;
+                        color: #666 !important;
+                    }
+                }
+                .buttontable {
+                    margin-left: 45%;
+                    width: 10px;
+                    height: 10px;
+                    cursor: pointer;
+                    padding: 5px;
+                    border-radius: 50%;
+                    background: url('https://cdn.rawgit.com/DataTables/DataTables/6c7ada53ebc228ea9bc28b1b216e793b1825d188/examples/resources/details_open.png') no-repeat center center;
+                }
+                .activetable {
+                    background: url('https://cdn.rawgit.com/DataTables/DataTables/6c7ada53ebc228ea9bc28b1b216e793b1825d188/examples/resources/details_close.png') no-repeat center center;
+                    /* Unicode character for "minus" sign (-) */
+                }
+                .routeinfo {
+                    .route_info_head {
+                        h1 {
+                            font-size: 25px;
+                            padding-top: 20px;
+                            font-weight: bold;
+                        }
+                    }
+                    .route_info_textarea {
+                        width: 100%;
+                        textarea {
+                            width: 98% !important;
+                            height: 90px;
+                            background-color: $bg-color;
+                            border: 0;
+                        }
+                    }
+                }
+                .routeinfo:hover {
+                    background-color: #ccc;
+                    .route_info_textarea {
+                        width: 100%;
+                        textarea {
+                            height: 90px;
+                            background-color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+textarea:focus {
+    outline: 0 !important;
+}
+
+@media(max-width:1290px) {
+    .container {
+        .driver_detail_container {
+            margin-top: 15px !important;
+            margin-bottom: 15px !important;
+            .driver_detail_slider {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            width: 100%;
+            background-color: $bg-color;
+            border-radius: 5px;
+            .guide_row {
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 15px;
+                padding-right: 15px;
+                .guide_col_12 {
+                    flex: 100%;
+                    .guide_card {
+                        display: flex;
+                        flex-wrap: wrap;
                         padding-top: 10px;
                         padding-bottom: 10px;
+                        border-bottom: 2px solid #d6d6d6;
+                        .guide_card_image {
+                            flex: 1;
+                            width: 130px;
+                            height: 130px;
+                            margin-right: -10px;
+                            .guide_card_image_img {
+                                width: 130px;
+                                height: 130px;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:946px) {
+    .container {
+        .driver_detail_container {
+            margin-top: 15px !important;
+            margin-bottom: 15px !important;
+            .driver_detail_slider {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            width: 100%;
+            background-color: $bg-color;
+            border-radius: 5px;
+            .guide_row {
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 15px;
+                padding-right: 15px;
+                .guide_col_12 {
+                    flex: 100%;
+                    .guide_card {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        border-bottom: 2px solid #d6d6d6;
+                        .guide_card_image {
+                            flex: 1;
+                            width: 130px;
+                            height: 130px;
+                            margin-right: 10px;
+                            .guide_card_image_img {
+                                width: 130px;
+                                height: 130px;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:946px) {
+    .container {
+        .driver_detail_container {
+            margin-top: 15px !important;
+            margin-bottom: 15px !important;
+            .driver_detail_slider {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            width: 100%;
+            background-color: $bg-color;
+            border-radius: 5px;
+            .guide_row {
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 15px;
+                padding-right: 15px;
+                .guide_col_12 {
+                    flex: 100%;
+                    .guide_card {
+                        display: flex;
+                        flex-direction: column;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        border-bottom: 2px solid #d6d6d6;
+                        .guide_card_image {
+                            flex: 1;
+                            width: 100%;
+                            margin-right: 10px;
+                            .guide_card_image_img {
+                                width: 100%;
+                                height: 300px;
+                                object-fit: cover;
+                            }
+                        }
                     }
                 }
             }

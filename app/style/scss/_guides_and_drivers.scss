@@ -257,7 +257,7 @@ $bg-color: #f7f7f7;
                         border: none;
                     }
                     .gui_head_search {
-                        font-size: 1.2em;
+                        font-size: 20px;
                     }
                     .gui_head_sifir {
                         color: $main-color;
@@ -277,17 +277,19 @@ $bg-color: #f7f7f7;
                         &:after {
                             content: '\2212';
                             font-weight: bold;
+                            font-size: 2em;
                             color: $main-color;
                             margin-left: 5px;
+                            position: relative;
+                            top: -10px;
                         }
                         &.active:after {
                             content: "\002b";
                             color: $main-color;
+                            font-size: 1em;
                         }
                     }
                     &_bottom {
-                        padding-top: 10px;
-                        margin-top: 10px;
                         .range_slide {
                             position: relative;
                             border-radius: 50%;
@@ -397,10 +399,10 @@ $bg-color: #f7f7f7;
                     padding-left: 15px;
                     padding-right: 15px;
                     padding-top: 15px;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid #DFDFDF;
                     &_title {
-                        font-size: 1.5em;
-                        padding-bottom: 15px;
-                        border-bottom: 1px solid #ccc;
+                        font-size: 20px;
                     }
                 }
                 .guide_col2_contant {
@@ -435,9 +437,11 @@ $bg-color: #f7f7f7;
                                     position: relative;
                                     top: -20px;
                                     &_name {
-                                        font-size: 1.6em;
+                                        font-size: 20px;
                                         color: black;
                                         margin-top: 20px;
+                                        font-weight: bold;
+                                        margin-bottom: 10px;
                                     }
                                     &_time {
                                         color: black;
@@ -445,10 +449,9 @@ $bg-color: #f7f7f7;
                                     }
                                     &_lang {
                                         color: black;
-                                        margin-bottom: 10px;
+                                        margin-bottom: 5px;
                                     }
                                     &_icons {
-                                        margin-top: 20px;
                                         .busy {
                                             background-color: #b73838;
                                             border-radius: 2px;
@@ -472,7 +475,9 @@ $bg-color: #f7f7f7;
                                 &_hirebuttons {
                                     flex: 1;
                                     img {
-                                        float: right;
+                                        position: relative;
+                                        left: 60px;
+                                        top: -3px;
                                     }
                                     span {
                                         font-size: 0.7em;
@@ -519,6 +524,37 @@ $bg-color: #f7f7f7;
                     .guide_row {
                         .guide_col_12 {
                             .guide_card {
+                                &_hirebuttons {
+                                    flex: 1;
+                                    span {
+                                        font-size: 0.7em;
+                                        display: block !important;
+                                        float: right;
+                                    }
+                                    img {
+                                        position: relative;
+                                        left: 0px;
+                                        top: -3px;
+                                    }
+                                    &_btn {
+                                        .btnguide {
+                                            clear: both;
+                                            display: block;
+                                            width: 100% !important;
+                                            text-align: center;
+                                            margin-top: 10px;
+                                            color: black;
+                                            padding: 5px;
+                                            margin-bottom: 10px;
+                                            border-radius: 4px;
+                                            border: 1px solid $main-color;
+                                        }
+                                        .activeguide {
+                                            background-color: $main-color;
+                                            color: white;
+                                        }
+                                    }
+                                }
                                 flex-direction: column;
                                 .guide_card_image {
                                     width: 100%;
