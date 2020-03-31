@@ -24,6 +24,12 @@
             }
         }
         .acc_bottom_features {
+            h2 {
+                font-size: 25px;
+                font-weight: bold;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
             .features_container {
                 display: flex;
                 flex-wrap: wrap;
@@ -32,15 +38,32 @@
                 .features_container_element {
                     flex: 1 1 auto;
                     color: #d3d2d2;
-                    border: 1px solid #d3d2d2;
+                    border: 1px solid #9fa3af;
                     padding-top: 15px;
                     padding-bottom: 15px;
                 }
             }
         }
         .acc_additional {
+            h2 {
+                font-size: 25px;
+                font-weight: bold;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
             margin-top: 10px;
             margin-bottom: 15px;
+        }
+        .acc_contact {
+            h2 {
+                font-size: 25px;
+                font-weight: bold;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            a {
+                color: #007bff;
+            }
         }
     }
 }

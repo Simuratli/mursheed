@@ -157,12 +157,16 @@ $bg-color: #f7f7f7;
                         &:after {
                             content: '\2212';
                             font-weight: bold;
+                            font-size: 2em;
                             color: $main-color;
                             margin-left: 5px;
+                            position: relative;
+                            top: -10px;
                         }
                         &.active:after {
                             content: "\002b";
                             color: $main-color;
+                            font-size: 1em;
                         }
                     }
                     &_bottom {

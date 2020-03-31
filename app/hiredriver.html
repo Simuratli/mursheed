@@ -147,39 +147,50 @@
     <div class="container">
 
         <div class="hirecard_container">
-            <h2>Decide your journey milestones</h2>
+            <div class="head_milestone">
+                <h2>Decide your journey milestones</h2>
+            </div>
             <div class="hire_card">
                 <div class="div_img_hire">
-                    <img src="../img/driver_price/rectangle.png" alt="">
+                    <img src="img/driver_price/rectangle.png" alt="">
                 </div>
                 <div class="hire_card_content">
-                    <h2>Alexandre Paiva</h2>
-                    <p>190 times ride</p>
-                    <p>Honda pilot</p>
+                    <h2 class="hire_card_content_name">Alexandre Paiva</h2>
+                    <p class="hire_card_content_rides">190 times ride</p>
+                    <p class="hire_card_content_car">Honda pilot</p>
                     <div class="btns">
                         <button class="avaible">Avaible</button>
-                        <img src="../img/guides_drivers/group-4.svg" alt="">
-                        <img src="../img/guides_drivers/user.svg" alt="">
+                        <img src="img/guides_drivers/group-4.svg" alt="">
+                        <img src="img/guides_drivers/user.svg" alt="">
                     </div>
                 </div>
                 <div class="hire_date">
+                    <div class="hire_select_div">
+                        <select style="width: 160px;  font-size: 1em !important; " class="country-selector hireselector ">
+                            <option disabled selected value="WY">Select Country</option>
+                            <option value="AL">Azerbaijan</option>
+                         </select>
+                    </div>
+
                     <label>
                     <span>Start date</span>
-                    <input style="width:200px" type="date">
+                    <input style="width:150px; background-color: #f7f7f7;" type="date">
                 </label>
                     <label>
                     <span>End date</span>
-                    <input style="width:200px" type="date">
+                    <input style="width:150px ;background-color: #f7f7f7;" type="date">
                 </label>
                 </div>
                 <div class="hire_detail_section">
-                    <img src="../img/guides_drivers/star.svg" alt="">
-                    <img src="../img/guides_drivers/star.svg" alt="">
-                    <img src="../img/guides_drivers/star.svg" alt="">
-                    <img src="../img/guides_drivers/star.svg" alt="">
-                    <img src="../img/guides_drivers/star.svg" alt="">
-                    <span>(23)</span>
-                    <a class="btnguide activeguide" href="#">Detail</a>
+                    <a class="driver_rate">
+                        <img src="img/guides_drivers/star.svg" alt="">
+                        <img src="img/guides_drivers/star.svg" alt="">
+                        <img src="img/guides_drivers/star.svg" alt="">
+                        <img src="img/guides_drivers/star.svg" alt="">
+                        <img src="img/guides_drivers/star.svg" alt="">
+                        <span>(23)</span>
+                    </a>
+                    <a class="btnguide " href="driver_detail.html">Details</a>
                 </div>
             </div>
 
@@ -191,16 +202,27 @@
                     <button class="btn btn_fixed">Fixed price</button>
                 </div>
                 <div class="select_price_title">
-                    <ul>
-                        <li>Date</li>
-                        <li>From</li>
-                        <li>Time</li>
-                        <li>To</li>
-                        <li>Info</li>
-                        <li>Route Cost</li>
-                    </ul>
+                    <table class="hiretable">
+                        <thead>
+                            <th>Date</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Time</th>
+                            <th>Route Cost</th>
+                            <th>Info</th>
+                        </thead>
+                    </table>
                 </div>
-
+                <div class="total_price">
+                    <div class="total_price_text">
+                        <h1>Total: price : 0</h1>
+                    </div>
+                    <div class="total_price_btn">
+                        <form>
+                            <button class="btn_continue">Continue to hire</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
