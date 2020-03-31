@@ -1,1 +1,1 @@
-$((function(){$("#slider-range").slider({range:!0,min:0,max:500,values:[75,300],slide:function(e,a){$("#amount").val("$"+a.values[0]+" - $"+a.values[1])}}),$("#amount").val("$"+$("#slider-range").slider("values",0)+" - $"+$("#slider-range").slider("values",1)),$("#amount").focusout((function(){var e=$(this).val().replace(/\$/g,"").split("-");$("#slider-range").slider({values:[parseInt(e[0]),parseInt(e[1])]})}))}));
+$(".js-range-slider").ionRangeSlider({type:"double",grid:!0,min:0,max:1e3,from:200,to:800,prefix:"$",skin:"round"});
