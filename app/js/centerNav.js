@@ -1,4 +1,4 @@
-        // center nav js
+        // // center nav js
         const hamburger = document.getElementById("hamburger");
         const openmenu = document.getElementById("openmenu");
 

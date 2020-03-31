@@ -86,3 +86,31 @@
                 margin: 0 !important;
             }
         }
+        
+        @media(max-width:570px) {
+            .bigslider {
+                .swiper-wrapper {
+                    padding: 0 !important;
+                    margin: 0 !important;
+                    .swiper-slide {
+                        .bigsliderTitle {
+                            padding-top: 100px;
+                            padding-bottom: 15px;
+                            text-align: left;
+                            margin-top: -190px;
+                            position: relative;
+                            z-index: 12;
+                            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), black);
+                            p {
+                                margin-left: 20px;
+                                color: white;
+                                font-size: 20px;
+                                font-weight: bold;
+                                position: relative;
+                                top: -20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }

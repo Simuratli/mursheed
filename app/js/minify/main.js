@@ -1,1 +1,1 @@
-const hamburger=document.getElementById("hamburger"),openmenu=document.getElementById("openmenu");hamburger.addEventListener("click",(function(){openmenu.classList.toggle("active")}));
+$("#hamburger").click((function(){$("#openmenu").slideToggle()}));
