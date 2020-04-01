@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
-    <link rel="stylesheet" href="style/css/main.min.css">
+    <link rel="stylesheet" href="style/css/main.css">
     <link rel="stylesheet" href="style/css/reset.css">
     <link rel="stylesheet" href="libs/main/css/_all_css_lib_files/all_css_lib_files.css">
     <title>Murheed</title>
@@ -14,6 +14,7 @@
 
 <body>
 
+    <!-- navbar -->
     <div class="topNav">
         <div class="container">
             <div class="topnavcontainer">
@@ -21,29 +22,29 @@
                     <div class="currency">
                         <form>
                             <select>
-                        <option class="optioncurrency">USD</option>
-                        <option class="optioncurrency">AZN</option>
-                            </select>
+                    <option class="optioncurrency">USD</option>
+                    <option class="optioncurrency">AZN</option>
+                        </select>
                         </form>
                     </div>
                     <div class="language">
                         <form>
                             <select>
-                        <option class="optionlang">Azerbaijan</option>
-                        <option class="optionlang">English</option>
-                    </select>
+                    <option class="optionlang">Azərbaycan</option>
+                    <option class="optionlang">English</option>
+                </select>
                         </form>
                     </div>
                 </div>
                 <div class="secondcontainer">
                     <div class="support">
-                        <a class="supportItem" href="support.html">Support</a>
-                        <a class="supportItem" href="contact.html">Contact Us</a>
+                        <a class="supportItem" href="support.html">Dəstək</a>
+                        <a class="supportItem" href="contact.html">Bizimlə Əlaqə</a>
                     </div>
                     <div id="dropLogBtn" class="profile" style="background-image: url(img/profile/user.jpg)">
                         <div id="loggedid">
-                            <a class="loggediditem" href="#">Login</a>
-                            <a class="loggediditem" href="register_chosing.html">Register</a>
+                            <a class="loggediditem" href="#">Daxil ol</a>
+                            <a class="loggediditem" href="register_chosing.html">Qeydiyyat</a>
                         </div>
                     </div>
                 </div>
@@ -58,31 +59,38 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="app/img/header/logo.svg" alt="">
+                    <img src="img/header/logo.svg" alt="">
                 </a>
             </div>
             <div class="rightContent">
                 <div class="currency">
-                    <span class="currencyText">Currency</span>
+                    <span class="currencyText">Valyuta</span>
                     <form>
-                        <select>
-                            <option class="optioncurrency">USD</option>
-                            <option class="optioncurrency">AZN</option>
-                        </select>
+                        <div class="custom-selectbox">
+                            <select>
+                                <option value="0">USD</option>
+                               <option value="1">EURO</option>
+                                <option value="2">TRY</option>
+                            </select>
+                        </div>
                     </form>
                 </div>
                 <div class="language">
-                    <span class="langText">Language</span>
+                    <span class="langText">Dil</span>
                     <form>
-                        <select>
-                            <option class="optionlang">Azerbaijan</option>
-                            <option class="optionlang">English</option>
-                        </select>
+                        <div class="custom-selectbox">
+                            <select>
+                                <option value="0">English</option>
+                               <option value="1">Turkey</option>
+                                <option value="2">Germany</option>
+                                <option value="3">France</option>
+                            </select>
+                        </div>
                     </form>
                 </div>
                 <div class="loginbuttons">
-                    <a href='login.html' class="loginbtn btn">Login</button>
-                    <a href="register.html" class="registerbtn btn">Register</a>
+                    <a href='login.html' class="loginbtn btn">Daxil ol</button>
+                <a href="register.html" class="registerbtn btn">Qeydiyyat</a>
                 </div>
                 <div id="hamburger" class="barIcon">
                     <p class="line"></p>
@@ -94,15 +102,15 @@
         </div>
         <div id="openmenu" class="container menucontainer">
             <div class="openmenu">
-                <a class="openmenu_item" href="#">Home</a>
-                <a class="openmenu_item" href="about.html">About</a>
-                <a class="openmenu_item" href="guide_and_drivers.html">Guides & Drivers</a>
-                <a class="openmenu_item" href="accomadation.html">Accomadation</a>
-                <a class="openmenu_item" href="flight.html">Flight Reservation</a>
-                <a class="openmenu_item" href="attractive_locations.html">Attractive Places</a>
-                <a class="openmenu_item" href="#">Offers</a>
-                <a class="openmenu_item" href="#">Support</a>
-                <a class="openmenu_item" href="contact.html">Contact</a>
+                <a class="openmenu_item" href="#">Ana səhifə</a>
+                <a class="openmenu_item" href="about.html"> Haqqımızda</a>
+                <a class="openmenu_item" href="guide_and_drivers.html"> Sürücülər & Bələdçilər</a>
+                <a class="openmenu_item" href="accomadation.html"> Məskən</a>
+                <a class="openmenu_item" href="flight.html">Uçuş Rezervasiyası</a>
+                <a class="openmenu_item" href="attractive_locations.html"> Cəlbedici Yerlər</a>
+                <a class="openmenu_item" href="offers.html">  Təkliflər</a>
+                <a class="openmenu_item" href="#">Dəstək</a>
+                <a class="openmenu_item" href="contact.html">Bizimlə Əlaqə</a>
             </div>
         </div>
     </div>
@@ -112,23 +120,24 @@
     <div class="bottomNav">
         <div class="container">
             <div class="navcontainer">
-                <a class="bottomnav_item active" href="#">Home</a>
-                <a class="bottomnav_item " href="about.html">About</a>
-                <a class="bottomnav_item " href="guide_and_drivers.html">Guides & Drivers</a>
-                <a class="bottomnav_item " href="accomadation.html">Accomadation</a>
-                <a class="bottomnav_item " href="flight.html">Flight Reservation</a>
-                <a class="bottomnav_item " href="attractive_locations.html">Attractive Places</a>
+                <a class="bottomnav_item active" href="#">Ana səhifə</a>
+                <a class="bottomnav_item " href="about.html">Haqqımızda</a>
+                <a class="bottomnav_item " href="guide_and_drivers.html">Sürücülər & Bələdçilər</a>
+                <a class="bottomnav_item " href="accomadation.html">Məskən</a>
+                <a class="bottomnav_item " href="flight.html">Uçuş Rezervasiyası</a>
+                <a class="bottomnav_item " href="attractive_locations.html">Cəlbedici Yerlər</a>
+                <a class="bottomnav_item " href="offers.html">Təkliflər</a>
             </div>
         </div>
     </div>
-
+    <!-- slidder -->
 
 
     <div class="siteNavigation">
         <div class="container navigation">
-            <a class="navigation__item" href="index.html">Home</a>
+            <a class="navigation__item" href="index.html">Ana səhifə</a>
             <span><i><i class="fas fa-chevron-right"></i></i></span>
-            <a class="navigation__item active" href="about.html">PLace</a>
+            <a class="navigation__item active" href="about.html"> Cəlbedici Yerlər</a>
         </div>
     </div>
 
@@ -137,45 +146,42 @@
         <div class="atractive_detail_single_container">
             <div class="atractive_detail_single_col1">
                 <div class="atractive_detail_single_imgmain">
-                    <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                    <img src="http://almursheed.com/Upload/attractiveLocation/2020/Baku-s2_49e5833d-39a6-41f8-8cac-8e8ee3462cb4.png" alt="">
                 </div>
                 <div class="atractive_detail_single_img_container">
                     <div class="atractive_detail_single_img">
-                        <a id="Zoom-1" class="MagicZoom" href="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-zoom-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80"
-                            class="MagicZoom" id="zoom" data-options="zoomMode: off; zoomOn: click"><img src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" alt=""></a>
+                        <a class="example-image-link" href="ihttp://almursheed.com/Upload/attractiveLocation/2020/42_5_92adbc55-ed0a-4454-bdda-45813974d229.jpg" data-lightbox="example-1"><img class="example-image" src="http://almursheed.com/Upload/attractiveLocation/2020/42_5_92adbc55-ed0a-4454-bdda-45813974d229.jpg" alt="image-1" /></a>
                     </div>
                     <div class="atractive_detail_single_img">
-                        <a id="Zoom-1" class="MagicZoom" href="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-zoom-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80"
-                            class="MagicZoom" id="zoom" data-options="zoomMode: off; zoomOn: click"><img src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" alt=""></a>
+                        <a class="example-image-link" href="http://almursheed.com/Upload/attractiveLocation/2020/icheri-sheher1_63ac1198-556d-4f32-ae10-8b90c43de699.jpg" data-lightbox="example-1"><img class="example-image" src="http://almursheed.com/Upload/attractiveLocation/2020/icheri-sheher1_63ac1198-556d-4f32-ae10-8b90c43de699.jpg" alt="image-1" /></a>
                     </div>
                     <div class="atractive_detail_single_img">
-                        <a id="Zoom-1" class="MagicZoom" href="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-zoom-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80"
-                            class="MagicZoom" id="zoom" data-options="zoomMode: off; zoomOn: click"><img src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" alt=""></a>
+                        <a class="example-image-link" href="http://almursheed.com/Upload/attractiveLocation/2020/icheri-sheher8_4a1e838a-725c-4318-b5bc-7ea8128d7e63.jpg" data-lightbox="example-1"><img class="example-image" src="http://almursheed.com/Upload/attractiveLocation/2020/icheri-sheher8_4a1e838a-725c-4318-b5bc-7ea8128d7e63.jpg" alt="image-1" /></a>
                     </div>
                     <div class="atractive_detail_single_img">
-                        <a id="Zoom-1" class="MagicZoom" href="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-zoom-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80"
-                            class="MagicZoom" id="zoom" data-options="zoomMode: off; zoomOn: click"><img src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" alt=""></a>
+                        <a class="example-image-link" href="http://almursheed.com/Upload/attractiveLocation/2020/main_5acdb030-75c3-44fc-a088-59b01f3b15fe.jpg" data-lightbox="example-1"><img class="example-image" src="http://almursheed.com/Upload/attractiveLocation/2020/main_5acdb030-75c3-44fc-a088-59b01f3b15fe.jpg" alt="image-1" /></a>
                     </div>
                     <div class="atractive_detail_single_img">
-                        <a id="Zoom-1" class="MagicZoom" href="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-zoom-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80"
-                            class="MagicZoom" id="zoom" data-options="zoomMode: off; zoomOn: click"><img src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" alt=""></a>
+                        <a class="example-image-link" href="http://almursheed.com/Upload/attractiveLocation/2020/Old_and_new_Baku_8d094fff-f565-4313-ae18-ec1b16262fe8.jpg" data-lightbox="example-1"><img class="example-image" src="http://almursheed.com/Upload/attractiveLocation/2020/Old_and_new_Baku_8d094fff-f565-4313-ae18-ec1b16262fe8.jpg" alt="image-1" /></a>
                     </div>
                     <div class="atractive_detail_single_img">
-                        <a id="Zoom-1" class="MagicZoom" href="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-zoom-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80"
-                            class="MagicZoom" id="zoom" data-options="zoomMode: off; zoomOn: click"><img src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" alt=""></a>
+                        <a class="example-image-link" href="http://almursheed.com/Upload/attractiveLocation/2020/Old_and_new_Baku_8d094fff-f565-4313-ae18-ec1b16262fe8.jpg" data-lightbox="example-1"><img class="example-image" src="http://almursheed.com/Upload/attractiveLocation/2020/Old_and_new_Baku_8d094fff-f565-4313-ae18-ec1b16262fe8.jpg" alt="image-1" /></a>
                     </div>
                     <div class="atractive_detail_single_img">
-                        <a id="Zoom-1" class="MagicZoom" href="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-zoom-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" data-image-2x="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80"
-                            class="MagicZoom" id="zoom" data-options="zoomMode: off; zoomOn: click"><img src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80" alt=""></a>
+                        <a class="example-image-link" href="http://almursheed.com/Upload/attractiveLocation/2020/View_of_old_Baku_8af714a9-8b43-40ce-ace5-c036256f5c73.jpg" data-lightbox="example-1"><img class="example-image" src="http://almursheed.com/Upload/attractiveLocation/2020/View_of_old_Baku_8af714a9-8b43-40ce-ace5-c036256f5c73.jpg" alt="image-1" /></a>
                     </div>
                 </div>
             </div>
+
+
             <div class="atractive_detail_single_col2">
                 <div class="atractive_detail_name">
-                    <h1 class="atractive_detail_name_h1">Boulvar</h1>
+                    <h1 class="atractive_detail_name_h1">Icherisheher (Old city)</h1>
                     <button class="actractive_detail_infobtn ">Ictimai Yer</button>
                 </div>
+
                 <div class="atractive_detail_map">
+                    <h2 class="atractive_detail_map_head">Location</h2>
                     <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 </div>
                 <div class="atractive_detail_info">
@@ -198,85 +204,136 @@
 
 
 
-
     <!-- footer  -->
     <footer>
+
         <div class="container">
             <div class="wrapper">
-                <div class="row">
-                    <div class="col-2">
-                        <div class="social">
-                            <div class="logo">
-                                <a href="index.html"><img src="app/img/footer/logo-dark.svg" alt=""></a>
-                            </div>
-                            <div class="description">
-                                <p>Mursheed helps you to have an unforgettable experience anywhere you travel to. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <p class="header-text">Site map</p>
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="">Guides & Drivers</a></li>
-                            <li><a href="offers.html">Offers</a></li>
-                            <li><a href="support.html">Support</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <p class="header-text">More</p>
-                        <ul>
-                            <li><a href="terms_conditions.html">Terms & conditions</a></li>
-                            <li><a href="privacypolicy.html">Privacy policy</a></li>
-                            <li><a href="">Cookies</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <div class="contact">
-                            <p class="header-text">Contact us</p>
+                <div class="footer">
+                    <div class="footer_row">
+                        <div class="footer_row_col aboutcol">
                             <ul>
-                                <li><a href="">info@mursheed.com</a></li>
-                                <li><a href="">+994 50 808 08 01</a></li>
+                                <li>
+                                    <img class="footer_logo" src="img/footer/logo-dark.svg" alt="">
+                                </li>
+                                <li>
+                                    Mursheed, səyahət etdiyiniz hər yerdə unudulmaz bir təcrübəyə sahib olmağınıza kömək edir.
+                                </li>
+
+
                             </ul>
-                            <p class="header-text">Subscribe</p>
-                            <div class="send pt-2">
-                                <input autocomplete="off" placeholder="your email address" type="text">
-                                <button><img src="app/img/footer/send.svg" alt=""></button>
-                            </div>
+                        </div>
+                        <div class="footer_row_col">
+                            <ul>
+                                <li>
+                                    <h6>Sayt xəritəsi</h6>
+                                </li>
+                                <li>
+                                    <a href="#">Ana Səhifə</a>
+                                </li>
+                                <li>
+                                    <a href="#">Haqqımızda</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bələdçilər & Sürücülər</a>
+                                </li>
+                                <li>
+                                    <a href="#">Məskən</a>
+                                </li>
+                                <li>
+                                    <a href="#">Uçuş Rezervasiyası</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cəlbedici Yerlər</a>
+                                </li>
+                                <li>
+                                    <a href="#">Təkliflər</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="footer_row_col">
+                            <ul>
+                                <li>
+                                    <h6>Daha çox</h6>
+                                </li>
+                                <li>
+                                    <a href="#">Şərtlər & qaydalar</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Gizlilik şərtləri</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cookies</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_row_col">
+                            <ul>
+                                <li>
+                                    <h6>Bizimlə Əlaqə</h6>
+                                </li>
+                                <li>
+                                    <a href="#">info@mursheed.com</a>
+                                </li>
+                                <li>
+                                    <a href="#">+994 50 808 08 01</a>
+                                </li>
+                                <li>
+                                    <form action="#">
+                                        <label>
+                                           Abonə Ol
+                                          <div class="send">
+                                            <input type="text"><button><img src="img/footer/send.svg" alt=""></button>
+                                          </div>
+                                       </label>
+                                    </form>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-
-                </div>
-                <div class="col-12">
-                    <div class="social-icons ">
+                    <div class="footer_social_row">
                         <ul>
-                            <li class="head">
-                                <h2 class="head_h2">Follow Us</h2>
+                            <li>
+                                <h5>Bizi izlə:</h5>
                             </li>
-                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-facebook-f"></i></a></li>
-                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-instagram"></i></a></li>
-                            <li><a href=""><i style="color:#C7C7C7;" class="fab fa-twitter"></i></a></li>
-                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-linkedin-in"></i></li>
-                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-whatsapp"></i></a></li>
-                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-snapchat-ghost"></i></a></li>
-                            <li><a href=""><i style="color:#C7C7C7;" class="fab fa-youtube"></i></a></li>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
+        </div>
     </footer>
 
 
 
+
     <script src='js/minify/jquery.3.4.1.js'></script>
-    <script src='js/minify/jqueryui.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
     <script src="libs/main/js/_all_js_lib_files/all_js_lib_files.js"></script>
     <script src="js/minify/accordionmenu.js"></script>
     <script src="js/minify/atractive_places_slider.js"></script>
     <script src="js/minify/big_slider.js"></script>
-    <script src="js/minify/centerNav.js"></script>
     <script src="js/minify/driver_detail.js"></script>
     <script src="js/minify/driverSlider.js"></script>
     <script src="js/minify/main.js"></script>
@@ -290,7 +347,12 @@
     <script src="js/customselecbox.js"></script>
     <script src="libs/rangeslider/ion.rangeSlider.min.js"></script>
     <script src="js/minify/range_slider.js"></script>
+    <script src="js/minify/centerNav.js"></script>
 
 
 
 </body>
+
+
+
+</html>
