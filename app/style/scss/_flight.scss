@@ -18,8 +18,8 @@ $bg-color: #f7f7f7;
     width: 100%;
     .flight_containerbg {
         background-color: $bg-color;
-        padding-top: 20px !important;
-        padding-bottom: 20px !important;
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
         .flight_row {
             display: flex;
             flex-wrap: wrap;
@@ -31,27 +31,41 @@ $bg-color: #f7f7f7;
                     margin: 0 auto;
                     display: flex;
                     justify-content: space-between;
-                    border: 1px solid #777;
-                    padding-top: 15px;
-                    padding-bottom: 15px;
+                    border: 1px solid #c5c4c4;
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                    .flight_airname {
+                        flex: 1;
+                        font-size: 1.2em;
+                        font-weight: lighter;
+                        color: gray;
+                        position: relative;
+                        top: 15px;
+                        margin-left: 20px;
+                    }
                     .flight_img {
-                        width: 140px;
+                        flex: 0.5;
+                        width: 100px;
                         height: 60px;
                         object-fit: cover;
                         margin-left: 15px !important;
                     }
-                    .flight_button {
-                        padding: 1px 15px;
-                        background-color: $main-color;
-                        display: inline;
-                        height: 23px;
-                        width: 70px;
-                        color: rgb(26, 19, 19);
-                        text-align: center;
-                        margin-top: 15px;
-                        color: white;
-                        font-size: 1em;
-                        margin-right: 10px !important;
+                    div {
+                        flex: 0.5;
+                        .flight_button {
+                            display: block;
+                            background: #0b8071;
+                            border: 1px solid #0b8071;
+                            border-radius: 3px;
+                            font-size: 16px;
+                            width: 80%;
+                            padding: 3px;
+                            margin-left: -10px;
+                            margin-top: 15px;
+                            font-weight: 700;
+                            text-align: center;
+                            color: #fff;
+                        }
                     }
                 }
             }
@@ -59,22 +73,77 @@ $bg-color: #f7f7f7;
     }
 }
 
-.pagination_cover {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 100%;
-    .pagination {
-        display: flex;
-        justify-content: flex-end;
-        &_item {
-            color: black;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            padding-left: 10px;
-            padding-right: 10px;
-            border-left: 0.2px solid $bg-color;
-            font-size: 0.8em;
+@media(max-width:800px) {
+    .flight_container {
+        .flight_containerbg {
+            .flight_row {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media(max-width:448px) {
+    .flight_container {
+        width: 100%;
+        .flight_containerbg {
             background-color: $bg-color;
+            padding-top: 30px !important;
+            padding-bottom: 30px !important;
+            .flight_row {
+                .col-6 {
+                    .flight_card {
+                        width: 95%;
+                        margin: 0 auto;
+                        display: block;
+                        border: 1px solid #c5c4c4;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                        flex-direction: column;
+                        .flight_div {
+                            width: 100%;
+                            display: block;
+                            margin: 0 auto;
+                            text-align: center;
+                        }
+                        .flight_airname {
+                            font-size: 1.2em;
+                            font-weight: lighter;
+                            color: gray;
+                            position: relative;
+                            top: 15px;
+                            display: block;
+                            margin-left: 0 auto;
+                        }
+                        .flight_img {
+                            flex: 0.5;
+                            width: 100px;
+                            height: 60px;
+                            object-fit: cover;
+                            margin-left: 0px !important;
+                        }
+                        div {
+                            flex: 0.5;
+                            .flight_button {
+                                display: block;
+                                background: #0b8071;
+                                border: 1px solid #0b8071;
+                                border-radius: 3px;
+                                font-size: 16px;
+                                width: 98%;
+                                padding: 3px;
+                                margin-left: 0px;
+                                margin-top: 25px;
+                                font-weight: 700;
+                                text-align: center;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
