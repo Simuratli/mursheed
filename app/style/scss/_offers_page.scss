@@ -2,26 +2,28 @@
     .input_container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         .offers_div {
-            flex: 1 1 auto;
             .offer_inoutarea {
-                width: 300px;
+                width: 310px;
             }
         }
     }
     .offer_cont_main {
+        padding-bottom: 30px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         .offers_col4 {
-            -ms-flex: 0 0 33.333333%;
-            flex: 0 0 33.333333%;
-            max-width: 33.333333%;
-            margin-top: 20px;
+            -ms-flex: 0 0 23.333333%;
+            flex: 0 0 23.333333%;
+            max-width: 23.333333%;
+            margin-top: 10px;
             .swiper_our_offers_partners_bottom_item {
                 border-radius: 3px;
                 text-align: left;
                 position: relative;
-                width: 85%;
+                width: 100%;
                 img {
                     width: 100%;
                 }
