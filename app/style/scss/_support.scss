@@ -23,18 +23,36 @@ $bg-color: #f7f7f7;
                 }
             }
             .support_header_title_box {
-                flex: 1;
+                flex: 0.8;
                 .support_card_link {
                     .support_card {
-                        padding-top: 20px;
-                        padding-bottom: 20px;
-                        width: 70%;
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                        padding-left: 15px;
+                        padding-right: 15px;
                         margin: 0 auto;
+                        width: 55%;
+                        font-size: 14px;
                         text-align: center;
                         color: white;
                         border-radius: 10px;
-                        padding-left: 10px;
-                        padding-right: 10px;
+                        p {
+                            display: block;
+                            margin-block-start: 1em;
+                            margin-block-end: 1em;
+                            margin-inline-start: 0px;
+                            margin-inline-end: 0px;
+                            margin-top: 0;
+                            margin-bottom: 1rem;
+                            font-size: 0.8em;
+                            font-weight: 400;
+                            line-height: 1.5;
+                        }
+                        .head_support {
+                            font-size: 1.5em;
+                            margin-bottom: 10px;
+                            padding-top: 5px;
+                        }
                         .fa-question-circle,
                         .fa-user {
                             font-size: 2em;
@@ -51,8 +69,20 @@ $bg-color: #f7f7f7;
         }
     }
     .faq_container {
+        margin-top: 20px;
+        .faq_head {
+            font-family: Averta;
+            font-size: 20px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            margin-bottom: 20px;
+            color: #000;
+        }
         .accordion {
-            border-top: 1px solid #777 !important;
+            border-top: 1px solid rgb(214, 212, 212) !important;
             color: #444;
             cursor: pointer;
             padding: 18px;
@@ -64,27 +94,27 @@ $bg-color: #f7f7f7;
             transition: 0.4s;
             background-color: transparent;
             &.active,
-            &:hover {
-                background-color: #ccc;
-            }
             &:after {
                 content: '\002B';
-                font-weight: bold;
                 float: right;
                 color: $main-color;
                 margin-left: 5px;
             }
             &.active:after {
                 content: "\2212";
-                color: $main-color;
             }
         }
         .panel {
             padding: 0 18px;
-            background-color: white;
+            background-color: $bg-color;
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.2s ease-out;
+            p {
+                font-size: 0.9em;
+                padding: 10px;
+                color: $main-color;
+            }
         }
     }
 }
