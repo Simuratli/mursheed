@@ -155,7 +155,7 @@
                     top: 50%;
                     &::after {
                         content: "";
-                        background-image: url("../img/swiper_most_popular_drivers/right.svg");
+                        background-image: url("../../img/swiper_most_popular_drivers/right.svg");
                         width: 30px;
                         height: 30px;
                         background-repeat: no-repeat;
@@ -165,7 +165,7 @@
                     top: 50%;
                     &::after {
                         content: "";
-                        background-image: url("../img/swiper_most_popular_drivers/left.svg");
+                        background-image: url("../../img/swiper_most_popular_drivers/left.svg");
                         width: 30px;
                         height: 30px;
                         background-repeat: no-repeat;
@@ -178,6 +178,26 @@
 
 @media only screen and (max-width: 992px) {
     #swiper_most_popular_drivers {
+        .swiper_most_popular_drivers_top {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 10px 10px;
+            align-items: center;
+            h6 {
+                font-family: Averta;
+                font-size: 24px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+            }
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
         h6 {
             font-size: 18px !important;
         }

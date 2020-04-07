@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
-    <link rel="stylesheet" href="style/css/main.min.css">
+    <link rel="shortcut icon" sizes="180x180" href="img/header/favIcon2.png">
+    <link rel="stylesheet" href="style/css/main.css">
     <link rel="stylesheet" href="style/css/reset.css">
     <link rel="stylesheet" href="libs/main/css/_all_css_lib_files/all_css_lib_files.css">
+
     <title>Murheed</title>
 </head>
 
 <body>
-
+    <!-- navbar -->
     <div class="topNav">
         <div class="container">
             <div class="topnavcontainer">
@@ -28,7 +30,7 @@
                     <div class="language">
                         <form>
                             <select>
-                        <option class="optionlang">Azerbaijan</option>
+                        <option class="optionlang">Azərbaycan</option>
                         <option class="optionlang">English</option>
                     </select>
                         </form>
@@ -36,13 +38,13 @@
                 </div>
                 <div class="secondcontainer">
                     <div class="support">
-                        <a class="supportItem" href="support.html">Support</a>
-                        <a class="supportItem" href="contact.html">Contact Us</a>
+                        <a class="supportItem" href="support.html">Dəstək</a>
+                        <a class="supportItem" href="contact.html">Bizimlə Əlaqə</a>
                     </div>
                     <div id="dropLogBtn" class="profile" style="background-image: url(img/profile/user.jpg)">
                         <div id="loggedid">
-                            <a class="loggediditem" href="#">Login</a>
-                            <a class="loggediditem" href="register_chosing.html">Register</a>
+                            <a class="loggediditem" href="#">Daxil ol</a>
+                            <a class="loggediditem" href="register_chosing.html">Qeydiyyat</a>
                         </div>
                     </div>
                 </div>
@@ -57,31 +59,38 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="../img/header/logo.svg" alt="">
+                    <img src="img/header/logo.svg" alt="">
                 </a>
             </div>
             <div class="rightContent">
                 <div class="currency">
-                    <span class="currencyText">Currency</span>
+                    <span class="currencyText">Valyuta</span>
                     <form>
-                        <select>
-                            <option class="optioncurrency">USD</option>
-                            <option class="optioncurrency">AZN</option>
-                        </select>
+                        <div class="custom-selectbox">
+                            <select>
+                                    <option value="0">USD</option>
+                                   <option value="1">EURO</option>
+                                    <option value="2">TRY</option>
+                                </select>
+                        </div>
                     </form>
                 </div>
                 <div class="language">
-                    <span class="langText">Language</span>
+                    <span class="langText">Dil</span>
                     <form>
-                        <select>
-                            <option class="optionlang">Azerbaijan</option>
-                            <option class="optionlang">English</option>
-                        </select>
+                        <div class="custom-selectbox">
+                            <select>
+                                    <option value="0">English</option>
+                                   <option value="1">Turkey</option>
+                                    <option value="2">Germany</option>
+                                    <option value="3">France</option>
+                                </select>
+                        </div>
                     </form>
                 </div>
                 <div class="loginbuttons">
-                    <a href='login.html' class="loginbtn btn">Login</button>
-                    <a href="register.html" class="registerbtn btn">Register</a>
+                    <a href='login.html' class="loginbtn btn">Daxil ol</button>
+                    <a href="register.html" class="registerbtn btn">Qeydiyyat</a>
                 </div>
                 <div id="hamburger" class="barIcon">
                     <p class="line"></p>
@@ -93,15 +102,15 @@
         </div>
         <div id="openmenu" class="container menucontainer">
             <div class="openmenu">
-                <a class="openmenu_item" href="#">Home</a>
-                <a class="openmenu_item" href="about.html">About</a>
-                <a class="openmenu_item" href="guide_and_drivers.html">Guides & Drivers</a>
-                <a class="openmenu_item" href="accomadation.html">Accomadation</a>
-                <a class="openmenu_item" href="flight.html">Flight Reservation</a>
-                <a class="openmenu_item" href="attractive_locations.html">Attractive Places</a>
-                <a class="openmenu_item" href="offers.html">Offers</a>
-                <a class="openmenu_item" href="#">Support</a>
-                <a class="openmenu_item" href="contact.html">Contact</a>
+                <a class="openmenu_item" href="#">Ana səhifə</a>
+                <a class="openmenu_item" href="about.html"> Haqqımızda</a>
+                <a class="openmenu_item" href="guide_and_drivers.html"> Sürücülər & Bələdçilər</a>
+                <a class="openmenu_item" href="accomadation.html"> Məskən</a>
+                <a class="openmenu_item" href="flight.html">Uçuş Rezervasiyası</a>
+                <a class="openmenu_item" href="attractive_locations.html"> Cəlbedici Yerlər</a>
+                <a class="openmenu_item" href="offers.html">  Təkliflər</a>
+                <a class="openmenu_item" href="#">Dəstək</a>
+                <a class="openmenu_item" href="contact.html">Bizimlə Əlaqə</a>
             </div>
         </div>
     </div>
@@ -111,14 +120,21 @@
     <div class="bottomNav">
         <div class="container">
             <div class="navcontainer">
-                <a class="bottomnav_item active" href="#">Home</a>
-                <a class="bottomnav_item " href="about.html">About</a>
-                <a class="bottomnav_item " href="guide_and_drivers.html">Guides & Drivers</a>
-                <a class="bottomnav_item " href="accomadation.html">Accomadation</a>
-                <a class="bottomnav_item " href="flight.html">Flight Reservation</a>
-                <a class="bottomnav_item " href="attractive_locations.html">Attractive Places</a>
-                <a class="bottomnav_item " href="offers.html">Offers</a>
+                <a class="bottomnav_item active" href="#">Ana səhifə</a>
+                <a class="bottomnav_item " href="about.html">Haqqımızda</a>
+                <a class="bottomnav_item " href="guide_and_drivers.html">Sürücülər & Bələdçilər</a>
+                <a class="bottomnav_item " href="accomadation.html">Məskən</a>
+                <a class="bottomnav_item " href="flight.html">Uçuş Rezervasiyası</a>
+                <a class="bottomnav_item " href="attractive_locations.html">Cəlbedici Yerlər</a>
+                <a class="bottomnav_item " href="offers.html">Təkliflər</a>
             </div>
+        </div>
+    </div>
+    <div class="siteNavigation">
+        <div class="container navigation">
+            <a class="navigation__item" href="index.html">Ana səhifə</a>
+            <span><i><i class="fas fa-chevron-right"></i></i></span>
+            <a class="navigation__item active" href="attractive_locations.html"> Təkliflər</a>
         </div>
     </div>
 
@@ -132,60 +148,85 @@
                         <li><a class="profile_nav_link " href="#tab2">Car</a></li>
                         <li><a class="profile_nav_link" href="#tab3">Rides Table</a></li>
                         <li><a class="profile_nav_link" href="#tab4">Routes</a></li>
-                        <li><a class="profile_nav_link" href="#tab5">Packages</a></li>
-                        <li><a class="profile_nav_link" href="#tab6">Comments</a></li>
+                        <li><a class="profile_nav_link" href="#tab5">Accounts</a></li>
                     </ul>
                 </div>
             </div>
             <div class="driver_profile_col2">
                 <div class="driverProfile_card">
                     <div class="driverProfile_card_img">
-                        <img src="app/img/popular_location/rectangle2.jpg" alt="">
+                        <img src="img/popular_location/rectangle2.jpg" alt="">
                     </div>
                     <div class="driverProfile_card_name">
                         <h1>Vilayat Muslumzada</h1>
-                        <p>User since date (12.12.19- 120 days)</p>
+                        <p>Total rides: 5</p>
+                        <p>Rating: 4/5</p>
+                        <p>Earning: 102</p>
+                    </div>
+                    <div class="busy_avaible">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                            <label class="onoffswitch-label" for="myonoffswitch">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
                     </div>
                 </div>
+                
 
                 <div class="drivers_input_area">
                     <form id='tab1' class="tab_content">
                         <div class="inputs">
-                            <label for="name">Company Name</label>
-                            <input autocomplete="off" id="name" type="text" placeholder="Your Company Name">
+                            <label for="name">First Name</label>
+                            <input autocomplete="off" id="name" type="text" placeholder="Your First Name">
+                            <!-- <span asp-validation-for="name" class="text-danger"></span> -->
                         </div>
                         <div class="inputs">
-                            <label for="name">Age Name</label>
-                            <input autocomplete="off" id="name" type="text" placeholder="Your Company Name">
+                            <label for="last-name">Last Name</label>
+                            <input autocomplete="off" id="last-name" type="text" placeholder="Your Last Name">
+                            <!-- <span asp-validation-for="name" class="text-danger"></span> -->
                         </div>
-                        <label class="required" for="">
-                            Add language
-                        </label>
-                        <div class="custom-selectbox w-trash">
-                            <select>
-                                    <option value="0">All languages</option>
-                                    <option value="1">English</option>
-                                    <option value="2">Russian</option>
-                                </select>
-                            <div class="trash">
-                                <i class="fas fa-trash"></i>
-                            </div>
+                        <div class="inputs">
+                            <label for="birthdate">Birthdate</label>
+                            <input class="birth-border" autocomplete="off" id="birthdate" type="date" placeholder="Your Birthdate">
+                            <!-- <span asp-validation-for="Phone" class="text-danger"></span> -->
+                        </div>
+                        <div class="inputs">
+                            <label for="last-name">Photo</label>
+                            <input autocomplete="off" id="last-name" type="file" placeholder="Your Last Name">
+                            <!-- <span asp-validation-for="name" class="text-danger"></span> -->
                         </div>
 
-                        <div class="add_lang">
-                            <i class="fas fa-plus"></i>
-                            <p>add language</p>
+                        <div class="inputs">
+                            <label for="country">Country</label>
+                            <select class="country-selector" name="state"  style="width: 100%;">
+                                <option>Azerbaijan</option>
+                                <option>Turkey</option>
+                                <option>Norway</option>
+                            </select>
+                        </div>
+
+                        <div class="inputs">
+                            <label for="country">Language</label>
+                            <select class="country-selector" multiple='multiple' name="state"  style="width: 100%;">
+                                <option>Azerbaijan</option>
+                                <option>Turkey</option>
+                                <option>Norway</option>
+                            </select>
                         </div>
                         <div class="save">
                             <button class="save-btn">Save changes</button>
                         </div>
                     </form>
+
+
                     <form id='tab2' class="tab_content">
                         <div class="inputs">
 
-                            <div class="custom-selectbox">
+                            <div class="myselectbox">
                                 <label class="required" for="">
-                                    Add language
+                                    Brand
                                 </label>
                                 <select>
                                     <option value="0">All languages</option>
@@ -198,9 +239,9 @@
 
                         <div class="inputs">
                             <label class="required" for="">
-                                Add language
+                                Model
                             </label>
-                            <div class="custom-selectbox">
+                            <div class="myselectbox">
                                 <select>
                                     <option value="0">All languages</option>
                                     <option value="1">English</option>
@@ -210,28 +251,62 @@
 
                         </div>
 
-                        <div class="inputs">
-
-                            <div class="custom-selectbox">
-                                <label class="required" for="">
-                                    Add language
-                                </label>
-                                <select>
-                                    <option value="0">All languages</option>
-                                    <option value="1">English</option>
-                                    <option value="2">Russian</option>
-                                </select>
+                            <div class="inputs">
+                                <label for="last-name">Photo</label>
+                                <input autocomplete="off" id="last-name" type="file" placeholder="Your Last Name">
+                                <!-- <span asp-validation-for="name" class="text-danger"></span> -->
                             </div>
 
-                        </div>
-                        <div class='file-input'>
-                            <label for="file">
-                                <span class='button'><img src="app/img/profile/upload.svg" alt=""></span>
-                                <span class='label' data-js-label>upload image</label>
-                            <input id="file" autocomplete="off" type='file'>
-                            </label>
-
-
+                        <div class="form-group inputs">
+                            <label asp-for="CarPhotos" class="col-form-label">Car Photos</label>
+                            <div>
+                                <input disabled autocomplete="off" asp-for="CarPhotos" class="form-control formField" type="file" multiple="multiple" id="add-photo" max="6">
+                                <span asp-validation-for="CarPhotos" class="text-danger"></span>
+                            </div>
+                            <div class="car-img-container">
+                                <div class="single-image-container">
+                                    <div class="car-overlay">
+                                        <button><i class="fas fa-search-plus"></i></button>
+                                        <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                    <img src="img/driver_details/grancoupe.jpg" alt="">
+                                </div>
+                                <div class="single-image-container">
+                                    <div class="car-overlay">
+                                        <button><i class="fas fa-search-plus"></i></button>
+                                        <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                    <img src="img/driver_details/grancoup2.jpg" alt="">
+                                </div>
+                                <div class="single-image-container">
+                                    <div class="car-overlay">
+                                        <button><i class="fas fa-search-plus"></i></button>
+                                        <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                    <img src="img/driver_details/granscoupe3.jpg" alt="">
+                                </div>
+                                <div class="single-image-container">
+                                    <div class="car-overlay">
+                                        <button><i class="fas fa-search-plus"></i></button>
+                                        <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                    <img src="img/driver_details/grancoupe4.jpg" alt="">
+                                </div>
+                                <div class="single-image-container">
+                                    <div class="car-overlay">
+                                        <button><i class="fas fa-search-plus"></i></button>
+                                        <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                    <img src="img/driver_details/grancoupe5.png" alt="">
+                                </div>
+                                <div class="single-image-container">
+                                    <div class="car-overlay">
+                                        <button><i class="fas fa-search-plus"></i></button>
+                                        <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                    <img src="img/driver_details/grancoupe6.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
 
                         <div class="save">
@@ -243,22 +318,33 @@
                     <form id="tab3" class="tab_content">
                         <div class="inputs">
                             <label for="tourist_name">Tourist name</label>
-                            <input autocomplete="off" id="tourist_name" type="text" placeholder="Tourist name">
                         </div>
-                        <p>Journey</p>
+                        
                         <div class="journey">
-                            <div class="inputs">
-                                <label for="price">Price</label>
-                                <input autocomplete="off" id="price" type="text" placeholder="580$">
-                            </div>
-                            <div class="inputs">
-                                <label for="start">Start date</label>
-                                <input autocomplete="off" type="date" placeholder="Date">
-                            </div>
-                            <div class="inputs">
-                                <label for="End">End date</label>
-                                <input autocomplete="off" type="date" placeholder="Date">
-                            </div>
+                            <table id="rideDataTable" class="table table-striped table-bordered  nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                <thead>
+                                    <tr>
+                                        <th>Country</th>
+                                        <th></th>
+                                        <th>From date</th>
+                                        <th>To date</th>
+                                        <th>Price</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="top">
+                                        <th>Country</th>
+                                        <th></th>
+                                        <th>From date</th>
+                                        <th>To date</th>
+                                        <th>Price</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <div class="save">
                             <button class="save-btn">Save changes</button>
@@ -273,7 +359,7 @@
                         <div class="new_route">
                             <div class="inputs">
                                 <label for="">From</label>
-                                <div class="custom-selectbox ">
+                                <div class="myselectbox ">
                                     <select>
                                         <option value="0">All languages</option>
                                         <option value="1">English</option>
@@ -283,7 +369,7 @@
                             </div>
                             <div class="inputs">
                                 <label for="">To</label>
-                                <div class="custom-selectbox ">
+                                <div class="myselectbox ">
                                     <select>
                                         <option value="0">All languages</option>
                                         <option value="1">English</option>
@@ -361,163 +447,39 @@
                     </form>
 
                     <form id="tab5" class="tab_content">
+    
                         <div class="inputs">
-                            <label for="name">Package Name</label>
-                            <input autocomplete="off" id="name" type="text" placeholder="Your Package Name">
+                            <label for="name">Email</label>
+                            <input autocomplete="off" id="name" type="email" placeholder="Your First Name">
+                            <!-- <span asp-validation-for="name" class="text-danger"></span> -->
                         </div>
                         <div class="inputs">
-                            <label for="name">Package Price</label>
-                            <input autocomplete="off" id="name" type="text" placeholder="Your Package price">
+                            <label for="name">Phone</label>
+                            <input autocomplete="off" id="name" type="text" placeholder="Your First Name">
+                            <!-- <span asp-validation-for="name" class="text-danger"></span> -->
                         </div>
-                        <p class="heading">Add new route</p>
-                        <div class="new_route">
-                            <div class="inputs">
-                                <label for="">From</label>
-                                <div class="custom-selectbox ">
-                                    <select>
-                                        <option value="0">All languages</option>
-                                        <option value="1">English</option>
-                                        <option value="2">Russian</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="inputs">
-                                <label for="">To</label>
-                                <div class="custom-selectbox ">
-                                    <select>
-                                        <option value="0">All languages</option>
-                                        <option value="1">English</option>
-                                        <option value="2">Russian</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="inputs cost">
-                                <label for="">Route Cost</label>
-                                <p>100$</p>
-                            </div>
+                        <div class="inputs">
+                            <label for="name">Username</label>
+                            <input autocomplete="off" id="name" type="text" placeholder="Your First Name">
+                            <!-- <span asp-validation-for="name" class="text-danger"></span> -->
                         </div>
-                        <p class="heading">All routes</p>
-                        <div class="all_routes details">
-                            <div class="thead">
-                                <ul>
-                                    <li>FROM</li>
-                                    <li>TO</li>
-                                    <li>COST</li>
-                                    <li></li>
-                                </ul>
+                        <div class="inputs">
+                            
+                            <div class="input_login_box">
+                                <i class="fa fa-eye"> </i>
+                                <label for="name">Password</label>
+                                <input type="password" class="login_input" placeholder="Password">
                             </div>
-                            <div class="line"></div>
-                            <div class="tbody">
-                                <ul>
-                                    <li>Baku</li>
-                                    <li>Nakhcivan</li>
-                                    <li>300$</li>
-                                    <li class="icons">
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-trash-alt"></i>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>Baku</li>
-                                    <li>Nakhcivan</li>
-                                    <li>300$</li>
-                                    <li>
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-trash-alt"></i>
-                                    </li>
-                                </ul>
-                                <ul>
-
-                                    <li>Baku</li>
-                                    <li>Nakhcivan</li>
-                                    <li>300$</li>
-                                    <li>
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-trash-alt"></i>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>Baku</li>
-                                    <li>Nakhcivan</li>
-                                    <li>300$</li>
-                                    <li>
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-trash-alt"></i>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>Baku</li>
-                                    <li>Nakhcivan</li>
-                                    <li>300$</li>
-                                    <li>
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-trash-alt"></i>
-                                    </li>
-                                </ul>
-
-                            </div>
+                            <!-- <span asp-validation-for="name" class="text-danger"></span> -->
                         </div>
-
-                    </form>
-
-
-                    <form id="tab6" class="tab_content">
-                        <div class="driver_detail_comment_card">
-                            <div class="driver_detail_comment_card_img">
-                                <img src="app/img/profile/rectangle.jpg" alt="">
+                        <div class="inputs">
+                            
+                            <div class="input_login_box">
+                                <i class="fa fa-eye"> </i>
+                                <label for="name">Confirm Password</label>
+                                <input type="password" class="login_input" placeholder="Password">
                             </div>
-                            <div class="driver_detail_comment_content">
-                                <h4>John Doe</h4>
-                                <div class="stars">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <span>19 June 2019</span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fugit culpa soluta odio unde tenetur in provident veritatis asperiores, id voluptatibus iusto temporibus, nulla ipsa, dolores inventore hic laboriosam magnam?</p>
-
-                            </div>
-                        </div>
-                        <div class="driver_detail_comment_card">
-                            <div class="driver_detail_comment_card_img">
-                                <img src="app/img/profile/rectangle.jpg" alt="">
-                            </div>
-                            <div class="driver_detail_comment_content">
-                                <h4>John Doe</h4>
-                                <div class="stars">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <span>19 June 2019</span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fugit culpa soluta odio unde tenetur in provident veritatis asperiores, id voluptatibus iusto temporibus, nulla ipsa, dolores inventore hic laboriosam magnam?</p>
-
-                            </div>
-                        </div>
-                        <div class="driver_detail_comment_card">
-                            <div class="driver_detail_comment_card_img">
-                                <img src="app/img/profile/rectangle.jpg" alt="">
-                            </div>
-                            <div class="driver_detail_comment_content">
-                                <h4>John Doe</h4>
-                                <div class="stars">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <img src="app/img/profile/star.svg" alt="">
-                                    <span>19 June 2019</span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fugit culpa soluta odio unde tenetur in provident veritatis asperiores, id voluptatibus iusto temporibus, nulla ipsa, dolores inventore hic laboriosam magnam?</p>
-
-                            </div>
+                            <!-- <span asp-validation-for="name" class="text-danger"></span> -->
                         </div>
                     </form>
 
@@ -526,84 +488,135 @@
         </div>
     </div>
 
-
-    <!-- footer  -->
     <footer>
+
         <div class="container">
             <div class="wrapper">
-                <div class="row">
-                    <div class="col-2">
-                        <div class="social">
-                            <div class="logo">
-                                <a href="index.html"><img src="../img/footer/logo-dark.svg" alt=""></a>
-                            </div>
-                            <div class="description">
-                                <p>Mursheed helps you to have an unforgettable experience anywhere you travel to. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <p class="header-text">Site map</p>
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="">Guides & Drivers</a></li>
-                            <li><a href="offers.html">Offers</a></li>
-                            <li><a href="support.html">Support</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <p class="header-text">More</p>
-                        <ul>
-                            <li><a href="terms_conditions.html">Terms & conditions</a></li>
-                            <li><a href="privacypolicy.html">Privacy policy</a></li>
-                            <li><a href="">Cookies</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <div class="contact">
-                            <p class="header-text">Contact us</p>
+                <div class="footer">
+                    <div class="footer_row">
+                        <div class="footer_row_col aboutcol">
                             <ul>
-                                <li><a href="">info@mursheed.com</a></li>
-                                <li><a href="">+994 50 808 08 01</a></li>
+                                <li>
+                                    <img class="footer_logo" src="img/footer/logo-dark.svg" alt="">
+                                </li>
+                                <li>
+                                    Mursheed, səyahət etdiyiniz hər yerdə unudulmaz bir təcrübəyə sahib olmağınıza kömək edir.
+                                </li>
+
+
                             </ul>
-                            <p class="header-text">Subscribe</p>
-                            <div class="send pt-2">
-                                <input autocomplete="off" placeholder="your email address" type="text">
-                                <button><img src="../img/footer/send.svg" alt=""></button>
-                            </div>
+                        </div>
+                        <div class="footer_row_col">
+                            <ul>
+                                <li>
+                                    <h6>Sayt xəritəsi</h6>
+                                </li>
+                                <li>
+                                    <a href="#">Ana Səhifə</a>
+                                </li>
+                                <li>
+                                    <a href="#">Haqqımızda</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bələdçilər & Sürücülər</a>
+                                </li>
+                                <li>
+                                    <a href="#">Məskən</a>
+                                </li>
+                                <li>
+                                    <a href="#">Uçuş Rezervasiyası</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cəlbedici Yerlər</a>
+                                </li>
+                                <li>
+                                    <a href="#">Təkliflər</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="footer_row_col">
+                            <ul>
+                                <li>
+                                    <h6>Daha çox</h6>
+                                </li>
+                                <li>
+                                    <a href="#">Şərtlər & qaydalar</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Gizlilik şərtləri</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cookies</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_row_col">
+                            <ul>
+                                <li>
+                                    <h6>Bizimlə Əlaqə</h6>
+                                </li>
+                                <li>
+                                    <a href="#">info@mursheed.com</a>
+                                </li>
+                                <li>
+                                    <a href="#">+994 50 808 08 01</a>
+                                </li>
+                                <li>
+                                    <form action="#">
+                                        <label>
+                                           Abonə Ol
+                                          <div class="send">
+                                            <input type="text"><button><img src="img/footer/send.svg" alt=""></button>
+                                          </div>
+                                       </label>
+                                    </form>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-
-                </div>
-                <div class="col-12">
-                    <div class="social-icons ">
+                    <div class="footer_social_row">
                         <ul>
-                            <li class="head">
-                                <h2 class="head_h2">Follow Us</h2>
+                            <li>
+                                <h5>Bizi izlə:</h5>
                             </li>
-                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-facebook-f"></i></a></li>
-                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-instagram"></i></a></li>
-                            <li><a href=""><i style="color:#C7C7C7;" class="fab fa-twitter"></i></a></li>
-                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-linkedin-in"></i></li>
-                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-whatsapp"></i></a></li>
-                            <li><a href=""><i style="color:#C7C7C7; " class="fab fa-snapchat-ghost"></i></a></li>
-                            <li><a href=""><i style="color:#C7C7C7;" class="fab fa-youtube"></i></a></li>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
+        </div>
     </footer>
 
 
+
+
     <script src='js/minify/jquery.3.4.1.js'></script>
-    <script src='js/minify/jqueryui.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
     <script src="libs/main/js/_all_js_lib_files/all_js_lib_files.js"></script>
     <script src="js/minify/accordionmenu.js"></script>
     <script src="js/minify/atractive_places_slider.js"></script>
     <script src="js/minify/big_slider.js"></script>
-    <script src="js/minify/centerNav.js"></script>
     <script src="js/minify/driver_detail.js"></script>
     <script src="js/minify/driverSlider.js"></script>
     <script src="js/minify/main.js"></script>
@@ -617,9 +630,12 @@
     <script src="js/customselecbox.js"></script>
     <script src="libs/rangeslider/ion.rangeSlider.min.js"></script>
     <script src="js/minify/range_slider.js"></script>
+    <script src="js/minify/centerNav.js"></script>
 
 
 
 </body>
+
+
 
 </html>

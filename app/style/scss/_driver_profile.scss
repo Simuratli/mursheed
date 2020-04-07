@@ -7,8 +7,10 @@ $bg-color: #f7f7f7;
         display: flex;
         flex-wrap: wrap;
         .driver_profile_col1 {
-            flex: 1;
+            flex: 0.7;
             .profile_navigator {
+                padding: 10px;
+                padding-top: 0;
                 .profile_nav_ul {
                     li {
                         display: block;
@@ -24,6 +26,8 @@ $bg-color: #f7f7f7;
                         &:hover {
                             color: $main-color;
                             border-right: 3px solid $main-color;
+                            position: relative;
+                            left: 1.3px;
                             a {
                                 color: $main-color;
                             }
@@ -32,7 +36,8 @@ $bg-color: #f7f7f7;
                     .activeprofile {
                         color: $main-color !important;
                         border-right: 3px solid $main-color;
-                        display: block;
+                        display: block;position: relative;
+                        left: 1.3px;
                         a {
                             color: $main-color;
                         }
@@ -45,7 +50,7 @@ $bg-color: #f7f7f7;
             .driver_detail_comment_card {
                 display: flex !important;
                 .driver_detail_comment_card_img {
-                    flex: 0.6;
+                    flex: 0.4;
                     width: 100px;
                     height: 100px;
                     margin-right: 10px;
@@ -70,16 +75,47 @@ $bg-color: #f7f7f7;
             }
             .driverProfile_card {
                 display: flex;
+                background-color: $bg-color;
                 flex-wrap: wrap;
                 &_img {
-                    width: 150px;
-                    height: 150px;
+                    flex: 0.35;
+                    height: 120px;
+                    width: 120px;
                     margin-right: 15px !important;
                     img {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
                     }
+                }
+                &_name{
+                    flex:1.8;
+                   
+                    h1{
+                        font-size: 30px;
+                        font-weight: 600;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: #324150;
+                        margin-top: 20px;
+                    }p{
+                        font-family: Averta;
+                        font-size: 12px;
+                        font-weight: 400;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: #666;
+                        margin-bottom: 0;
+                    }
+
+                }.busy_avaible{
+                    position: relative;
+                    top:70px;
+                    left: -15px;
                 }
             }
             .drivers_input_area {
@@ -213,12 +249,46 @@ $bg-color: #f7f7f7;
                         }
                     }
                     .journey {
-                        border: 1px solid rgb(198, 199, 199);
-                        border-radius: 5px;
-                        padding: 20px;
-                        margin-bottom: 15px;
+                       #rideDataTable{
+                           thead{
+                               border: 1px solid #dee2e6;
+                            
+                              th{
+                                padding-top: 5px;
+                                padding-bottom: 5px;   
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                color: #666
+                              }
+                           }
+                           tbody{
+
+                           .top{
+                            th{
+                                padding-top: 10px;
+                                padding-bottom: 10px; 
+                                background-color: rgb(230, 230, 230);
+                            }
+                            text-transform: capitalize;
+                            font-weight: 600;
+                            color: black ;
+                            border: 1px solid #dee2e6;
+                           }
+                           tr{
+                            
+                               td{
+                                border: 1px solid #dee2e6;
+                                padding-top: 5px;
+                                padding-bottom: 5px; 
+                               }
+                           }
+
+                           }
+
+                       }
+
                     }
-                    .custom-selectbox {
+                    .myselectbox {
                         label {
                             font-weight: bold !important;
                         }
@@ -337,6 +407,13 @@ $bg-color: #f7f7f7;
                             height: 100%;
                             object-fit: cover;
                         }
+                    }
+                    .busy_avaible{
+                        position: relative;
+                        top:0px;
+                        left: 40%;
+                        margin-top: 10px;
+                        margin-bottom: 20px;
                     }
                 }
                 .drivers_input_area {
@@ -475,7 +552,7 @@ $bg-color: #f7f7f7;
                             padding: 20px;
                             margin-bottom: 15px;
                         }
-                        .custom-selectbox {
+                        .myselectbox {
                             label {
                                 font-weight: bold !important;
                             }
@@ -566,5 +643,132 @@ $bg-color: #f7f7f7;
     }
     table td:last-child {
         border-bottom: 0;
+    }
+}
+
+
+.onoffswitch {
+    position: relative; width: 95px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #FFFFFF; border-radius: 23px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 37px; padding: 0; line-height: 37px;
+    font-size: 11px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Available";
+    padding-left: 9px;
+    background-color: #0B8071; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "Busy";
+    padding-right: 9px;
+    background-color: #B51A1A; color: #FCFCFC;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 9.5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 54px;
+    border: 2px solid #FFFFFF; border-radius: 23px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+.birth-border{
+    border: 1px solid #c7c7c7 !important;
+}
+
+
+.car-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  .single-image-container{
+      width: 25%;
+      margin: 20px 1px;
+      position: relative;
+      cursor: pointer;
+
+      &:hover .car-overlay{
+          visibility: visible;
+          opacity: 1;
+      }
+
+      .car-overlay{
+          visibility: hidden;
+          opacity: 0;
+          transition: visibility 0s, opacity 0.3s linear;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0,0,0,.7);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          button{
+              background-color: transparent;
+              color: white;
+              border: 1px solid white;
+              border-radius: 50%;
+              height: 40px;
+              width: 40px;
+              margin: 5px;
+              cursor: pointer;
+              outline: none;
+          }
+
+          .delete-btn:hover{
+              color: orangered;
+              border: 1px solid orangered;
+              transition: .3s ease;
+          }
+      }
+  }
+  img{
+      width: 100%;
+  }
+}
+
+.input_login_box {
+    width: 100%;
+    .fa-eye {
+        position: relative;
+        float: right;
+        top: 28px;
+        color: $main-color;
+    }
+    .login_input {
+        width: 100%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border: 1px solid #c7c7c7;
+        background-color: $bg-color;
+        font-size: 1em;
+    }
+    .login_input:focus {
+        outline: none;
     }
 }
