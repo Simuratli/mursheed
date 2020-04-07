@@ -4,6 +4,7 @@ var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify-es').default;
 var cleanCSS = require('gulp-clean-css');
+const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('salam', async function() {
     console.log("HELLO")
@@ -65,6 +66,9 @@ gulp.task('sass', function() {
         .pipe(sass())
         .pipe(cleanCSS({
             inline: ['none']
+        }))
+        .pipe(autoprefixer({
+            cascade: false
         }))
         .pipe(gulp.dest('app/style/css'))
         .pipe(browserSync.reload({

@@ -111,7 +111,7 @@
                     top: 50%;
                     &::after {
                         content: "";
-                        background-image: url("../img/swiper_popular_attractions_locations/right.svg");
+                        background-image: url("../../img/swiper_popular_attractions_locations/right.svg");
                         width: 30px;
                         height: 30px;
                         background-repeat: no-repeat;
@@ -121,7 +121,7 @@
                     top: 50%;
                     &::after {
                         content: "";
-                        background-image: url("../img/swiper_popular_attractions_locations/left.svg");
+                        background-image: url("../../img/swiper_popular_attractions_locations/left.svg");
                         width: 30px;
                         height: 30px;
                         background-repeat: no-repeat;
@@ -133,6 +133,7 @@
 }
 
 @media only screen and (max-width: 992px) {
+
     #swiper_popular_attractions_locations {
         h6 {
             font-size: 18px !important;
@@ -142,6 +143,27 @@
         }
         .swiper-button-prev {
             left: -15px !important;
+        }
+
+        .swiper_popular_attractions_locations_top {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 10px 10px;
+            align-items: center;
+            h6 {
+                font-family: Averta;
+                font-size: 24px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+            }
+            a {
+                color: black;
+                text-decoration: none;
+            }
         }
     }
 }

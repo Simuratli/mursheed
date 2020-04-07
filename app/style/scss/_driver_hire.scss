@@ -59,6 +59,12 @@ $bg-color: #f7f7f7;
                 border-left: 2px solid #ccc;
                 margin-top: 15px;
                 flex: 2;
+                input{
+                    width: 150px !important;
+                }
+                .hireselector{
+                    width: 160px !important;
+                }
                 label {
                     margin-top: 10px;
                     span {
@@ -147,11 +153,14 @@ $bg-color: #f7f7f7;
             .hire_card {
                 display: flex;
                 flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
                 .div_img_hire {
                     margin: 0 auto !important;
+                    width: 100%;
                     img {
-                        width: 150px;
-                        height: 150px;
+                        width: 100%;
+                        height: 300px;
                         object-fit: cover;
                     }
                 }
@@ -173,6 +182,12 @@ $bg-color: #f7f7f7;
                     padding-left: 0px;
                     border: 0px;
                     flex: 2;
+                    input{
+                        width: 97% !important;
+                    }
+                    .hireselector {
+                        width: 100% !important;
+                    }
                     label {
                         span {
                             font-size: 1em;
@@ -181,6 +196,8 @@ $bg-color: #f7f7f7;
                 }
                 .hire_detail_section {
                     margin-top: 15px;
+                    align-items: flex-start;
+                justify-content: flex-start;
                     .btnguide {
                         display: block;
                         text-align: center;
