@@ -160,37 +160,51 @@
                     <div class="control_indicator"></div>
                 </label>
                 </div>
-                <div class="accomadation_search">
-                    <div class="accomadation_search_header">
-                        <div class="acc_head_search">Search</div>
-                        <a class="acc_head_sifir" href="#">Sıfırlayın</a>
+                <div class="filter">
+                        <div class="filter_header">
+                            <h4>Filter</h4>
+                            <p>reset</p>
+                        </div>
+                        <div class="filter_body">
+                            <div class="filter_item">
+                                <div class="item_header ">
+                                    <h6>By room</h6>
+                                    <div class="plus activate"><i style="color: #0b8071;" class="fas fa-plus"></i></div>
+                                    <div class="plus"><i style="color: #0b8071;" class="fas fa-minus"></i></div>
+                                </div>
+                                <div class="item_body by_language">
+                                    <div class="checkbox_body">
+                                        <div class="form-group mb-0 inputs">
+                                            <select style="width: 100%;" aria-placeholder="Room" required multiple='multiple' class="country-selector roomsize">
+                                                <option >1</option>
+                                                <option value="AL">1</option>
+                                               <option value="WY">2</option>
+                                          </select> 
+                                            <!-- <span asp-validation-for="Phone" class="text-danger"></span> -->
+                                            <span asp-validation-for="LanguageIds" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="filter_item">
+                                <div class="item_header ">
+                                    <h6>By Price</h6>
+                                    <div class="plus activate"><i style="color: #0b8071;" class="fas fa-plus"></i></div>
+                                    <div class="plus"><i style="color: #0b8071;" class="fas fa-minus"></i></div>
+                                </div>
+                                <div class="item_body by_language">
+                                    <div class="checkbox_body">
+                                        <div class="form-group mb-0 inputs">
+                                            <form action="">
+                                                <inputx type="text" class="js-range-slider" name="my_range" value="" />
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="accomadation_search_content">
-                        <div id="accomadation_search_content_header1" class="accomadation_search_content_header">
-                            <div>Otaga gore</div>
-
-                        </div>
-                        <div id="accomadation_search_content_bottom1" class="accomadation_search_content_bottom">
-                            <select style="width: 100%;" aria-placeholder="Room" required multiple='multiple' class="country-selector roomsize">
-                                <option >1</option>
-                                <option value="AL">1</option>
-                               <option value="WY">2</option>
-                          </select>
-                        </div>
-                    </div>
-                    <div class="accomadation_search_content">
-                        <div id="accomadation_search_content_header2" class="accomadation_search_content_header">
-                            <div>Qiymətə görə</div>
-                        </div>
-                        <div id="accomadation_search_content_bottom2" class="accomadation_search_content_bottom">
-                            <form action="">
-                                <inputx type="text" class="js-range-slider" name="my_range" value="" />
-                            </form>
-
-                        </div>
-                    </div>
-
-                </div>
             </div>
             <div class="accomadation_col2">
                 <div class="accomadation_col2_container">
