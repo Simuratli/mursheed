@@ -198,8 +198,8 @@ $bg-color: #f7f7f7;
                 &_content {
                     padding: 15px;
                     border-bottom: 2px solid rgb(223, 223, 223) !important;
-                    &:nth-last-child(1) {
-                        border: none;
+                    &:last-child {
+                        border: none !important;
                     }
                     &_header {
                         display: flex;
@@ -210,16 +210,14 @@ $bg-color: #f7f7f7;
                             content: '\2212';
                             font-size: 2em;
                             margin-left: 5px;
-                            position: relative;
-                            top: -10px;
+                            margin-top: -12px;
                             color: $main-color;
                         }
                         &.active:after {
                             content: "\002b";
                             font-size: 1em;
                             margin-left: 5px;
-                            position: relative;
-                            top: -10px;
+                          
                             color: $main-color;
                         }
                     }
@@ -511,82 +509,4 @@ $bg-color: #f7f7f7;
             }
         }
     }
-}
-
-
-.plussign {
-    font-size: 1.7em;
-    font-weight: bold;
-    color: $main-color;
-    position: relative;
-    top: -10px;
-}
-
-.select2-selection__rendered {
-    background-color: #f7f7f7;
-}
-
-.select2-container--default .select2-selection--multiple {
-    background-color: transparent;
-    border: 1px solid #dfdfdf;
-    height: auto !important;
-}
-
-.select2-search__field {
-    height: 40px !important;
-    border: none !important;
-    margin: 0px !important;
-    padding: 0px 5px !important;
-    background-color: #f7f7f7 !important;
-}
-
-.select2-selection--multiple {
-    border: 1px solid #dfdfdf !important;
-    background-color: #f7f7f7 !important;
-}
-
-select.form-control {
-    background-color: transparent !important;
-    height: 46px !important;
-}
-
-.select2-selection__rendered {
-    height: 100%;
-}
-
-//driver_register.html
-.select2-selection--single {
-    height: 43px !important;
-    padding: 8px 10px;
-    outline: none;
-}
-
-.select2-search {
-    outline: none;
-}
-
-.select2-search__field {
-    outline: none;
-}
-
-.select2-search--dropdown {
-    padding: 0 !important;
-}
-
-.select2-selection__rendered {
-    color: #000;
-}
-
-.select2-selection__clear {
-    display: none;
-}
-
-.select2-selection--single {
-    border: 1px solid #dfdfdf !important;
-    background-color: #f7f7f7 !important;
-}
-
-.select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background-color: #E5E5E5 !important;
-    color: black !important;
 }

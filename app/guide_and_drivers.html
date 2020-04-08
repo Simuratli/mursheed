@@ -153,103 +153,134 @@
                         <div class="control_indicator2"></div>
                     </label>
                 </div>
-                <div class="guide_search">
-                    <div class="guide_search_header">
-                        <div class="gui_head_search">Search</div>
-                        <a class="gui_head_sifir" href="#">Sıfırlayın</a>
+
+                <div class="filter">
+                    <div class="filter_header">
+                        <h4>Filter</h4>
+                        <p>reset</p>
                     </div>
-                    <div class="guide_search_content">
-                        <div id="guide_search_content_header1" class="guide_search_content_header">
-                            <div>By City</div>
+                    <div class="filter_body">
+                        <div class="filter_item">
+                            <div class="item_header by_city">
+                                <h6>By city</h6>
+                                <div class="plus activate"><i style="color: #0b8071;" class="fas fa-plus"></i></div>
+                                <div class="plus"><i style="color: #0b8071;" class="fas fa-minus"></i></div>
+
+                            </div>
+                            <div class="item_body">
+                                <div class="inputs" style="width: 100%;">
+                                    <select style="width: 100%;" required class="country-selector ">
+                                        <option value="" selected disabled >By city</option>
+                                        <option >Baku</option>
+                                        <option value="AL">Gabala</option>
+                                       <option value="WY">Ujar</option>
+                                  </select>
+                                </div>
+                            </div>
                         </div>
-                        <div id="guide_search_content_bottom1" class="guide_search_content_bottom">
-                            <select required class="country-selector ">
-                                <option value="" selected disabled >By city</option>
-                                <option >Baku</option>
-                                <option value="AL">Gabala</option>
-                               <option value="WY">Ujar</option>
-                          </select>
+                        <div class="border"></div>
+                        <div class="filter_item">
+                            <div class="item_header ">
+                                <h6>By car</h6>
+                                <div class="plus activate"><i style="color: #0b8071;" class="fas fa-plus"></i></div>
+                                <div class="plus"><i style="color: #0b8071;" class="fas fa-minus"></i></div>
+                            </div>
+                            <div class="item_body by_car">
+                                <!--#region custom selectbox-->
+                                <div style="margin-bottom: 10px;" class="inputs">
+                                    <select style="width: 100%;" required class="country-selector ">
+                                        <option value="" selected disabled >Brand</option>
+                                        <option >Baku</option>
+                                        <option value="AL">Kia</option>
+                                       <option value="WY">Mercedes</option>
+                                  </select>
+                                </div>
+                                <div class="inputs">
+                                    <select style="width: 100%;" required class="country-selector ">
+                                        <option value="" selected disabled >Model</option>
+                                        <option >Baku</option>
+                                        <option value="AL">Optima</option>
+                                       <option value="WY">E220</option>
+                                  </select>
+                                </div>
+                                <!--#endregion-->
+                            </div>
                         </div>
-                    </div>
-                    <div class="guide_search_content">
-                        <div id="guide_search_content_header2" class="guide_search_content_header">
-                            <div>By Car</div>
-                            <div class="plussign"></div>
+                        <div class="border"></div>
+                        <div class="filter_item">
+                            <div class="item_header ">
+                                <h6>By language</h6>
+                                <div class="plus activate"><i style="color: #0b8071;" class="fas fa-plus"></i></div>
+                                <div class="plus"><i style="color: #0b8071;" class="fas fa-minus"></i></div>
+                            </div>
+                            <div class="item_body by_language">
+                                <div class="checkbox_body">
+                                    <div class="form-group mb-0 inputs">
+                                        <select style="width: 100%;" required multiple='multiple' class="country-selector languageselector">
+                                            <option value=""  >Italian</option>
+                                            <option >Russian</option>
+                                            <option value="AL">English</option>
+                                      </select>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div id="guide_search_content_bottom2" class="guide_search_content_bottom">
-                            <select required class="country-selector ">
-                                <option value="" selected disabled >Brand</option>
-                                <option >Baku</option>
-                                <option value="AL">Kia</option>
-                               <option value="WY">Mercedes</option>
-                          </select>
-                            <br><br>
-                            <select required class="country-selector ">
-                            <option value="" selected disabled >Model</option>
-                            <option >Baku</option>
-                            <option value="AL">Optima</option>
-                           <option value="WY">E220</option>
-                      </select>
+                        <div class="border"></div>
+                        <div class="filter_item">
+                            <div class="item_header ">
+                                <h6>By gender</h6>
+                                <div class="plus activate"><i style="color: #0b8071;" class="fas fa-plus"></i></div>
+                                <div class="plus"><i style="color: #0b8071;" class="fas fa-minus"></i></div>
+                            </div>
+                            <div class="item_body by_gender">
+                                <form action="">
+                                    <label class="control control-checkbox">
+                                       
+                                            <input type="checkbox" />
+                                            Male
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                    <label class="control control-checkbox">
+                                       
+                                            <input type="checkbox" />
+                                            Female
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </form>
+                            </div>
                         </div>
-                    </div>
-                    <div class="guide_search_content">
-                        <div id="guide_search_content_header3" class="guide_search_content_header">
-                            <div>By Language</div>
-                            <div class="plussign"></div>
-                        </div>
-                        <div id="guide_search_content_bottom3" class="guide_search_content_bottom">
-                            <select required multiple='multiple' class="country-selector languageselector">
-                                <option value=""  >Italian</option>
-                                <option >Russian</option>
-                                <option value="AL">English</option>
-                          </select>
-                        </div>
-                    </div>
-                    <div class="guide_search_content">
-                        <div id="guide_search_content_header4" class="guide_search_content_header">
-                            <div>By gender</div>
-                            <div class="plussign"></div>
-                        </div>
-                        <div id="guide_search_content_bottom4" class="guide_search_content_bottom">
-                            <form action="">
-                                <label class="control control-checkbox">
-                                   
-                                        <input type="checkbox" />
-                                        Male
-                                    <div class="control_indicator"></div>
-                                </label>
-                                <label class="control control-checkbox">
-                                   
-                                        <input type="checkbox" />
-                                        Female
-                                    <div class="control_indicator"></div>
-                                </label>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="guide_search_content">
-                        <div id="guide_search_content_header5" class="guide_search_content_header">
-                            <div>By avability</div>
-                            <div class="plussign"></div>
-                        </div>
-                        <div id="guide_search_content_bottom5" class="guide_search_content_bottom">
-                            <form action="">
-                                <label class="control control-checkbox">
-                                   
-                                        <input type="checkbox" />
-                                        Avaible
-                                    <div class="control_indicator"></div>
-                                </label>
-                                <label class="control control-checkbox">
-                                   
-                                        <input type="checkbox" />
-                                        Busy
-                                    <div class="control_indicator"></div>
-                                </label>
-                            </form>
+                        <div class="border"></div>
+                        <div class="filter_item">
+                            <div class="item_header ">
+                                <h6>By availability</h6>
+                                <div class="plus activate"><i style="color: #0b8071;" class="fas fa-plus"></i></div>
+                                <div class="plus"><i style="color: #0b8071;" class="fas fa-minus"></i></div>
+                            </div>
+                            <div class="item_body by_availability">
+                                <div class="checkbox_header">
+                                    <p>All</p>
+                                </div>
+                                <div class="checkbox_body ">
+                                    <form action="">
+                                        <label class="control control-checkbox">
+                                           
+                                                <input type="checkbox" />
+                                                Avaible
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                        <label class="control control-checkbox">
+                                           
+                                                <input type="checkbox" />
+                                                Busy
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="guide_col2">
                 <div class="guide_col2_container">
