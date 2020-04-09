@@ -160,7 +160,7 @@ $bg-color: #f7f7f7;
                     }
                     .add_lang {
                         display: flex;
-                        justify-content: center;
+                        justify-content: space-evenly;
                         width: 100%;
                         padding-top: 10px;
                         padding-bottom: 10px;
@@ -187,45 +187,78 @@ $bg-color: #f7f7f7;
                         }
                     }
                     .new_route {
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-items: center;
-                        justify-content: center;
-                        .inputs {
-                            flex: 1;
-                            margin-left: 10px;
-                        }
-                        .inputs:last-child {
-                            text-align: center;
-                        }
-                    }
-                    .all_routes {
-                        padding: 15px;
-                        .thead {
-                            width: 100%;
-                            ul {
-                                display: flex;
-                                margin-bottom: 5px;
-                                li {
-                                    flex: 1 1 auto;
+                        .routes_container{
+                            display: flex;
+                            flex-wrap: wrap;
+                            
+                            .routes_col_12{
+                                .inputs{
+                                    textarea{
+                                        width: 100%;
+                                        background-color: $bg-color;
+                                        border-radius: 5px;
+                                        border: 1px solid #c7c7c7;
+                                        padding-left: 15px;
+                                      }
+                                }
+                             
+                            }
+                            .routes_col_6{
+                                position: relative;
+                                -ms-flex: 0 0 46%;
+                                flex: 0 0 46%;
+                                max-width: 46%;
+                                padding-right: 25px;
+                                .inputs{
+                                    width: 98%;
+                                    textarea{
+                                        width: 100%;
+                                        background-color: $bg-color;
+                                        border-radius: 5px;
+                                        border: 1px solid #c7c7c7;
+                                    }
+                                }
+                            }
+                            .routes_col_3{
+                                -ms-flex: 0 0 22%;
+                                flex: 0 0 22%;
+                                flex-wrap: wrap;
+                                max-width: 22%;
+                                margin-right: 15px;
+                                button{
+                                    margin-left: 45%;
                                 }
                             }
                         }
-                        .tbody {
-                            ul {
-                                margin-bottom: 15px;
-                                display: flex;
-                                li {
-                                    flex: 1 1 auto;
+                    }
+                   .all_routes{
+                       label{
+                           font-weight: bold;
+                           padding-bottom: 20px;
+                       }
+                        &_table{
+                            align-items: center;
+                            border-collapse: collapse;
+                            border-spacing: 0;
+                            width: 100%;
+                            &_thead{
+                                border: 1px solid #ccc;
+                                th {
+                                    font-weight: 700;
+                                    padding-top: 15px;
+                                    font-size: 1em;
+                                    padding-bottom: 15px;
+                                }
+                                td{
+                                    padding-top: 10px;
+                                    padding-bottom: 10px;
+                                    text-align: center;
                                 }
                             }
                         }
-                        .line {
-                            width: 100%;
-                            height: 1px;
-                            margin-bottom: 5px;
-                        }
-                    }
+                   }
+                  
+
                     .file-input {
                         cursor: pointer;
                         text-align: center;
@@ -485,43 +518,47 @@ $bg-color: #f7f7f7;
                             }
                         }
                         .new_route {
-                            display: flex;
-                            flex-wrap: wrap;
-                            align-items: center;
-                            justify-content: center;
-                            .inputs {
-                                flex: 1;
-                                margin-left: 10px;
-                            }
-                            .inputs:last-child {
-                                text-align: center;
-                            }
-                        }
-                        .all_routes {
-                            padding: 15px;
-                            .thead {
-                                width: 100%;
-                                ul {
-                                    display: flex;
-                                    margin-bottom: 5px;
-                                    li {
-                                        flex: 1 1 auto;
+                            .routes_container{
+                                display: flex;
+                                flex-wrap: wrap;
+                                .routes_col_12{
+                                    .inputs{
+                                        textarea{
+                                            width: 100%;
+                                            background-color: $bg-color;
+                                            border-radius: 5px;
+                                            border: 1px solid #c7c7c7;
+                                            padding-left: 15px;
+                                          }
+                                    }
+                                 
+                                }
+                                .routes_col_6{
+                                    position: relative;
+                                    -ms-flex: 0 0 100%;
+                                    flex: 0 0  100%;
+                                    max-width:  100%;
+                                    padding-right: 25px;
+                                    .inputs{
+                                        width: 98%;
+                                        textarea{
+                                            width: 100%;
+                                            background-color: $bg-color;
+                                            border-radius: 5px;
+                                            border: 1px solid #c7c7c7;
+                                        }
                                     }
                                 }
-                            }
-                            .tbody {
-                                ul {
-                                    margin-bottom: 15px;
-                                    display: flex;
-                                    li {
-                                        flex: 1 1 auto;
+                                .routes_col_3{
+                                    -ms-flex: 0 0 100%;
+                                    flex: 0 0 100%;
+                                    flex-wrap: wrap;
+                                    max-width: 100%;
+                                    margin-right: 15px;
+                                    button{
+                                        margin-left: 45%;
                                     }
                                 }
-                            }
-                            .line {
-                                width: 100%;
-                                height: 1px;
-                                margin-bottom: 5px;
                             }
                         }
                         .file-input {
@@ -772,3 +809,28 @@ $bg-color: #f7f7f7;
         outline: none;
     }
 }
+
+
+.add-route-btn,
+    .delete-route-btn,
+    .add-date-btn {
+        height: 30px !important;
+        width: 30px !important;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .add-route-btn,
+    .add-date-btn {
+        background-color: limegreen;
+    }
+
+    .delete-route-btn {
+        background-color: orangered;
+    }
+
+    .bg-color{
+        background-color: $bg-color;
+    }
