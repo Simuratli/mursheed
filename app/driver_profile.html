@@ -321,30 +321,29 @@
                         </div>
                         
                         <div class="journey">
-                            <table id="rideDataTable" class="table table-striped table-bordered  nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                <thead>
-                                    <tr>
-                                        <th>Country</th>
-                                        <th></th>
-                                        <th>From date</th>
-                                        <th>To date</th>
-                                        <th>Price</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="top">
-                                        <th>Country</th>
-                                        <th></th>
-                                        <th>From date</th>
-                                        <th>To date</th>
-                                        <th>Price</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="all_routes">
+                                <label for="">All route</label>
+                                <table class="all_routes_table">
+                                    <thead class="all_routes_table_thead">
+                                        <th data-label="ID" >ID</th>
+                                        <th data-label="FROM">FROM</th>
+                                        <th data-label="TO">TO</th>
+                                        <th data-label="PRICE">PRICE</th>
+                                        <th data-label="INFO">INFO</th>
+                                        <th data-label="#">#</th>
+                                    </thead>
+                                    <tbody class="all_routes_table_thead">
+                                       <tr>
+                                        <td data-label="ID" >123</td>
+                                        <td data-label="FROM">Baku</td>
+                                        <td data-label="TO">Moskva</td>
+                                        <td data-label="PRICE">354$</td>
+                                        <td data-label="INFO">He serve Soviet Union</td>
+                                        <td data-label="#">#</td>
+                                       </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div class="save">
                             <button class="save-btn">Save changes</button>
@@ -355,95 +354,120 @@
 
 
                     <form id="tab4" class="tab_content">
+                     <div class="bg-color">
                         <p class="heading">Add new route</p>
                         <div class="new_route">
-                            <div class="inputs">
-                                <label for="">From</label>
-                                <div class="myselectbox ">
-                                    <select>
-                                        <option value="0">All languages</option>
-                                        <option value="1">English</option>
-                                        <option value="2">Russian</option>
+                          <div class="routes_container">
+                            <div class="routes_col_6">
+                                <div class="inputs">
+                                    <label for="">From</label>
+                                    <select style="width: 100%" class="country-selector" name="state"  style="width: 100%;">
+                                        <option>Azerbaijan</option>
+                                        <option>Turkey</option>
+                                        <option>Norway</option>
                                     </select>
                                 </div>
                             </div>
+                            
+                          <div class="routes_col_6">
                             <div class="inputs">
                                 <label for="">To</label>
                                 <div class="myselectbox ">
-                                    <select>
-                                        <option value="0">All languages</option>
-                                        <option value="1">English</option>
-                                        <option value="2">Russian</option>
+                                    <select class="country-selector" name="state"  style="width: 100%;">
+                                        <option>Azerbaijan</option>
+                                        <option>Turkey</option>
+                                        <option>Norway</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="inputs cost">
-                                <label for="">Route Cost</label>
-                                <p>100$</p>
+                          </div>
+                          </div>
+                          <div class="routes_container">
+                            <div class="routes_col_6">
+                                <div class="inputs">
+                                    <label for="">Price</label>
+                                    <input placeholder="100$" type="text">
+                                </div>
                             </div>
+                            
+                          <div class="routes_col_6">
+                            <div class="inputs">
+                                <label for="">Info</label>
+                                <div class="myselectbox ">
+                                    <textarea  cols="50%" rows=""></textarea>
+                                </div>
+                            </div>
+                          </div>
+                          </div>
+
+                          <div class="routes_container">
+                            <div class="routes_col_3">
+                                <div class="inputs">
+                                    <label for="">From</label>
+                                    <input placeholder="100$" type="text">
+                                </div>
+                            </div>
+                            
+                          <div class="routes_col_3">
+                            <div class="inputs">
+                                <label for="">To</label>
+                                <div class="myselectbox ">
+                                    <input type="text">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="routes_col_3">
+                            <div class="inputs">
+                                <label for="">Price</label>
+                                <div class="myselectbox ">
+                                    <input type="text">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="routes_col_3">
+                            <div class="inputs">
+                                <label for="">Add route</label>
+                                <div class="myselectbox ">
+                                    <button class="add-route-btn" type="submit"><i class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="routes_container">
+                            <div class="routes_col_12">
+                                <div class="inputs">
+                                    <label for="">Info</label>
+                                    <textarea rows="5" cols="98%" ></textarea>
+                                </div>
+                            </div>
+                          </div>
+                          </div>
+                          
                         </div>
-                        <p class="heading">All routes</p>
-                        <div class="all_routes details">
-                            <div class="thead">
-                                <ul>
-                                    <li>FROM</li>
-                                    <li>TO</li>
-                                    <li>COST</li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                            <div class="line"></div>
-                            <div class="tbody">
-                                <ul>
-                                    <li>Baku</li>
-                                    <li>Nakhcivan</li>
-                                    <li>300$</li>
-                                    <li class="icons">
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-trash-alt"></i>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>Baku</li>
-                                    <li>Nakhcivan</li>
-                                    <li>300$</li>
-                                    <li>
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-trash-alt"></i>
-                                    </li>
-                                </ul>
-                                <ul>
+                     </div>
 
-                                    <li>Baku</li>
-                                    <li>Nakhcivan</li>
-                                    <li>300$</li>
-                                    <li>
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-trash-alt"></i>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>Baku</li>
-                                    <li>Nakhcivan</li>
-                                    <li>300$</li>
-                                    <li>
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-trash-alt"></i>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>Baku</li>
-                                    <li>Nakhcivan</li>
-                                    <li>300$</li>
-                                    <li>
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-trash-alt"></i>
-                                    </li>
-                                </ul>
-
-                            </div>
+                        <div class="all_routes">
+                            <label for="">All route</label>
+                            <table class="all_routes_table">
+                                <thead class="all_routes_table_thead">
+                                    <th data-label="ID" >ID</th>
+                                    <th data-label="FROM">FROM</th>
+                                    <th data-label="TO">TO</th>
+                                    <th data-label="PRICE">PRICE</th>
+                                    <th data-label="INFO">INFO</th>
+                                    <th data-label="#">#</th>
+                                </thead>
+                                <tbody class="all_routes_table_thead">
+                                   <tr>
+                                    <td data-label="ID" >ID</td>
+                                    <td data-label="FROM">FROM</td>
+                                    <td data-label="TO">TO</td>
+                                    <td data-label="PRICE">PRICE</td>
+                                    <td data-label="INFO">INFO</td>
+                                    <td data-label="#">#</td>
+                                   </tr>
+                                </tbody>
+                            </table>
                         </div>
-
                     </form>
 
                     <form id="tab5" class="tab_content">

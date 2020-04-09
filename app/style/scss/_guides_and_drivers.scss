@@ -17,55 +17,54 @@ $bg-color: #f7f7f7;
             z-index: -1;
             opacity: 0;
         }
-        .control_indicator {
+        .control_indicator2 {
             position: absolute;
-            top: 2px;
+            top: 4px;
             left: 0;
-            height: 20px;
-            width: 20px;
-            background: #e6e6e6;
-            border: 0px solid #000000;
-            border-radius: undefinedpx;
+            height: 13px;
+            width: 13px;
+            background: white;
+            border:3px solid $main-color !important;
+            border-radius: 50%;
         }
-        .control2:hover input~.control_indicator,
-        .control2 input:focus~.control_indicator {
-            background: #cccccc;
+        .control2:hover input~.control_indicator2,
+        .control2 input:focus~.control_indicator2 {
+            background: white;
         }
-        .control2 input:checked~.control_indicator {
-            background: #0b8071;
+        .control2 input:checked~.control_indicator2 {
+            background: white;
         }
-        .control:hover input:not([disabled]):checked~.control_indicator,
+        .control:hover input:not([disabled]):checked~.control_indicator2,
         .control2 input:checked:focus~.control_indicator {
             background: $main-color;
         }
-        .control2 input:disabled~.control_indicator {
-            background: #e6e6e6;
+        .control2 input:disabled~.control_indicator2 {
+            background: white;
             opacity: 0.6;
             pointer-events: none;
         }
-        .control_indicator:after {
+        .control_indicator2:after {
             box-sizing: unset;
             content: '';
             position: absolute;
             display: none;
         }
-        .control2 input:checked~.control_indicator:after {
+        .control2 input:checked~.control_indicator2:after {
             display: block;
         }
-        .control-radio .control_indicator {
+        .control-radio .control_indicator2 {
             border-radius: 50%;
         }
-        .control-radio .control_indicator:after {
-            left: 5px;
-            top: 5px;
-            height: 10px;
-            width: 10px;
+        .control-radio .control_indicator2:after {
+            left: 2px;
+            top: 2px;
+            height: 9px;
+            width: 9px;
             border-radius: 50%;
-            background: #ffffff;
-            transition: background 250ms;
+            background: $main-color
         }
         .control-radio input:disabled~.control_indicator:after {
-            background: #7b7b7b;
+            background: white;
         }
         .control-radio .control_indicator::before {
             content: '';
@@ -73,8 +72,8 @@ $bg-color: #f7f7f7;
             position: absolute;
             left: 0;
             top: 0;
-            width: 4.5rem;
-            height: 4.5rem;
+            width: 4rem;
+            height: 4rem;
             margin-left: -1.3rem;
             margin-top: -1.3rem;
             background: #2aa1c0;
@@ -104,13 +103,13 @@ $bg-color: #f7f7f7;
             left: 0;
             height: 20px;
             width: 20px;
-            background: #e6e6e6;
+            background: white;
             border: 0px solid #000000;
             border-radius: 0px;
         }
         .control:hover input~.control_indicator,
         .control input:focus~.control_indicator {
-            background: #cccccc;
+            background: white;
         }
         .control input:checked~.control_indicator {
             background: #0b8071;
@@ -120,7 +119,7 @@ $bg-color: #f7f7f7;
             background: $main-color
         }
         .control input:disabled~.control_indicator {
-            background: #e6e6e6;
+            background: white;
             opacity: 0.6;
             pointer-events: none;
         }
@@ -138,12 +137,12 @@ $bg-color: #f7f7f7;
             top: 4px;
             width: 3px;
             height: 8px;
-            border: solid #ffffff;
+            border: solid white;
             border-width: 0 2px 2px 0;
             transform: rotate(45deg);
         }
         .control-checkbox input:disabled~.control_indicator:after {
-            border-color: #7b7b7b;
+            border-color: white;
         }
         .control-checkbox .control_indicator::before {
             content: '';
@@ -168,9 +167,9 @@ $bg-color: #f7f7f7;
         .guide_col1 {
             flex: 1;
             .guide_filter {
-                border-radius: 10px;
+                border-radius: 5px;
                 border: 1px solid $main-color;
-                padding: 15px;
+                padding: 10px;
                 margin-bottom: 15px !important;
                 &_label {
                     display: block;
@@ -199,8 +198,8 @@ $bg-color: #f7f7f7;
                 &_content {
                     padding: 15px;
                     border-bottom: 2px solid rgb(223, 223, 223) !important;
-                    &:nth-last-child(1) {
-                        border: none;
+                    &:last-child {
+                        border: none !important;
                     }
                     &_header {
                         display: flex;
@@ -211,16 +210,14 @@ $bg-color: #f7f7f7;
                             content: '\2212';
                             font-size: 2em;
                             margin-left: 5px;
-                            position: relative;
-                            top: -10px;
+                            margin-top: -12px;
                             color: $main-color;
                         }
                         &.active:after {
                             content: "\002b";
                             font-size: 1em;
                             margin-left: 5px;
-                            position: relative;
-                            top: -10px;
+                          
                             color: $main-color;
                         }
                     }
@@ -512,82 +509,4 @@ $bg-color: #f7f7f7;
             }
         }
     }
-}
-
-
-.plussign {
-    font-size: 1.7em;
-    font-weight: bold;
-    color: $main-color;
-    position: relative;
-    top: -10px;
-}
-
-.select2-selection__rendered {
-    background-color: #f7f7f7;
-}
-
-.select2-container--default .select2-selection--multiple {
-    background-color: transparent;
-    border: 1px solid #dfdfdf;
-    height: auto !important;
-}
-
-.select2-search__field {
-    height: 40px !important;
-    border: none !important;
-    margin: 0px !important;
-    padding: 0px 5px !important;
-    background-color: #f7f7f7 !important;
-}
-
-.select2-selection--multiple {
-    border: 1px solid #dfdfdf !important;
-    background-color: #f7f7f7 !important;
-}
-
-select.form-control {
-    background-color: transparent !important;
-    height: 46px !important;
-}
-
-.select2-selection__rendered {
-    height: 100%;
-}
-
-//driver_register.html
-.select2-selection--single {
-    height: 43px !important;
-    padding: 8px 10px;
-    outline: none;
-}
-
-.select2-search {
-    outline: none;
-}
-
-.select2-search__field {
-    outline: none;
-}
-
-.select2-search--dropdown {
-    padding: 0 !important;
-}
-
-.select2-selection__rendered {
-    color: #000;
-}
-
-.select2-selection__clear {
-    display: none;
-}
-
-.select2-selection--single {
-    border: 1px solid #dfdfdf !important;
-    background-color: #f7f7f7 !important;
-}
-
-.select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background-color: #E5E5E5 !important;
-    color: black !important;
 }

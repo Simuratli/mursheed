@@ -23,12 +23,12 @@ $bg-color: #f7f7f7;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 .atractive_detail_single_img {
-                    width: 260px;
+                    width: 48%;
                     height: 164px;
                     margin-top: 15px;
                     img {
-                        width: 260px;
-                        height: 164px;
+                        width: 100%;
+                        height: 100%;
                         object-fit: cover;
                     }
                 }
