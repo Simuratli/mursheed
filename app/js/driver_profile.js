@@ -1,49 +1,7 @@
 
-// 
-// // Brand selectbox
-// document.addEventListener("DOMContentLoaded", loadcarsbrand);
-// var brand = document.getElementById('brand');
-// function loadcarsbrand(){
-// 	var xhr = new XMLHttpRequest();
-// 	xhr.open('GET','../json/brand.json',true);
-// 	xhr.onload = function(){
-// 	if(this.status === 200){
-// 		const arr = JSON.parse(this.responseText);
-// 		arr.forEach((z)=>{
-// 			brand.innerHTML += `<option value='${z.brandId}'>${z.name}</option>`;
-// 		return	 mylocalbd =[z.name]
-// 		})
-// 		}
-// 	}
-// 	xhr.send()
-//     }
-    
-
-
-    
-// // Model Selectbox
-// document.addEventListener("DOMContentLoaded", loadcars);
-// var model = document.getElementById('model');
-// function loadcars(){
-// 	var xhr = new XMLHttpRequest();
-// 	xhr.open('GET','../json/model.json',true);
-// 	xhr.onload = function(){
-// 	if(this.status === 200){
-// 		const arr = JSON.parse(this.responseText);
-// 		arr.forEach((e)=>{
-// 			if(mylocalbd.brandId === e.brandId){
-// 				model.innerHTML += `<option value='${e.brandId}'>${e.name}</option>`
-// 			}
-// 		})
-// 		}
-// 	}
-
-// 	xhr.send()
-// 	}
-
-// 	console.log(mylocalbd)
- var brandSelect   = document.getElementById('brand');
- var modelSelect   = document.getElementById('model');
+// Selectbox json read
+var brandSelect   = document.getElementById('brand');
+var modelSelect   = document.getElementById('model');
 let myObject = {
 	init:function(){
 		var that = this;
@@ -77,14 +35,7 @@ let myObject = {
 				}
 			}
 
-			// carBrand.forEach((brand) => {
-			// 	// modelSelect.innerHTML += `<option value='${brand.brandId}'>${brand.name}</option>`;
-			// 	// console.log(brand.brandId);
-			// 	if(brandSelect.value === brand.brandId ){
-			// 		console.log('equal');
-			// 	}
-				
-			// });
+			
 
 		}
 		xhr.send()
@@ -92,3 +43,53 @@ let myObject = {
 }
 
 myObject.init();
+
+// Selectbox json read end
+
+
+// Image Preview
+function previewFiles() {
+
+	var preview = document.querySelector('#preview');
+	var files = document.querySelector('#browse').files;
+	
+	function readAndPreview(file) {
+  	var element = document.createElement('div');
+	  element.setAttribute("class", "single-image-container") ;
+	  preview.appendChild(element);
+	  
+	
+	 var overlay = document.createElement('div');
+	  overlay.setAttribute('class','car-overlay') ;
+	  element.appendChild(overlay);
+	
+	 var button = document.createElement('button');
+	  button.className = 'delete-btn';
+	  overlay.appendChild(button);
+	
+	   var icon = document.createElement('i');
+	  icon.className = 'fas fa-trash-alt';
+	  button.appendChild(icon);
+	  
+	  // Make sure `file.name` matches our extensions criteria
+	  if ( /\.(jpe?g|png|gif)$/i.test(file.name) ) {
+		var reader = new FileReader();
+  
+		reader.addEventListener("load", function () {
+		  var image = new Image();
+		  image.title = file.name;
+		  image.src = this.result;
+		  image.className = 'imagetest';
+		  element.appendChild( image );
+		}, false);
+  
+		reader.readAsDataURL(file);
+	  }
+  
+	}
+  
+	if (files) {
+	  [].forEach.call(files, readAndPreview);
+	}
+  
+  }
