@@ -1,0 +1,36 @@
+[
+    {
+        "modelId":1,
+        "brandId":1,
+        "name":"A1"
+    },
+    {
+        "modelId":2,
+        "brandId":1,
+        "name":"A2"
+    },
+    {
+        "modelId":3,
+        "brandId":1,
+        "name":"A3"
+    },
+    {
+        "modelId":4,
+        "brandId":2,
+        "name":"E190"
+    },{
+        "modelId":5,
+        "brandId":2,
+        "name":"C klass"
+    }
+    ,{
+        "modelId":6,
+        "brandId":3,
+        "name":"Passat"
+    }
+    ,{
+        "modelId":7,
+        "brandId":3,
+        "name":"Golf"
+    }
+]

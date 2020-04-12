@@ -193,8 +193,8 @@
                             <!-- <span asp-validation-for="Phone" class="text-danger"></span> -->
                         </div>
                         <div class="inputs">
-                            <label for="last-name">Photo</label>
-                            <input autocomplete="off" id="last-name" type="file" placeholder="Your Last Name">
+                            <label for="photo">Photo</label>
+                            <input autocomplete="off"  type="file" placeholder="Your Last Name">
                             <!-- <span asp-validation-for="name" class="text-danger"></span> -->
                         </div>
 
@@ -224,14 +224,12 @@
                     <form id='tab2' class="tab_content">
                         <div class="inputs">
 
-                            <div class="myselectbox">
+                            <div  class="myselectbox">
                                 <label class="required" for="">
                                     Brand
                                 </label>
-                                <select>
-                                    <option value="0">All languages</option>
-                                    <option value="1">English</option>
-                                    <option value="2">Russian</option>
+                                <select id="brand">
+                                
                                 </select>
                             </div>
 
@@ -242,18 +240,16 @@
                                 Model
                             </label>
                             <div class="myselectbox">
-                                <select>
-                                    <option value="0">All languages</option>
-                                    <option value="1">English</option>
-                                    <option value="2">Russian</option>
+                                <select id="model">
+                                   
                                 </select>
                             </div>
 
                         </div>
 
                             <div class="inputs">
-                                <label for="last-name">Photo</label>
-                                <input autocomplete="off" id="last-name" type="file" placeholder="Your Last Name">
+                                <label for="photo">Photo</label>
+                                <input autocomplete="off" id="photo" type="file" placeholder="Your Last Name">
                                 <!-- <span asp-validation-for="name" class="text-danger"></span> -->
                             </div>
 
@@ -474,17 +470,17 @@
     
                         <div class="inputs">
                             <label for="name">Email</label>
-                            <input autocomplete="off" id="name" type="email" placeholder="Your First Name">
+                            <input autocomplete="off" id="email" type="email" placeholder="Your Email">
                             <!-- <span asp-validation-for="name" class="text-danger"></span> -->
                         </div>
                         <div class="inputs">
                             <label for="name">Phone</label>
-                            <input autocomplete="off" id="name" type="text" placeholder="Your First Name">
+                            <input autocomplete="off" id="number" type="text" placeholder="Number">
                             <!-- <span asp-validation-for="name" class="text-danger"></span> -->
                         </div>
                         <div class="inputs">
                             <label for="name">Username</label>
-                            <input autocomplete="off" id="name" type="text" placeholder="Your First Name">
+                            <input autocomplete="off" id="username" type="text" placeholder="Your Username">
                             <!-- <span asp-validation-for="name" class="text-danger"></span> -->
                         </div>
                         <div class="inputs">
@@ -655,6 +651,7 @@
     <script src="libs/rangeslider/ion.rangeSlider.min.js"></script>
     <script src="js/minify/range_slider.js"></script>
     <script src="js/minify/centerNav.js"></script>
+    <script src="js/minify/driver_profile.js"></script>
 
 
 
