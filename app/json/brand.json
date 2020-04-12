@@ -1,0 +1,14 @@
+[
+    {
+        "brandId":1,
+        "name":"Audi"
+    },
+    {
+        "brandId":2,
+        "name":"Mercedes"
+    },
+    {
+        "brandId":3,
+        "name":"Wolkswagen"
+    }
+]
