@@ -247,66 +247,20 @@
 
                         </div>
 
-                            <div class="inputs">
-                                <label for="photo">Photo</label>
-                                <input autocomplete="off" id="photo" type="file" placeholder="Your Last Name">
-                                <!-- <span asp-validation-for="name" class="text-danger"></span> -->
-                            </div>
-
                         <div class="form-group inputs">
                             <label asp-for="CarPhotos" class="col-form-label">Car Photos</label>
                             <div>
-                                <input disabled autocomplete="off" asp-for="CarPhotos" class="form-control formField" type="file" multiple="multiple" id="add-photo" max="6">
+                                <input maxlength="4" id="browse" type="file" class="form-control formField" onchange="previewFiles()" multiple>
                                 <span asp-validation-for="CarPhotos" class="text-danger"></span>
                             </div>
-                            <div class="car-img-container">
-                                <div class="single-image-container">
-                                    <div class="car-overlay">
-                                        <button><i class="fas fa-search-plus"></i></button>
-                                        <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                    </div>
-                                    <img src="img/driver_details/grancoupe.jpg" alt="">
+                                 <p id="countimgtxt"></p> 
+                                <div id="preview"  class='car-img-container'>
+  
                                 </div>
-                                <div class="single-image-container">
-                                    <div class="car-overlay">
-                                        <button><i class="fas fa-search-plus"></i></button>
-                                        <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                    </div>
-                                    <img src="img/driver_details/grancoup2.jpg" alt="">
-                                </div>
-                                <div class="single-image-container">
-                                    <div class="car-overlay">
-                                        <button><i class="fas fa-search-plus"></i></button>
-                                        <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                    </div>
-                                    <img src="img/driver_details/granscoupe3.jpg" alt="">
-                                </div>
-                                <div class="single-image-container">
-                                    <div class="car-overlay">
-                                        <button><i class="fas fa-search-plus"></i></button>
-                                        <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                    </div>
-                                    <img src="img/driver_details/grancoupe4.jpg" alt="">
-                                </div>
-                                <div class="single-image-container">
-                                    <div class="car-overlay">
-                                        <button><i class="fas fa-search-plus"></i></button>
-                                        <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                    </div>
-                                    <img src="img/driver_details/grancoupe5.png" alt="">
-                                </div>
-                                <div class="single-image-container">
-                                    <div class="car-overlay">
-                                        <button><i class="fas fa-search-plus"></i></button>
-                                        <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                    </div>
-                                    <img src="img/driver_details/grancoupe6.jpg" alt="">
-                                </div>
-                            </div>
                         </div>
 
                         <div class="save">
-                            <button class="save-btn">Save changes</button>
+                            <button id="saveCarbtn" class="save-btn">Save changes</button>
                         </div>
                     </form>
 
