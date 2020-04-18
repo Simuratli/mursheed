@@ -16,7 +16,6 @@ $bg-color: #f7f7f7;
 @import '_fullpage_slider';
 @import '_guide_register';
 @import '_guides_and_drivers';
-@import '_login';
 @import '_mursheed_app';
 @import '_navigation_for_site';
 @import '_offers_page';
@@ -30,6 +29,9 @@ $bg-color: #f7f7f7;
 @import '_range_slider';
 @import '_pagination';
 @import '_filter';
+@import '_additions';
+@import '_login';
+
 // header
 @import 'partials/header/_navbar_top';
 @import 'partials/header/_navbar_center';

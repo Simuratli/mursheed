@@ -771,23 +771,28 @@ $bg-color: #f7f7f7;
           justify-content: center;
           align-items: center;
 
-          button{
-              background-color: transparent;
-              color: white;
-              border: 1px solid white;
-              border-radius: 50%;
-              height: 40px;
-              width: 40px;
-              margin: 5px;
-              cursor: pointer;
-              outline: none;
-          }
-
-          .delete-btn:hover{
-              color: orangered;
-              border: 1px solid orangered;
-              transition: .3s ease;
-          }
+          .btn-car{
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+            margin-right: 5px;
+            outline: none;
+            i{
+                position: relative !important;
+                left: 11px !important;
+                top: 6px !important;
+            }
+            &:hover{
+                color: red;
+                border: 1px solid red;
+            }
+            
+            transition: .3s ease;
+        }
       }
   }
   img{

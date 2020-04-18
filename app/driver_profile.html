@@ -228,7 +228,7 @@
                                 <label class="required" for="">
                                     Brand
                                 </label>
-                                <select id="brand">
+                                <select id="BrandId">
                                 
                                 </select>
                             </div>
@@ -240,7 +240,7 @@
                                 Model
                             </label>
                             <div class="myselectbox">
-                                <select id="model">
+                                <select id="ModelId">
                                    
                                 </select>
                             </div>
@@ -250,7 +250,7 @@
                         <div class="form-group inputs">
                             <label asp-for="CarPhotos" class="col-form-label">Car Photos</label>
                             <div>
-                                <input maxlength="4" id="browse" type="file" class="form-control formField" onchange="previewFiles()" multiple>
+                                <input id="CarPhotos" type="file" class="form-control formField" onchange="onChange(this)" multiple>
                                 <span asp-validation-for="CarPhotos" class="text-danger"></span>
                             </div>
                                  <p id="countimgtxt"></p> 
@@ -260,7 +260,7 @@
                         </div>
 
                         <div class="save">
-                            <button id="saveCarbtn" class="save-btn">Save changes</button>
+                            <button id="saveCarbtn" onchange="onSave()" class="save-btn">Save changes</button>
                         </div>
                     </form>
 
@@ -605,7 +605,7 @@
     <script src="libs/rangeslider/ion.rangeSlider.min.js"></script>
     <script src="js/minify/range_slider.js"></script>
     <script src="js/minify/centerNav.js"></script>
-    <script src="js/minify/driver_profile.js"></script>
+    <script src="js/driver_profile_car.js"></script>
 
 
 
